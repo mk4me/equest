@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="d0cbfee7-7523-49ff-8993-2e420cebf215" name="C3D" linkedPackageId="8e421e4d-05cd-46e7-8f81-6d4440ee9baf" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="05677d18-a54e-4c5c-826b-51daf1474725">
+      <profileInstance Id="e21b0ca3-0520-4648-9ca7-ff693beb441e" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="554d5e9a-29a5-4c84-af67-8a17589a5071">
+      <profileInstance Id="2c9c78f5-6a39-432e-b747-31259273bdc7" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="d2df6695-fe63-4655-ad53-54ae0539773b" name="DataChannel" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="b736a863-1d27-4329-97b0-7aaa72fa79a9" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="6b0c9474-8883-46e2-adf3-d5012d4f9476" name="EMGChannel" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="2c3501dd-1417-425f-9c94-1101d76a75ed" />
+        <generalsInternal>
+          <generalization Id="e61023ac-a098-4b98-a6fd-34eeb5ad1665" isSubstitutable="false">
+            <classMoniker Id="d2df6695-fe63-4655-ad53-54ae0539773b" LastKnownName="DataChannel" />
+            <elementDefinition Id="6b0af391-4dce-407a-9778-715e96f0b817" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="74974ac3-d449-4edf-82bd-cbda4d35f261" name="GRFChannel" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="3f3605d9-c6fc-48bc-8a65-8df3da7f7c9f" />
+        <generalsInternal>
+          <generalization Id="f2044141-fd22-461d-8ad5-eebee38990f2" isSubstitutable="false">
+            <classMoniker Id="d2df6695-fe63-4655-ad53-54ae0539773b" LastKnownName="DataChannel" />
+            <elementDefinition Id="59d62b4f-3380-4759-9fa5-b55c3f1efb2a" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="743d0441-3b28-4ed2-ae1d-84dbf236606f" name="MarkerSet" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="87bac64f-2923-4bad-86e1-ef95b639376a" />
+        <targetEnds>
+          <association Id="e22ca291-1784-405f-b991-0825171041e7" isDerived="false" sourceEndRoleName="MarkerSet" targetEndRoleName="MarkerChannel" isLeaf="false" isAbstract="false">
+            <classMoniker Id="100bbfa3-5f70-478a-beea-ea862cdb0647" LastKnownName="MarkerChannel" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5740a664-995c-4605-8c4f-22e50b15d4ae" name="MarkerSet" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="e158b9ed-2c19-441b-a457-45b8ddc63a0e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="84601016-eeac-4cff-a873-ac3e643994cf" name="MarkerChannel" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="b6552c7e-cc92-4e0a-b118-55952c9bbf02" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="c4539ce5-1c84-4c06-bc64-109c88a5d631" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="601f8c41-1dcd-4032-bd9f-4055ebb95845" name="C3DParser" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="905f21e9-56d5-420d-bb9f-892c94409e9f" />
+        <suppliersInternal>
+          <interfaceRealization Id="61a48a81-35c3-4e54-a2c7-0356cbe84fa2">
+            <interfaceMoniker Id="9fd936d2-6ff5-41a6-b681-f29d43b1d46f" LastKnownName="IParser" />
+            <elementDefinition Id="f7c5a81a-f6e7-450d-bb5b-17c6d177af1d" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <targetEnds>
+          <association Id="dc392dec-c240-4c69-a0f9-fdf71ff0fa45" isDerived="false" sourceEndRoleName="C3DParser" targetEndRoleName="GRFSerie" isLeaf="false" isAbstract="false">
+            <classMoniker Id="74974ac3-d449-4edf-82bd-cbda4d35f261" LastKnownName="GRFChannel" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="072dcf7c-d001-4b04-a855-f0e4c7fea6b7" name="C3DParser" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="928d733b-eb68-4646-96f8-31ead1b3227d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7dad451b-8ab4-4f67-9a06-30b57de44db1" name="GRFSerie" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="c9929109-c97f-4728-af35-834db8d25375" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="2c2abe3d-df2f-4fce-84cd-b03cc2487baf" />
+          </association>
+          <association Id="35a07731-f487-4fc1-91f0-eccff842b76e" isDerived="false" sourceEndRoleName="C3DParser" targetEndRoleName="EMGSerie" isLeaf="false" isAbstract="false">
+            <classMoniker Id="6b0c9474-8883-46e2-adf3-d5012d4f9476" LastKnownName="EMGChannel" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="832cf93e-5812-4c32-8cb2-f7a269060f51" name="C3DParser" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="b78c6249-aa62-4836-b02b-114f1f32d097" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="75a8e8f0-83f9-4e88-b583-3acb5ac60941" name="EMGSerie" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="3d7789be-9353-4a75-b3f3-f1434fd46085" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="bb4ab779-c6e5-4d9a-8de1-8f4b39172147" />
+          </association>
+          <association Id="381cbd0a-8b9d-4c7f-ac23-db6e8e594ad9" isDerived="false" sourceEndRoleName="C3DParser" targetEndRoleName="MarkerSet" isLeaf="false" isAbstract="false">
+            <classMoniker Id="743d0441-3b28-4ed2-ae1d-84dbf236606f" LastKnownName="MarkerSet" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2585c39c-40d1-47c5-86e7-4f5b804db289" name="C3DParser" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="48569a86-f924-45ea-ab48-661bcbca1e85" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="60cd35cb-16d3-40fc-8d77-8e38205e9622" name="MarkerSet" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="36d0786b-505f-4338-aa83-adff8ff02500" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="6c976358-c3f9-48ac-bb12-6f741e172f0a" />
+          </association>
+          <association Id="14ecc7e8-eb5f-4729-82b7-19bc27cd7507" isDerived="false" sourceEndRoleName="C3DParser" targetEndRoleName="MarkerChannel" isLeaf="false" isAbstract="false">
+            <classMoniker Id="100bbfa3-5f70-478a-beea-ea862cdb0647" LastKnownName="MarkerChannel" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="aa3f1e45-6604-4658-a5aa-2dd60b0886e9" name="C3DParser" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="6e04b326-7f79-428f-864a-72b6e1d7853d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a0705bf8-20c2-46e0-928d-a9318e5a708a" name="MarkerChannel" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="06899b30-4e2c-4375-8324-378d3b1bf601" name="Lower" value="1">
+                      <elementDefinition Id="757a0644-d73b-4ab0-87da-a43971ab99dc" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="c64ec91e-a6f4-48e3-9532-f046bda69f6c" name="Upper" value="1">
+                      <elementDefinition Id="093086f6-71c7-42a9-b964-06a010737280" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="36fcc105-ca92-4f54-aa61-06c128ccd7ea" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="409f85d8-b72c-43bc-a341-064bb2550231" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="9fd936d2-6ff5-41a6-b681-f29d43b1d46f" name="IParser" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="42208161-3da2-4413-b70e-517f7c06f958" />
+        <targetEnds>
+          <association Id="1f6e687f-e794-4672-ac0e-83ea86a0c84b" isDerived="false" sourceEndRoleName="IParser" targetEndRoleName="ObjectWrapper" isLeaf="false" isAbstract="false">
+            <classMoniker Id="b460591c-ac9c-40fd-aba2-701c1b5d8541" LastKnownName="ObjectWrapper" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8853be1b-0212-42f2-b0fe-1f41d824e890" name="IParser" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="fca9ca17-e159-4019-aa83-5405195218e1" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e2d02624-e42b-4d81-97a3-c79f98bf9cdd" name="ObjectWrapper" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="aca42e15-220b-45fb-9c47-c2788050c640" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="ea68ed77-8187-4aba-be0a-4ede994e32ce" />
+          </association>
+        </targetEnds>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="b460591c-ac9c-40fd-aba2-701c1b5d8541" name="ObjectWrapper" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="01b34fc6-514e-4892-a886-4dad11685f40" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="12afd020-1d6a-4990-870b-39c73c90ea14" name="VideoParser" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="1c503d4e-afb2-42a6-b5ce-3b8af7d09842" />
+        <suppliersInternal>
+          <interfaceRealization Id="80bed94c-fb79-4b2a-ab50-92118d0a2bae">
+            <interfaceMoniker Id="9fd936d2-6ff5-41a6-b681-f29d43b1d46f" LastKnownName="IParser" />
+            <elementDefinition Id="fdac03be-1176-4bdc-a6b3-d8eadeba243d" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <targetEnds>
+          <association Id="add5c7d0-5095-4dd1-a4f1-c3e953a2c70a" isDerived="false" sourceEndRoleName="VideoParser" targetEndRoleName="vidlib::VideoImageStream" isLeaf="false" isAbstract="false">
+            <classMoniker Id="ed0edde4-8778-4600-a552-b855e03e7a68" LastKnownName="vidlib::VideoImageStream" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="eab2ff99-4165-4aeb-8b52-982c009d03c4" name="VideoParser" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="4b1f3def-300b-4ec9-ade0-d124d61f5b50" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="fedecdef-04df-489f-bf99-385758774aa9" name="vidlib::VideoImageStream" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="bebe14e9-adbd-4a1a-9c72-086795078b6a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="2828a202-6974-4f4a-ad1b-6d7b3447da58" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="ed0edde4-8778-4600-a552-b855e03e7a68" name="vidlib::VideoImageStream" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="401c6c7d-7c4f-4c32-98f0-a8b4327d5802" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="100bbfa3-5f70-478a-beea-ea862cdb0647" name="MarkerChannel" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="43a46911-cba9-42b1-8c6a-c125e9cbaf60" />
+        <generalsInternal>
+          <generalization Id="7558169c-b726-40b9-8ce3-aa635a6d44ac" isSubstitutable="false">
+            <classMoniker Id="d2df6695-fe63-4655-ad53-54ae0539773b" LastKnownName="DataChannel" />
+            <elementDefinition Id="0664217e-7567-484d-a1af-81d38c643463" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="5ae9ffa2-0b12-49be-8666-ce28afab1009" name="EMGSet" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="e362b7b1-aeaa-4c2f-b774-b95502d5109b" />
+        <targetEnds>
+          <association Id="f7cd6098-1e21-44df-be89-bdfeb67bf6b7" isDerived="false" sourceEndRoleName="EMGSet" targetEndRoleName="EMGChannel" isLeaf="false" isAbstract="false">
+            <classMoniker Id="6b0c9474-8883-46e2-adf3-d5012d4f9476" LastKnownName="EMGChannel" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0115967d-1516-47ef-b589-27aa6baa1276" name="EMGSet" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="26130692-f68a-45ab-849f-d46748fb5288" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e6138b20-5314-475a-8ea5-307c44af0d80" name="EMGChannel" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="871d3d80-19d7-4359-b054-6d9d17a52cc6" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="73e6cee1-7321-41c0-ae42-bbc81d3b9c7b" />
+          </association>
+          <association Id="13528138-ea2e-408d-98c9-cd6d66b3aab5" isDerived="false" sourceEndRoleName="EMGSet" targetEndRoleName="C3DParser" isLeaf="false" isAbstract="false">
+            <classMoniker Id="601f8c41-1dcd-4032-bd9f-4055ebb95845" LastKnownName="C3DParser" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5ed67990-0344-4c99-9a6c-af09b953b94f" name="EMGSet" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="f7f481c8-acc4-401c-bb9b-5494d13b4fb7" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2e33200c-57be-46a5-860f-e872de145a2d" name="C3DParser" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="814d558a-8626-4a5a-b386-ffa55e188ee3" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="070c0f57-4ed0-44aa-8605-d2c00a80c1d3" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="6b1fc013-1ffe-4b8e-ac02-562f943a147d" name="GRFSet" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="52914e00-18dd-416d-a9d8-2fdfe50a3992" />
+        <targetEnds>
+          <association Id="b403f3d1-78e8-4331-b7a9-f6636ce27f49" isDerived="false" sourceEndRoleName="GRFSet" targetEndRoleName="GRFChannel" isLeaf="false" isAbstract="false">
+            <classMoniker Id="74974ac3-d449-4edf-82bd-cbda4d35f261" LastKnownName="GRFChannel" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e61f71f3-46ca-411f-b572-58fcf4c8d05b" name="GRFSet" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="b7292f03-9703-4efb-94f6-aa06eab571ff" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="00ac79d0-e7b2-43eb-ad57-59ac2e9eac0f" name="GRFChannel" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="dd91cbe4-aa90-4d16-b57d-f6ac7c6cce54" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="cf4bea3d-2ad0-4df0-9693-9d763521a1ec" />
+          </association>
+          <association Id="d39f257d-4d98-4746-8f58-5add3e246daf" isDerived="false" sourceEndRoleName="GRFSet" targetEndRoleName="C3DParser" isLeaf="false" isAbstract="false">
+            <classMoniker Id="601f8c41-1dcd-4032-bd9f-4055ebb95845" LastKnownName="C3DParser" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="492fb0f2-0eaa-4d48-9f5e-0510aa5d8584" name="GRFSet" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="21dc17f7-c30a-4d53-b5c1-185793f87f9f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8d138746-d0ec-450e-8425-6ae6bc649931" name="C3DParser" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="1996a2dd-5521-4c1c-8791-895655482469" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="b5deeded-8418-4c04-a839-25788e51540a" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="8e421e4d-05cd-46e7-8f81-6d4440ee9baf" name="uml">
+    <elementDefinition Id="c2d1360b-ea8b-406c-b331-dd1f2f8fbe08" />
+  </package>
+</logicalClassDesignerModel>

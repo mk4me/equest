@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{980058a7-19e3-49b4-af06-483c4016f4be}</ProjectGuid>
+    <ArchitectureToolsVersion>1.0.0.0</ArchitectureToolsVersion>
+    <Name>uml</Name>
+    <RootNamespace>uml</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v10.0\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" />
+  <ItemGroup>
+    <Content Include="C3D.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="C3D.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>C3D.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="CMake\Finders.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="CMake\Finders.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>CMake\Finders.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="DataManager.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="DataManager.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>DataManager.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="DataRepresentationInWorkflowItems.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="DMLoadTrial.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="DMLoadTrial.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>DMLoadTrial.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="DMQueryData.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="DMQueryData.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>DMQueryData.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="InputOutputWorkflowItemDescription.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_1206.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="DMRegisterParser.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="DMRegisterParser.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>DMRegisterParser.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="ModelDefinition\Package_1556.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_1557.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_1558.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_1601.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UMLClassDiagram1.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UMLClassDiagram1.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>UMLClassDiagram1.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="IVisualizer.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="IVisualizer.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>IVisualizer.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="Plugin.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Plugin.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Plugin.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="TreeModel.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="TreeModel.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>TreeModel.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="MdeMainWindow.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="MdeMainWindow.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>MdeMainWindow.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="Filters.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Filters.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Filters.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="VDF.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="VDF.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>VDF.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="WorkflowDiagram.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="WorkflowDiagram.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>WorkflowDiagram.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="WorkflowItems.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="WorkflowItems.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>WorkflowItems.classdiagram</DependentUpon>
+    </Content>
+    <Folder Include="ModelDefinition\" />
+    <Content Include="EDR.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="EDR.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>EDR.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="ModelDefinition\uml.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Folder Include="CMake" />
+  </ItemGroup>
+</Project>

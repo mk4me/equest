@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="113d0699-4574-4726-b166-7b04354b69cf" name="WprkflowItems" linkedPackageId="9f7b1331-7ced-4271-9a22-4fbaf038105c" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="c4e15cad-7f7a-4d6a-93f1-077bf981826c" name="IInputDescription" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="6eedc4d9-d378-424b-8beb-cbcdb19387bb" />
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="5a66888c-c319-407b-b77d-8cf81453948b" name="IOutputDescription" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8eec5efe-ff3c-46b2-a6ae-0fe7a4c43993" />
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="206a503e-80c2-49b4-a5ed-f8fdddf47182" name="IInputIProcessItem" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="58d5625d-8c8c-41eb-9274-2a948d872439" />
+        <generalsInternal>
+          <generalization Id="e39aaf5e-17fd-4166-8622-83a9a7948523" isSubstitutable="false">
+            <interfaceMoniker Id="c4e15cad-7f7a-4d6a-93f1-077bf981826c" LastKnownName="IInputDescription" />
+            <elementDefinition Id="029b66c5-7fe0-4554-bf0d-8c882240ea0a" />
+          </generalization>
+          <generalization Id="f5531702-0dd8-474d-879b-e9600938eb86" isSubstitutable="false">
+            <interfaceMoniker Id="a1f1c366-5488-49ca-aa67-1a9913d69b2a" LastKnownName="IWorkflowItemBase" />
+            <elementDefinition Id="b02f1803-7e42-40ca-b4e0-1f8ce873b1c0" />
+          </generalization>
+        </generalsInternal>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="8a2b71db-5f3f-4f0f-a251-8f9c049766b8" name="IOutputProcessItem" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="205a9346-c24f-4355-a45e-3e0f19673b83" />
+        <generalsInternal>
+          <generalization Id="aef0f42a-b2c6-49c5-bed0-de1ba7db19cb" isSubstitutable="false">
+            <interfaceMoniker Id="5a66888c-c319-407b-b77d-8cf81453948b" LastKnownName="IOutputDescription" />
+            <elementDefinition Id="5794c53e-347f-43ba-a463-a3f8de6f3895" />
+          </generalization>
+          <generalization Id="1c92a643-9e06-4a96-8aa5-1a6285b7aab4" isSubstitutable="false">
+            <interfaceMoniker Id="a1f1c366-5488-49ca-aa67-1a9913d69b2a" LastKnownName="IWorkflowItemBase" />
+            <elementDefinition Id="9aa083e2-924b-44cf-877d-c23c88d382f8" />
+          </generalization>
+        </generalsInternal>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="064e8b61-03ce-4ca4-870d-3c7fba4e907a" name="IInputOutputProcessItem" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="547d808e-8ae3-4d3d-930d-c0bf054d1cd4" />
+        <generalsInternal>
+          <generalization Id="965f67ca-8104-4707-a8bf-2b99c065873f" isSubstitutable="false">
+            <interfaceMoniker Id="5a66888c-c319-407b-b77d-8cf81453948b" LastKnownName="IOutputDescription" />
+            <elementDefinition Id="b6eb3781-a76e-4926-a7da-53ef5ffc8269" />
+          </generalization>
+          <generalization Id="e1545be8-a811-4a86-8459-e477c050a7d2" isSubstitutable="false">
+            <interfaceMoniker Id="c4e15cad-7f7a-4d6a-93f1-077bf981826c" LastKnownName="IInputDescription" />
+            <elementDefinition Id="f7aba7b1-eef6-44f8-90b3-f18556b64f90" />
+          </generalization>
+          <generalization Id="76a31e37-a251-4da3-969c-2113ebd871d1" isSubstitutable="false">
+            <interfaceMoniker Id="a1f1c366-5488-49ca-aa67-1a9913d69b2a" LastKnownName="IWorkflowItemBase" />
+            <elementDefinition Id="1e6bfda2-9768-4e8c-bb80-d8b8a4f62155" />
+          </generalization>
+        </generalsInternal>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="a1f1c366-5488-49ca-aa67-1a9913d69b2a" name="IWorkflowItemBase" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="40269022-5565-47e7-87d6-de7d903997ab" />
+        <generalsInternal>
+          <generalization Id="bfa732d5-b7fe-4db3-828d-8414ccee7dfe" isSubstitutable="false">
+            <interfaceMoniker Id="16d54218-9116-4b0d-9a7f-40b335a0ece4" LastKnownName="IIdentifible" />
+            <elementDefinition Id="40590f23-54d4-46ce-bdcb-3f6ee66ece43" />
+          </generalization>
+          <generalization Id="a9be62c6-46fe-4b17-9a2f-6058185f172d" isSubstitutable="false">
+            <interfaceMoniker Id="c012e78f-6908-4d80-b04e-d74cd7fe47cb" LastKnownName="ISerializable" />
+            <elementDefinition Id="df2c6afd-a2ac-442d-acec-15d403df47c6" />
+          </generalization>
+          <generalization Id="44a223d0-1d5a-4ccc-912a-6f5ba3d4f461" isSubstitutable="false">
+            <interfaceMoniker Id="99131ab2-c3f0-4da6-8f0e-3ff332425bbc" LastKnownName="IConfigurable" />
+            <elementDefinition Id="35f9f022-162f-40d1-a0db-5c45ec9b9be6" />
+          </generalization>
+          <generalization Id="f1bf98dc-9d03-4432-874b-0ef3601fad03" isSubstitutable="false">
+            <interfaceMoniker Id="d867ed16-42e9-467d-96e0-48f7581c6127" LastKnownName="IClonable" />
+            <elementDefinition Id="311458e1-4e94-40c1-8b4c-ab28c28e1b1f" />
+          </generalization>
+        </generalsInternal>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="c012e78f-6908-4d80-b04e-d74cd7fe47cb" name="ISerializable" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="fba2109e-4dab-49af-b5c0-a21ddf1f9a58" />
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="99131ab2-c3f0-4da6-8f0e-3ff332425bbc" name="IConfigurable" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ef01fc07-62ba-4b1b-a5e7-bf831d176c39" />
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="16d54218-9116-4b0d-9a7f-40b335a0ece4" name="IIdentifible" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e0c88f40-ab6e-4aaa-9abe-e5c27b9116d7" />
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="d867ed16-42e9-467d-96e0-48f7581c6127" name="IClonable" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="4f6bde66-3d66-4db2-a5a0-a1bf89af2549" />
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="61b1dc61-de40-4fa9-b993-e030f980abce" name="InputDesription" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="8333d654-f85e-4299-8c5a-49e1c79476ff" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="556c304f-0824-4146-8f1a-97331717f499" name="OutputDescription" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="cd335927-5ee4-41c7-bb17-5d0bc5a6951c" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="a8b4b5cf-5e1d-4d43-9bd4-588c4528b035" name="InputProcessItem" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="aee232a1-9877-4190-8387-63223fedf4b7" />
+        <generalsInternal>
+          <generalization Id="03ab4cfc-2a5c-459f-aad3-6d5c8e8c1977" isSubstitutable="false">
+            <classMoniker Id="61b1dc61-de40-4fa9-b993-e030f980abce" LastKnownName="InputDesription" />
+            <elementDefinition Id="46064e0e-583f-4e1b-aa27-b41b1adea1b9" />
+          </generalization>
+          <generalization Id="a8f4402a-212a-4177-a5e7-866b9b9b514d" isSubstitutable="false">
+            <classMoniker Id="a16aae30-c26e-4866-9208-fae2997c0b79" LastKnownName="WorkflowProcessItemEncapsulator" />
+            <elementDefinition Id="c6c555f8-3c37-40dd-a350-e1ff9ab117ae" />
+          </generalization>
+        </generalsInternal>
+        <ownedRedefinableTemplateSignatureInternal>
+          <redefinableTemplateSignature Id="7fd09ae0-aa55-4c77-977a-35170834cecc" parameters="" isLeaf="false">
+            <elementDefinition Id="b2aa47a4-24d7-4f9b-9e39-3921baae78f9" />
+            <ownedParameters>
+              <classifierTemplateParameter Id="14a6b2a5-0184-43c3-85b3-f8d5020d3473">
+                <elementDefinition Id="b15cf334-962c-4877-8081-b7cb0bf929b1" />
+                <ownedParameterableElement>
+                  <class Id="778b12f3-bcdb-43cd-84b7-89a7e320c1fe" name="T" isAbstract="false" isLeaf="false" isActiveClass="false">
+                    <elementDefinition Id="1d52dd82-32c3-4efb-8336-c1b513e009dd" />
+                  </class>
+                </ownedParameterableElement>
+              </classifierTemplateParameter>
+            </ownedParameters>
+          </redefinableTemplateSignature>
+        </ownedRedefinableTemplateSignatureInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="a76210c6-7900-4f64-8ccb-91a2085729ca" name="OutputProcessItem" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="d6b25aa4-6f2e-4527-b02b-1b16f71d451c" />
+        <generalsInternal>
+          <generalization Id="d387aa51-a257-4ca6-9483-8909627b3745" isSubstitutable="false">
+            <classMoniker Id="a16aae30-c26e-4866-9208-fae2997c0b79" LastKnownName="WorkflowProcessItemEncapsulator" />
+            <elementDefinition Id="a57cf396-334c-47f4-9f73-6bc8e15fcff0" />
+          </generalization>
+          <generalization Id="96dc36b7-a2c4-4ecc-bb70-2a58d438a0c8" isSubstitutable="false">
+            <classMoniker Id="556c304f-0824-4146-8f1a-97331717f499" LastKnownName="OutputDescription" />
+            <elementDefinition Id="bd889c17-a56b-4e2a-a71a-48ab22907b32" />
+          </generalization>
+        </generalsInternal>
+        <ownedRedefinableTemplateSignatureInternal>
+          <redefinableTemplateSignature Id="bc5aad0f-774e-496d-ac00-254bc3e4cfff" parameters="" isLeaf="false">
+            <elementDefinition Id="01b5e671-871e-4a3d-a96e-a090ab784b4f" />
+            <ownedParameters>
+              <classifierTemplateParameter Id="3c60e8fa-5995-4e9c-9b40-d328eb33894c">
+                <elementDefinition Id="1fefc7e2-7588-4945-8937-22802ff9421e" />
+                <ownedParameterableElement>
+                  <class Id="51e5fd7b-cfe0-4c0a-af80-28d785a61ab0" name="T" isAbstract="false" isLeaf="false" isActiveClass="false">
+                    <elementDefinition Id="b5414de9-00bc-4499-892b-89c0f399bb62" />
+                  </class>
+                </ownedParameterableElement>
+              </classifierTemplateParameter>
+            </ownedParameters>
+          </redefinableTemplateSignature>
+        </ownedRedefinableTemplateSignatureInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="210b32c5-8767-418c-a492-0ebe229d429b" name="InputOutputProcessItem" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="67388a3e-ac42-4a43-ab3b-6cb539bb8b70" />
+        <generalsInternal>
+          <generalization Id="01f58225-5c07-482a-bb02-092119caa271" isSubstitutable="false">
+            <classMoniker Id="a16aae30-c26e-4866-9208-fae2997c0b79" LastKnownName="WorkflowProcessItemEncapsulator" />
+            <elementDefinition Id="5f010419-3043-4b19-bfae-b620b7813f16" />
+          </generalization>
+          <generalization Id="0ba1b603-722e-4c47-9c15-99bfffe2099a" isSubstitutable="false">
+            <classMoniker Id="556c304f-0824-4146-8f1a-97331717f499" LastKnownName="OutputDescription" />
+            <elementDefinition Id="38d1c549-27ab-4ea0-b3ab-b5cb34f8e6dc" />
+          </generalization>
+          <generalization Id="985b30ec-0ed2-4f08-88ae-70408f535716" isSubstitutable="false">
+            <classMoniker Id="61b1dc61-de40-4fa9-b993-e030f980abce" LastKnownName="InputDesription" />
+            <elementDefinition Id="b7cb959e-fa3e-42b9-a6eb-c52d848780d8" />
+          </generalization>
+        </generalsInternal>
+        <ownedRedefinableTemplateSignatureInternal>
+          <redefinableTemplateSignature Id="78d0571d-4826-4aa7-b15d-fc16eae678c3" parameters="" isLeaf="false">
+            <elementDefinition Id="09e2d1f0-b835-40d2-ad47-afcca4570b1b" />
+            <ownedParameters>
+              <classifierTemplateParameter Id="7b3cbe09-ad0a-413a-a230-99015b6ae8c0">
+                <elementDefinition Id="6dfb92d4-db6d-4500-a884-3dc72ec353ad" />
+                <ownedParameterableElement>
+                  <class Id="869cf6e0-4b9f-4864-b2d6-9e034476007a" name="T" isAbstract="false" isLeaf="false" isActiveClass="false">
+                    <elementDefinition Id="d7c66e94-7981-4df3-81e3-41cdd5acd569" />
+                  </class>
+                </ownedParameterableElement>
+              </classifierTemplateParameter>
+            </ownedParameters>
+          </redefinableTemplateSignature>
+        </ownedRedefinableTemplateSignatureInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="a16aae30-c26e-4866-9208-fae2997c0b79" name="WorkflowProcessItemEncapsulator" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="f221e248-f8c9-410a-8952-802ae71f30be" />
+        <suppliersInternal>
+          <interfaceRealization Id="d335f6c4-b213-4cce-af96-2bf5793217b3">
+            <interfaceMoniker Id="64d5f85e-5b63-4b77-97a1-c634dbcaede7" LastKnownName="IWorkflowProcessItem" />
+            <elementDefinition Id="cc9dea38-047a-4959-8ce2-203e928170e0" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedRedefinableTemplateSignatureInternal>
+          <redefinableTemplateSignature Id="fcc62399-a0a6-427a-a31f-8d079c7f4523" parameters="" isLeaf="false">
+            <elementDefinition Id="4cbd3d04-61ee-4b3c-8e1d-780a32837a0d" />
+            <ownedParameters>
+              <classifierTemplateParameter Id="54ec7d12-5553-4ba1-8042-bec328896e95">
+                <elementDefinition Id="e6479655-d268-47e8-9e17-7a091451d0e0" />
+                <ownedParameterableElement>
+                  <class Id="c75d200f-08bf-4ca3-86a0-c2605c740bc3" name="T" isAbstract="false" isLeaf="false" isActiveClass="false">
+                    <elementDefinition Id="1cf6b418-aba2-4874-a7ff-af383e334900" />
+                  </class>
+                </ownedParameterableElement>
+              </classifierTemplateParameter>
+            </ownedParameters>
+          </redefinableTemplateSignature>
+        </ownedRedefinableTemplateSignatureInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="64d5f85e-5b63-4b77-97a1-c634dbcaede7" name="IWorkflowProcessItem" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="988191b9-799c-40c4-a66a-84bd7423eeb3" />
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="9f7b1331-7ced-4271-9a22-4fbaf038105c" name="uml">
+    <elementDefinition Id="c2d1360b-ea8b-406c-b331-dd1f2f8fbe08" />
+  </package>
+</logicalClassDesignerModel>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="c98db094-3749-4598-80c9-08478cbc6ca1" name="UMLClassDiagram2" linkedPackageId="37d7e764-5250-4156-878d-ebac9d13432a" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <ownedCommentsInternal>
+    <comment Id="3037e5b3-a114-4541-8275-c540a6e5a361">
+      <elementDefinition Id="701fe5c1-65ff-4cf8-afec-edb40a3b65af" />
+      <body>Dane widziane przez elementy Workflow na poziomie klienta i EDR</body>
+    </comment>
+    <comment Id="91b9f3a9-ec79-470e-a794-f3d26fb7c367">
+      <elementDefinition Id="4f56652f-df6b-45d7-9574-15b965fd0286" />
+      <body>Od strony EDR - sloty (informacje o typach) + sposób wymiany informacji (ObjectWrappery, CopyPolicy)
+
+Rozszerza możliwości klas klienta o informację o zmianie stanu slotu, sposobie przekazywania infomracji przez slot (modyfikowanie/niemodyfikowanie danych)</body>
+    </comment>
+    <comment Id="4233d361-57ce-4784-b005-ce4b8cca6a2f">
+      <elementDefinition Id="1bf6f290-6181-46d9-9529-25881d12e927" />
+      <body>Od strony klienta - pobieranie i zapisywanie obiektów domenowych (ObjectWrapperów)</body>
+    </comment>
+  </ownedCommentsInternal>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="d7dc0e7f-f15b-4c4a-9ef2-152f1f3e1792" name="ObjectOutput" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="cf70f340-e928-4ebc-9458-92f532eb56a4" />
+        <suppliersInternal>
+          <interfaceRealization Id="79ce14f7-c0f9-40eb-964f-0bc2216b94e8">
+            <interfaceMoniker Id="9699fd4b-332e-488f-88f7-4610e7a2ad05" LastKnownName="IObjectOutput" />
+            <elementDefinition Id="1e775b4e-4142-4c9f-93ba-b9dc4b299c46" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <generalsInternal>
+          <generalization Id="bbcf6127-4d94-4f81-aa8f-d0cde461ece8" isSubstitutable="false">
+            <classMoniker Id="4361de09-8810-4cdb-83b8-af9d9051a9c8" LastKnownName="ObjectSlots" />
+            <elementDefinition Id="408aace3-f259-41b3-98b0-7b0c3b2bf5ef" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="4361de09-8810-4cdb-83b8-af9d9051a9c8" name="ObjectSlots" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="48f1cb21-2550-477e-994c-a33ff53a8d4e" />
+        <targetEnds>
+          <association Id="4097291a-c995-4438-aead-2dc62466d64c" isDerived="false" sourceEndRoleName="ObjectSlots" targetEndRoleName="Slot" isLeaf="false" isAbstract="false">
+            <classMoniker Id="92cf9516-79de-40d3-bb84-0f44e45e5ca6" LastKnownName="Slot" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c3c336f2-5b85-4c21-8c04-5dde326d5a15" name="ObjectSlots" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="d88b8999-5f93-4af0-ab78-e2b75e9b4a64" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="078d789b-296f-439c-8c66-29af3c964fee" name="Slot" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <lowerValueInternal>
+                    <literalString Id="cd15199d-6a4e-4911-ad56-c8884b6275eb" name="Lower" value="1">
+                      <elementDefinition Id="b75605bf-b3ba-49e2-ad3f-86badded3e3c" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="4ca967e1-5676-497e-a307-e6323bbf01d8" name="Upper" value="16">
+                      <elementDefinition Id="ae9288c3-b03e-4207-b07a-60a1624b3643" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="04c5208b-cf83-4482-981d-6cca8e65ec2d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="b0927b91-5942-4571-9757-6759a299e730" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="834d0c28-439a-428e-b3c2-200b2a80abe0" name="ObjectSource" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="1a772aff-7424-4c88-8911-db30f109bb7d" />
+        <suppliersInternal>
+          <interfaceRealization Id="1283281d-3a7b-4e16-92b1-eb5f9dbc2e3b">
+            <interfaceMoniker Id="3192d5ce-ac68-48d7-b0c9-bbbd54c633a9" LastKnownName="IObjectInput" />
+            <elementDefinition Id="c6a59597-cd0e-4ffd-b7c3-2b52639c7789" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <generalsInternal>
+          <generalization Id="b95d305e-4301-417c-b412-657c46dccef8" isSubstitutable="false">
+            <classMoniker Id="4361de09-8810-4cdb-83b8-af9d9051a9c8" LastKnownName="ObjectSlots" />
+            <elementDefinition Id="466c9400-dda2-46d0-9171-1b8ca721d808" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="3192d5ce-ac68-48d7-b0c9-bbbd54c633a9" name="IObjectInput" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f4856558-e089-43cf-94aa-2adbaf96f63f" />
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="9699fd4b-332e-488f-88f7-4610e7a2ad05" name="IObjectOutput" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5577b1b4-080c-416e-a55e-d73f6a42bc16" />
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="92cf9516-79de-40d3-bb84-0f44e45e5ca6" name="Slot" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="119bab83-ba97-492a-98d9-fcd27b41edc7" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="37d7e764-5250-4156-878d-ebac9d13432a" name="uml">
+    <elementDefinition Id="c2d1360b-ea8b-406c-b331-dd1f2f8fbe08" />
+  </package>
+</logicalClassDesignerModel>

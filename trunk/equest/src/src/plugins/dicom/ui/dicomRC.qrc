@@ -1,0 +1,37 @@
+<RCC>
+  <qresource prefix="dicom">
+    <file alias="pathIcon.png">../resources/embedded/pathIcon.png</file>
+    <file alias="curveIcon.png">../resources/embedded/curveIcon.png</file>	
+    <file alias="arrowIcon.png">../resources/embedded/arrowIcon.png</file>
+    <file alias="arrowIconDisabled.png">../resources/embedded/arrowIconDisabled.png</file>
+    <file alias="file.png">../resources/embedded/file.png</file>
+    <file alias="file_done.png">../resources/embedded/file_done.png</file>
+    <file alias="file_blue.png">../resources/embedded/file_blue.png</file>
+    <file alias="undo.png">../resources/embedded/undo.png</file>
+    <file alias="redo.png">../resources/embedded/redo.png</file>
+    <file alias="save.png">../resources/embedded/save.png</file>
+    <file alias="saveDisabled.png">../resources/embedded/saveDisabled.png</file>
+    <file alias="edit.png">../resources/embedded/edit.png</file>
+    <file alias="remove.png">../resources/embedded/remove.png</file>
+	  <file alias="crop.png">../resources/embedded/crop.png</file>
+    <file alias="cropDisabled.png">../resources/embedded/cropDisabled.png</file>
+	  <file alias="move.png">../resources/embedded/move.png</file>
+	  <file alias="add_curve.png">../resources/embedded/add_curve.png</file>
+	  <file alias="add_poly.png">../resources/embedded/add_poly.png</file>
+	  <file alias="moveIcon.png">../resources/embedded/moveIcon.png</file>
+	  <file alias="left.png">../resources/embedded/left.png</file>
+	  <file alias="right.png">../resources/embedded/right.png</file>
+	  <file alias="upload.png">../resources/embedded/upload.png</file>
+    <file alias="uploadDisabled.png">../resources/embedded/uploadDisabled.png</file>
+	  <file alias="BoneIcon.png">../resources/embedded/BoneIcon.png</file>
+	  <file alias="SkinIcon.png">../resources/embedded/SkinIcon.png</file>
+	  <file alias="TendonIcon.png">../resources/embedded/TendonIcon.png</file>
+	  <file alias="JointIcon.png">../resources/embedded/JointIcon.png</file>
+	  <file alias="InflammatoryIcon.png">../resources/embedded/InflammatoryIcon.png</file>
+	  <file alias="NoiseIcon.png">../resources/embedded/NoiseIcon.png</file>
+    <file alias="accept.png">../resources/embedded/accept.png</file>
+    <file alias="acceptDisabled.png">../resources/embedded/acceptDisabled.png</file>
+    <file alias="reject.png">../resources/embedded/reject.png</file>
+    <file alias="rejectDisabled.png">../resources/embedded/rejectDisabled.png</file>
+  </qresource>
+</RCC>

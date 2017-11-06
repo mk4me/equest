@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="bb26abad-f934-4920-8a09-2fa42b976773" name="UMLClassDiagram3" linkedPackageId="ca00f681-0227-4d84-8232-e283a26f02e7" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <ownedCommentsInternal>
+    <comment Id="82f25e2e-e012-4d63-a2df-b6e3dd15bc2e">
+      <elementDefinition Id="c2354d0e-1c0d-4ffc-8f5c-1a5fdfacdde8" />
+      <body>guziki close/undock + możliwość osadzania akcji/menu/widgetów</body>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="6da189ee-1560-4ef1-9e83-dc24e09e3e70">
+      <profileInstance Id="aafd4f8a-0714-4f3f-8353-1f8206230805" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="3caef2b2-db2c-4d7a-a7f1-70e82b454a6b">
+      <profileInstance Id="4fb2f473-1699-4a7e-8fbf-5933c2b67512" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="3468a0c6-4f4d-4b2a-8d57-9b80b578d6f3" name="QDockWidget" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="57d0d64c-cee4-48c0-b29c-6e68055bd190" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="7faaa107-c17d-48ac-b680-00e2d0909ec5" name="EDRInnerWidget" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="f9c1b5e1-49df-4922-8933-49be69c30db2" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="b2454066-9a07-4903-9df6-4a919cb1f7f2" name="EDRDockWidget" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="96573247-61ed-4007-a293-54287fc4a4ca" />
+        <generalsInternal>
+          <generalization Id="2ae21e2e-f894-4c34-937e-6dc859c136c4" isSubstitutable="false">
+            <classMoniker Id="3468a0c6-4f4d-4b2a-8d57-9b80b578d6f3" LastKnownName="QDockWidget" />
+            <elementDefinition Id="29305db7-0205-40db-893a-b2a513db6b6f" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association Id="92f064b5-7d4d-4b48-887e-7f1de46db11a" isDerived="false" sourceEndRoleName="EDRDockWidget" targetEndRoleName="EDRTitleBar" isLeaf="false" isAbstract="false">
+            <classMoniker Id="56330c80-6ba1-4f90-8ba9-ffdace6fefea" LastKnownName="EDRTitleBar" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e29390c7-e594-4798-8ab7-19177bbc1edb" name="EDRDockWidget" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="086fd4c5-a8b0-4559-8586-3fe44f7f004a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a57075f7-02eb-4e6b-97aa-ab265f1b81d6" name="EDRTitleBar" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="24f0deba-9bc3-482a-bd15-e8f7a4159f52" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="3c8a6b1b-26c6-4c22-85e6-aa3486462164" />
+          </association>
+          <association Id="e9f95880-f1c3-4472-aac6-80b3669a2522" isDerived="false" sourceEndRoleName="EDRDockWidget" targetEndRoleName="InnerWidget2" isLeaf="false" isAbstract="false">
+            <classMoniker Id="7faaa107-c17d-48ac-b680-00e2d0909ec5" LastKnownName="EDRInnerWidget" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3fd8032f-6b0c-4bdb-975f-213e6352ef21" name="EDRDockWidget" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="f42d6697-31c5-48a2-8f49-9324fab1d15f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3a099994-c5bc-4069-ab22-1ed5a16ab299" name="InnerWidget2" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="af050cb0-b01d-445d-9b92-5c00e61e0429" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="2e9a80ec-3ecb-4be0-b500-02d86e4d6fb6" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="56330c80-6ba1-4f90-8ba9-ffdace6fefea" name="EDRTitleBar" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="dd45718a-76eb-4a43-97f6-8ec18e20ecee" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="ca00f681-0227-4d84-8232-e283a26f02e7" name="uml">
+    <elementDefinition Id="c2d1360b-ea8b-406c-b331-dd1f2f8fbe08" />
+  </package>
+</logicalClassDesignerModel>

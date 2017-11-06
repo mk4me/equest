@@ -1,0 +1,28 @@
+<RCC>
+  <qresource prefix="kinematic/icons">
+    <file alias="trajectory.png">../resources/embedded/icons/trajectory.png</file>
+    <file alias="switch-axisa.png">../resources/embedded/icons/switch-axisa.png</file>
+    <file alias="switch-axis.png">../resources/embedded/icons/switch-axis.png</file>
+    <file alias="picker.png">../resources/embedded/icons/picker.png</file>
+    <file alias="pickera.png">../resources/embedded/icons/pickera.png</file>
+    <file alias="force_trace.png">../resources/embedded/icons/force_trace.png</file>
+    <file alias="force_tracea.png">../resources/embedded/icons/force_tracea.png</file>
+    <file alias="foot_trace.png">../resources/embedded/icons/foot_trace.png</file>
+    <file alias="foot_tracea.png">../resources/embedded/icons/foot_tracea.png</file>    
+    <file alias="skeletal_trace.png">../resources/embedded/icons/skeletal_trace.png</file>
+    <file alias="skeletal_tracea.png">../resources/embedded/icons/skeletal_tracea.png</file>
+    <file alias="trace.png">../resources/embedded/icons/trace.png</file>
+    <file alias="tracea.png">../resources/embedded/icons/tracea.png</file>
+	  <file alias="trace-blue.png">../resources/embedded/icons/trace-blue.png</file>
+	  <file alias="view.png">../resources/embedded/icons/view.png</file>
+    <file alias="viewa.png">../resources/embedded/icons/viewa.png</file>
+	  <file alias="right-a.png">../resources/embedded/icons/right-a.png</file>
+	  <file alias="right-b.png">../resources/embedded/icons/right-b.png</file>
+	  <file alias="left-a.png">../resources/embedded/icons/left-a.png</file>
+	  <file alias="left-b.png">../resources/embedded/icons/left-b.png</file>
+	  <file alias="manipulator-objects.png">../resources/embedded/icons/manipulator-objects.png</file>
+	  <file alias="manipulator-translate.png">../resources/embedded/icons/manipulator-translate.png</file>
+	  <file alias="manipulator-rotate.png">../resources/embedded/icons/manipulator-rotate.png</file>
+	  <file alias="manipulator-scale.png">../resources/embedded/icons/manipulator-scale.png</file>
+  </qresource>
+</RCC>

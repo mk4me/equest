@@ -1,0 +1,320 @@
+# AST/ASF file generated using VICON BodyLanguage
+# -----------------------------------------------
+:version 1.10
+:name VICON
+:units
+  mass 1.0
+  length 0.1
+  angle deg
+:documentation
+   .ast/.asf automatically generated from VICON data using
+   VICON BodyBuilder and BodyLanguage model FULLBODY5.MOD
+:root
+   order TX TY TZ RZ RY RX
+   axis XYZ
+   position 0 0 0  
+   orientation 0 0 0 
+:bonedata
+  begin
+     id 1 
+     name lhipjoint
+     direction 0.971635 -0.235368 -0.0229622 
+     length 0.568225 
+     axis 0 0 0  XYZ
+  end
+  begin
+     id 2 
+     name lfemur
+     direction 0.173648 -0.984808 0  
+     length 2.08569  
+     axis 0 0 10  XYZ
+    dof rx ry rz
+    limits (-180.0 180.0)
+           (-180.0 180.0)
+           (-180.0 180.0)
+  end
+  begin
+     id 3 
+     name ltibia
+     direction 0.173637 -0.98481 0   
+     length 1.79792   
+     axis 0 0 10   XYZ
+    dof rx ry rz
+    limits (-180.0 180.0)
+           (-180.0 180.0)
+           (-180.0 180.0)
+  end
+  begin
+     id 4 
+     name lfoot
+     direction 7.05258e-012 -0.425936 0.904753   
+     length 0.449453   
+     axis -90 -1.73656e-015 10   XYZ
+    dof rx ry rz
+    limits (-180.0 180.0)
+           (-180.0 180.0)
+           (-180.0 180.0)
+  end
+  begin
+     id 5 
+     name ltoes
+     direction 7.79688e-012 -4.42275e-011 1   
+     length 0.217683   
+     axis -90 -1.73656e-015 10   XYZ
+    dof rx ry rz
+    limits (-180.0 180.0)
+           (-180.0 180.0)
+           (-180.0 180.0)
+  end
+  begin
+     id 6 
+     name rhipjoint
+     direction -0.970146 -0.241374 -0.0235481   
+     length 0.554085  
+     axis 0 0 0  XYZ 
+  end
+  begin
+     id 7 
+     name rfemur
+     direction -0.173648 -0.984808 0   
+     length 2.10141   
+     axis 0 0 -10   XYZ
+    dof rx ry rz
+    limits (-180.0 180.0)
+           (-180.0 180.0)
+           (-180.0 180.0)
+  end
+  begin
+     id 8 
+     name rtibia
+     direction -0.17364 -0.984809 0   
+     length 1.80693   
+     axis 0 0 -10   XYZ
+    dof rx ry rz
+    limits (-180.0 180.0)
+           (-180.0 180.0)
+           (-180.0 180.0)
+ end
+ begin
+     id 9 
+     name rfoot
+     direction -7.26229e-012 -0.363524 0.931585   
+     length 0.430189  
+     axis -90 1.73656e-015 -10   XYZ
+    dof rx ry rz
+    limits (-180.0 180.0)
+           (-180.0 180.0)
+           (-180.0 180.0)
+  end
+  begin
+     id 10 
+     name rtoes
+     direction -7.79525e-012 -4.42146e-011 1   
+     length 0.210235   
+     axis -90 1.73656e-015 -10   XYZ
+    dof rx ry rz
+    limits (-180.0 180.0)
+           (-180.0 180.0)
+           (-180.0 180.0)
+  end
+  begin
+     id 11 
+     name lowerback
+     direction 0.00593724 0.999689 0.0242162   
+     length 0.45987   
+     axis 0 0 0   XYZ
+    dof rx ry rz
+    limits (-180.0 180.0)
+           (-180.0 180.0)
+           (-180.0 180.0)
+  end
+  begin
+     id 12 
+     name upperback
+     direction 0.00925937 0.99995 0.00370321   
+     length 0.460836   
+     axis 0 0 0   XYZ
+    dof rx ry rz
+    limits (-180.0 180.0)
+           (-180.0 180.0)
+           (-180.0 180.0)
+  end
+  begin
+     id 13 
+     name thorax
+     direction 0.00651739 0.999949 -0.00775523   
+     length 0.459894   
+     axis 0 0 0   XYZ
+    dof rx ry rz
+    limits (-180.0 180.0)
+           (-180.0 180.0)
+           (-180.0 180.0)
+  end
+  begin
+     id 14 
+     name lowerneck
+     direction 0.0170226 0.997744 -0.0649453   
+     length 0.381527   
+     axis 0 0 0   XYZ
+    dof rx ry rz
+    limits (-180.0 180.0)
+           (-180.0 180.0)
+           (-180.0 180.0)
+  end
+  begin
+     id 15 
+     name upperneck
+     direction 0.0145375 0.999311 0.0341409   
+     length 0.374139   
+     axis 0 0 0   XYZ
+    dof rx ry rz
+    limits (-180.0 180.0)
+           (-180.0 180.0)
+           (-180.0 180.0)
+  end
+  begin
+     id 16
+     name head
+     direction 0.00365961 0.999807 0.0193225  
+     length 0.399544  
+     axis 0 0 0   XYZ
+    dof rx ry rz
+    limits (-180.0 180.0)
+           (-180.0 180.0)
+           (-180.0 180.0)
+  end
+  begin
+     id 17 
+     name lshoulderjoint
+     direction 0.981627 -0.190809 0  
+     length 0.727384  
+     axis 0 0 -11   XYZ
+    dof rx ry rz
+    limits (-180.0 180.0)
+           (-180.0 180.0)
+           (-180.0 180.0)
+  end
+  begin
+     id 18 
+     name lhumerus
+     direction 0.48481 -0.87462 4.97078e-027   
+     length 1.34276   
+     axis -180 5.14477e-009 -151   XYZ
+    dof rx ry rz
+    limits (-180.0 180.0)
+           (-180.0 180.0)
+           (-180.0 180.0)
+  end
+  begin
+     id 19
+     name lradius
+     direction 0.48481 -0.87462 9.81707e-027   
+     length 0.73731   
+     axis -180 5.14477e-009 -151   XYZ
+    dof rx ry rz
+    limits (-180.0 180.0)
+           (-180.0 180.0)
+           (-180.0 180.0)
+  end
+  begin
+     id 20
+     name lwrist
+     direction 0.48481 -0.87462 1.7879e-026   
+     length 0.368655   
+     axis -180 5.14477e-009 -151   XYZ
+    dof rx ry rz
+    limits (-180.0 180.0)
+           (-180.0 180.0)
+           (-180.0 180.0)
+  end
+  begin
+     id 21 
+     name lhand
+     direction 0.478286 -0.862913 -0.163167   
+     length 0.349632   
+     axis -180 5.14477e-009 -151   XYZ
+    dof rx ry rz
+    limits (-180.0 180.0)
+           (-180.0 180.0)
+           (-180.0 180.0)
+  end
+  begin
+     id 22 
+     name rshoulderjoint
+     direction -0.981627 -0.190809 0   
+     length 0.691107  
+     axis 0 0 11   XYZ 
+    dof rx ry rz
+    limits (-180.0 180.0)
+           (-180.0 180.0)
+           (-180.0 180.0)
+  end
+  begin
+     id 23 
+     name rhumerus
+     direction -0.48481 -0.87462 -4.97237e-027  
+     length 1.38994   
+     axis 180 5.14477e-009 151   XYZ
+    dof rx ry rz
+    limits (-180.0 180.0)
+           (-180.0 180.0)
+           (-180.0 180.0)
+  end
+  begin
+     id 24 
+     name rradius
+     direction -0.48481 -0.87462 -9.81783e-027   
+     length 0.741021   
+     axis 180 5.14477e-009 151   XYZ
+    dof rx ry rz
+    limits (-180.0 180.0)
+           (-180.0 180.0)
+           (-180.0 180.0)
+  end
+  begin
+     id 25 
+     name rwrist
+     direction -0.48481 -0.87462 -1.7882e-026   
+     length 0.370511   
+     axis 180 5.14477e-009 151   XYZ
+    dof rx ry rz
+    limits (-180.0 180.0)
+           (-180.0 180.0)
+           (-180.0 180.0)
+  end
+  begin
+     id 26
+     name rhand
+     direction -0.477484 -0.861072 -0.174825   
+     length 0.326136   
+     axis 180 5.14477e-009 151   XYZ
+    dof rx ry rz
+    limits (-180.0 180.0)
+           (-180.0 180.0)
+           (-180.0 180.0)
+  end
+:hierarchy
+  begin
+    root lhipjoint rhipjoint lowerback 
+    lhipjoint lfemur
+    lfemur ltibia
+    ltibia lfoot
+    lfoot ltoes
+    rhipjoint rfemur
+    rfemur rtibia
+    rtibia rfoot
+    rfoot rtoes
+    lowerback upperback
+    upperback thorax
+    thorax lowerneck lshoulderjoint rshoulderjoint
+    lowerneck upperneck
+    upperneck head
+    lshoulderjoint lhumerus
+    lhumerus lradius
+    lradius lwrist
+    lwrist lhand
+    rshoulderjoint rhumerus
+    rhumerus rradius
+    rradius rwrist
+    rwrist rhand
+  end

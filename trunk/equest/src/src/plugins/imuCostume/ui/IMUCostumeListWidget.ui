@@ -1,0 +1,581 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>IMUCostumeListWidget</class>
+ <widget class="QWidget" name="IMUCostumeListWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>707</width>
+    <height>729</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>IMUCostumeList</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <widget class="QGroupBox" name="costumesGroupBox">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="title">
+        <string>Costumes</string>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <item>
+         <widget class="QTreeWidget" name="costumesTreeWidget">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="contextMenuPolicy">
+           <enum>Qt::CustomContextMenu</enum>
+          </property>
+          <column>
+           <property name="text">
+            <string>IP Address</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Connection Status</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Use Status</string>
+           </property>
+          </column>
+          <item>
+           <property name="text">
+            <string>192.168.2.115</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="imuCostumeIcons.qrc">
+             <normaloff>:/imuCostume/icons/niedostepny.png</normaloff>:/imuCostume/icons/niedostepny.png</iconset>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>192.168.2.116</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="imuCostumeIcons.qrc">
+             <normaloff>:/imuCostume/icons/nieznanydostepny.png</normaloff>:/imuCostume/icons/nieznanydostepny.png</iconset>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>192.168.2.117</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="imuCostumeIcons.qrc">
+             <normaloff>:/imuCostume/icons/niedostepny.png</normaloff>:/imuCostume/icons/niedostepny.png</iconset>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>192.168.1.12</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="imuCostumeIcons.qrc">
+             <normaloff>:/imuCostume/icons/niedostepny.png</normaloff>:/imuCostume/icons/niedostepny.png</iconset>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>192.168.1.18</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="imuCostumeIcons.qrc">
+             <normaloff>:/imuCostume/icons/niedostepny.png</normaloff>:/imuCostume/icons/niedostepny.png</iconset>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </item>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <widget class="QGroupBox" name="sensorsGroupBox">
+       <property name="title">
+        <string>Sensors</string>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QTreeWidget" name="sensorsTree">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="contextMenuPolicy">
+           <enum>Qt::CustomContextMenu</enum>
+          </property>
+          <column>
+           <property name="text">
+            <string>ID</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Status</string>
+           </property>
+          </column>
+          <item>
+           <property name="text">
+            <string>Sensor 1</string>
+           </property>
+           <property name="text">
+            <string>offline</string>
+           </property>
+           <property name="icon">
+            <iconset resource="imuCostumeIcons.qrc">
+             <normaloff>:/imuCostume/icons/niedostepny.png</normaloff>:/imuCostume/icons/niedostepny.png</iconset>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Sensor 2</string>
+           </property>
+           <property name="text">
+            <string>offline</string>
+           </property>
+           <property name="icon">
+            <iconset resource="imuCostumeIcons.qrc">
+             <normaloff>:/imuCostume/icons/niedostepny.png</normaloff>:/imuCostume/icons/niedostepny.png</iconset>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Sensor 3</string>
+           </property>
+           <property name="text">
+            <string>offline</string>
+           </property>
+           <property name="icon">
+            <iconset resource="imuCostumeIcons.qrc">
+             <normaloff>:/imuCostume/icons/niedostepny.png</normaloff>:/imuCostume/icons/niedostepny.png</iconset>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Sensor 4</string>
+           </property>
+           <property name="text">
+            <string>offline</string>
+           </property>
+           <property name="icon">
+            <iconset resource="imuCostumeIcons.qrc">
+             <normaloff>:/imuCostume/icons/niedostepny.png</normaloff>:/imuCostume/icons/niedostepny.png</iconset>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Sensor 5</string>
+           </property>
+           <property name="text">
+            <string>offline</string>
+           </property>
+           <property name="icon">
+            <iconset resource="imuCostumeIcons.qrc">
+             <normaloff>:/imuCostume/icons/niedostepny.png</normaloff>:/imuCostume/icons/niedostepny.png</iconset>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Sensor 6</string>
+           </property>
+           <property name="text">
+            <string>offline</string>
+           </property>
+           <property name="icon">
+            <iconset resource="imuCostumeIcons.qrc">
+             <normaloff>:/imuCostume/icons/niedostepny.png</normaloff>:/imuCostume/icons/niedostepny.png</iconset>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Sensor 7</string>
+           </property>
+           <property name="text">
+            <string>offline</string>
+           </property>
+           <property name="icon">
+            <iconset resource="imuCostumeIcons.qrc">
+             <normaloff>:/imuCostume/icons/niedostepny.png</normaloff>:/imuCostume/icons/niedostepny.png</iconset>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Sensor 8</string>
+           </property>
+           <property name="text">
+            <string>offline</string>
+           </property>
+           <property name="icon">
+            <iconset resource="imuCostumeIcons.qrc">
+             <normaloff>:/imuCostume/icons/niedostepny.png</normaloff>:/imuCostume/icons/niedostepny.png</iconset>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Sensor 9</string>
+           </property>
+           <property name="text">
+            <string>offline</string>
+           </property>
+           <property name="icon">
+            <iconset resource="imuCostumeIcons.qrc">
+             <normaloff>:/imuCostume/icons/niedostepny.png</normaloff>:/imuCostume/icons/niedostepny.png</iconset>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Sensor 10</string>
+           </property>
+           <property name="text">
+            <string>offline</string>
+           </property>
+           <property name="icon">
+            <iconset resource="imuCostumeIcons.qrc">
+             <normaloff>:/imuCostume/icons/niedostepny.png</normaloff>:/imuCostume/icons/niedostepny.png</iconset>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Sensor 11</string>
+           </property>
+           <property name="text">
+            <string>offline</string>
+           </property>
+           <property name="icon">
+            <iconset resource="imuCostumeIcons.qrc">
+             <normaloff>:/imuCostume/icons/niedostepny.png</normaloff>:/imuCostume/icons/niedostepny.png</iconset>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Sensor 12</string>
+           </property>
+           <property name="text">
+            <string>offline</string>
+           </property>
+           <property name="icon">
+            <iconset resource="imuCostumeIcons.qrc">
+             <normaloff>:/imuCostume/icons/niedostepny.png</normaloff>:/imuCostume/icons/niedostepny.png</iconset>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Sensor 13</string>
+           </property>
+           <property name="text">
+            <string>offline</string>
+           </property>
+           <property name="icon">
+            <iconset resource="imuCostumeIcons.qrc">
+             <normaloff>:/imuCostume/icons/niedostepny.png</normaloff>:/imuCostume/icons/niedostepny.png</iconset>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Sensor 14</string>
+           </property>
+           <property name="text">
+            <string>offline</string>
+           </property>
+           <property name="icon">
+            <iconset resource="imuCostumeIcons.qrc">
+             <normaloff>:/imuCostume/icons/niedostepny.png</normaloff>:/imuCostume/icons/niedostepny.png</iconset>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Sensor 15</string>
+           </property>
+           <property name="text">
+            <string>offline</string>
+           </property>
+           <property name="icon">
+            <iconset resource="imuCostumeIcons.qrc">
+             <normaloff>:/imuCostume/icons/niedostepny.png</normaloff>:/imuCostume/icons/niedostepny.png</iconset>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Sensor 16</string>
+           </property>
+           <property name="text">
+            <string>offline</string>
+           </property>
+           <property name="icon">
+            <iconset resource="imuCostumeIcons.qrc">
+             <normaloff>:/imuCostume/icons/niedostepny.png</normaloff>:/imuCostume/icons/niedostepny.png</iconset>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Sensor 17</string>
+           </property>
+           <property name="text">
+            <string>offline</string>
+           </property>
+           <property name="icon">
+            <iconset resource="imuCostumeIcons.qrc">
+             <normaloff>:/imuCostume/icons/niedostepny.png</normaloff>:/imuCostume/icons/niedostepny.png</iconset>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Sensor 18</string>
+           </property>
+           <property name="text">
+            <string>offline</string>
+           </property>
+           <property name="icon">
+            <iconset resource="imuCostumeIcons.qrc">
+             <normaloff>:/imuCostume/icons/niedostepny.png</normaloff>:/imuCostume/icons/niedostepny.png</iconset>
+           </property>
+          </item>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QPushButton" name="refreshPushButton">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="text">
+        <string>Refresh</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="recordPushButton">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="text">
+        <string>Record</string>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="outputPushButton">
+       <property name="text">
+        <string>Output...</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="openPushButton">
+       <property name="text">
+        <string>Open</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="verticalSpacer">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+  </layout>
+  <action name="actionConnect_costume">
+   <property name="text">
+    <string>Connect costume</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="imuCostumeIcons.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>refreshPushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>IMUCostumeListWidget</receiver>
+   <slot>onRefresh()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>311</x>
+     <y>23</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>182</x>
+     <y>104</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>costumesTreeWidget</sender>
+   <signal>currentItemChanged(QTreeWidgetItem*,QTreeWidgetItem*)</signal>
+   <receiver>IMUCostumeListWidget</receiver>
+   <slot>onCostumeChange(QTreeWidgetItem*,QTreeWidgetItem*)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>218</x>
+     <y>124</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>260</x>
+     <y>236</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>costumesTreeWidget</sender>
+   <signal>customContextMenuRequested(QPoint)</signal>
+   <receiver>IMUCostumeListWidget</receiver>
+   <slot>onCostumesListContextMenu(QPoint)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>218</x>
+     <y>124</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>260</x>
+     <y>236</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>recordPushButton</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>IMUCostumeListWidget</receiver>
+   <slot>onRecord(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>473</x>
+     <y>50</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>260</x>
+     <y>236</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>outputPushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>IMUCostumeListWidget</receiver>
+   <slot>onOptions()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>473</x>
+     <y>79</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>260</x>
+     <y>236</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionConnect_costume</sender>
+   <signal>triggered()</signal>
+   <receiver>IMUCostumeListWidget</receiver>
+   <slot>onConnectCostume()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>260</x>
+     <y>364</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>openPushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>IMUCostumeListWidget</receiver>
+   <slot>onOpen()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>659</x>
+     <y>108</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>353</x>
+     <y>364</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>onCostumesListContextMenu(QPoint)</slot>
+  <slot>onRefresh()</slot>
+  <slot>onCostumeChange(QTreeWidgetItem*,QTreeWidgetItem*)</slot>
+  <slot>onRecord(bool)</slot>
+  <slot>onSensoresListContextMenu(QPoint)</slot>
+  <slot>onOptions()</slot>
+  <slot>onConnectCostume()</slot>
+  <slot>onOpen()</slot>
+ </slots>
+</ui>

@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="fff92c4f-f157-43d6-9162-28ded236521c" name="WorkflowDiagram" linkedPackageId="a04caf79-85b0-46fd-810c-a5750c34378c" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <ownedCommentsInternal>
+    <comment Id="dbefaa32-494e-48e9-81ff-f5822b53e7a8">
+      <elementDefinition Id="c16b1d2d-778e-4358-9ef6-8fdb918415dc" />
+      <body>Workflow widziany po stronie klientów i EDR
+</body>
+    </comment>
+  </ownedCommentsInternal>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="00260860-b071-4233-b271-f81f49dc4c93" name="Workflow" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="d48a030e-ae11-4dc8-b2f6-0012fe8c2223" />
+        <suppliersInternal>
+          <interfaceRealization Id="f1e9c0e5-177d-480e-bd57-42449b2e55ef">
+            <interfaceMoniker Id="5c8eb528-5281-4d0e-9726-62b72118496a" LastKnownName="IWorkflow" />
+            <elementDefinition Id="c2a62988-9ad0-4bde-a433-ec5e283e6bec" />
+          </interfaceRealization>
+          <interfaceRealization Id="c6629198-2b15-4d70-b3f8-776719a7faa2">
+            <interfaceMoniker Id="9880adae-82b0-432a-8323-2f004e68e0b7" LastKnownName="ISerializable" />
+            <elementDefinition Id="10059213-b7fd-49d7-acb4-1c71ce180a2a" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <targetEnds>
+          <association Id="9ee8ebde-00bb-463c-95fd-cb38d1272213" isDerived="false" sourceEndRoleName="Workflow" targetEndRoleName="EDRDataFlow" isLeaf="false" isAbstract="false">
+            <classMoniker Id="d2bc6ad5-9066-4ab2-b964-40a2d98a0730" LastKnownName="EDRDataFlow" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="fcad1c9a-1fe8-480d-b384-60b443953ad7" name="Workflow" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="4a3f1246-d149-4524-a057-6ad69e822528" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="bd782e88-f8f1-463d-ba24-f6961c775c33" name="EDRDataFlow" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="ab85b781-4fcb-4cd8-a327-a7b03de449df" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="9346aa57-41ef-4ded-89f2-da80ef5475f0" />
+          </association>
+          <association Id="21ca2653-ded1-4d5d-86c5-7cd925589f4f" isDerived="false" sourceEndRoleName="Workflow" targetEndRoleName="IWorkflowItemBase" isLeaf="false" isAbstract="false">
+            <interfaceMoniker Id="860a6e92-e11f-461d-a0fc-3fbcc2bc8132" LastKnownName="IWorkflowItemBase" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="db521df3-2e7b-43e4-9398-0fd5d78979c4" name="Workflow" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="7698ec4f-6e45-428d-8392-f6a5c44041a6" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="79784878-57d5-4b84-b746-104597541e63" name="IWorkflowItemBase" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="e2aff848-79c4-422b-b978-c142cf6519c1" name="Lower" value="0">
+                      <elementDefinition Id="d8396365-ccaf-4b97-aa82-adaf6a80028a" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="7d51754a-6480-46c1-b576-956d1bbdd361" name="Upper" value="*">
+                      <elementDefinition Id="78ec6676-8853-4ea4-9f59-9c597a749324" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="6e43e901-3ce5-4b4e-b686-b9f26322e590" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="ffc4a701-deaa-42df-8da2-9f7de1fc0724" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="d2bc6ad5-9066-4ab2-b964-40a2d98a0730" name="EDRDataFlow" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="cbc0593e-3be7-4f8d-b68b-341d9f272dff" />
+        <generalsInternal>
+          <generalization Id="9e95bb32-b169-4545-a408-8d09ee3c4475" isSubstitutable="false">
+            <classMoniker Id="f8cdeb00-5531-4b52-8ab2-4d66b43ebc93" LastKnownName="DataFlow" />
+            <elementDefinition Id="51897611-857b-4468-9cbe-56d9cdcef951" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association Id="df678c0b-6df8-4e11-917d-b99d6ff2facf" isDerived="false" sourceEndRoleName="EDRDataFlow" targetEndRoleName="EDRPin" isLeaf="false" isAbstract="false">
+            <classMoniker Id="73b2d654-317a-48cd-b8dd-fbee308d4012" LastKnownName="EDRPin" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c33efbbc-08ca-4b5b-9610-b3d63ce3ccab" name="EDRDataFlow" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="e65ca1d8-942b-4ca9-b830-4b50ec0a72e6" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d765403a-dc93-4ede-b7f3-63c9a6ae4595" name="EDRPin" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="06f5a619-11fb-4cb6-b473-b0d143b41668" name="Lower" value="*">
+                      <elementDefinition Id="fee4fc28-6b8c-47af-bbd6-8a78c93f5673" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="2e240d34-28bb-49e1-85c3-4335d6e49827" name="Upper" value="*">
+                      <elementDefinition Id="9031d3c0-3eba-43d0-9574-d4a927b8e452" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="22bccfcd-e11f-43f7-93cb-6a97d030b9e2" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="97e626dd-7cb1-49bb-9605-83756e659f8d" />
+          </association>
+          <association Id="07421f75-7cbe-4efd-9b83-0701280ec329" isDerived="false" sourceEndRoleName="EDRDataFlow" targetEndRoleName="EDRNode" isLeaf="false" isAbstract="false">
+            <classMoniker Id="36e18a5c-65eb-475e-b946-f3aab8b0b250" LastKnownName="EDRNode" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="694c09f7-52ce-488b-811a-69023f56d1a2" name="EDRDataFlow" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="c69651ba-3db9-46ed-bdc9-58acdcfa60f0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7013bfc3-3ed7-4573-82d9-203b0ec2275e" name="EDRNode" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="2ca50613-4fe9-4f01-ba74-6e3940c40a84" name="Lower" value="*">
+                      <elementDefinition Id="bb4bf52d-f324-4d18-a31b-0f7c79cb592e" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="d95f3b2b-3bce-4f23-b061-6ff1d4ad1ed7" name="Upper" value="*">
+                      <elementDefinition Id="36a23884-a4d1-47fe-9112-00b7d9559db0" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="2ed3daf4-e36a-4e7b-b646-7ca71b9430f5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="7a244334-b224-4c20-a0d4-2bbcbf2dae7f" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="f8cdeb00-5531-4b52-8ab2-4d66b43ebc93" name="DataFlow" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="56e100eb-e115-4cdd-ac8e-1937670ee418" />
+        <generalsInternal>
+          <generalization Id="5df3d84c-1f79-4544-8272-778bcec7531e" isSubstitutable="false">
+            <classMoniker Id="c3cfaa49-17d0-4f2e-b8a9-a0777c5d550d" LastKnownName="Lockable" />
+            <elementDefinition Id="55c35745-5684-460f-995d-d37917bdf105" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="36e18a5c-65eb-475e-b946-f3aab8b0b250" name="EDRNode" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="e7d8c2eb-71cc-4ce1-a36e-e2e9ab37c9fd" />
+        <generalsInternal>
+          <generalization Id="13cad104-299f-42f4-9d18-008dd52501fe" isSubstitutable="false">
+            <classMoniker Id="5db5414c-00f4-4ac1-9ac8-9bceeff08cab" LastKnownName="DFNode" />
+            <elementDefinition Id="ead4abb8-ca37-4b33-8ea8-34c1b6fe415b" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="73b2d654-317a-48cd-b8dd-fbee308d4012" name="EDRPin" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="7e4e4b90-fc5b-4544-9fef-c7146d2dc51d" />
+        <generalsInternal>
+          <generalization Id="738687f8-a0f0-4aa2-afa8-4664f3d060ba" isSubstitutable="false">
+            <classMoniker Id="4e474e31-4e86-45b3-9676-362f11c5a64e" LastKnownName="DFPin" />
+            <elementDefinition Id="768c9af1-b794-4369-9100-bc61a59be107" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="5db5414c-00f4-4ac1-9ac8-9bceeff08cab" name="DFNode" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="73f958f2-3e44-423d-9a33-30d9e8ee3765" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="4e474e31-4e86-45b3-9676-362f11c5a64e" name="DFPin" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="dde0948b-0ea0-4276-8490-2339147937f0" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="a3ad0395-25f2-4763-95bd-a3353238e8ad" name="WorkflowManager" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="06ce07cd-e67a-49fe-9af4-3b54882fb2fb" />
+        <suppliersInternal>
+          <interfaceRealization Id="dd62ca6e-81c4-4d0c-b68a-91ad3972af65">
+            <interfaceMoniker Id="71aa6d37-6227-487b-83a5-4745b4132e16" LastKnownName="IWorkflowManager" />
+            <elementDefinition Id="b292ff00-97d6-4deb-a78f-2f5d6d021672" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <targetEnds>
+          <association Id="d1ae861a-dabe-4a12-86d0-13e86c06bca9" isDerived="false" sourceEndRoleName="WorkflowManager" targetEndRoleName="Workflow" isLeaf="false" isAbstract="false">
+            <classMoniker Id="00260860-b071-4233-b271-f81f49dc4c93" LastKnownName="Workflow" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="50eb5479-7109-4671-afdf-203e8a31b7ea" name="WorkflowManager" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="e6cf8d3c-2752-4103-bfbb-211e73afed41" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="63db8938-e638-47fc-afb4-3217e1d2204b" name="Workflow" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="ef62c36e-e5f5-4bae-9e99-8bf7988de271" name="Lower" value="*">
+                      <elementDefinition Id="4c8e8a07-26df-4062-894c-57d5a6195bb8" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="56b694a1-6065-48f3-8e76-ab5acd020d86" name="Upper" value="*">
+                      <elementDefinition Id="670b63b7-9df2-4ff6-9330-2ff2f4862bb8" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="20d025e3-4b88-4a02-9c04-565604485b41" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="c3358cb4-517c-466c-9c2c-8f68249747aa" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="71aa6d37-6227-487b-83a5-4745b4132e16" name="IWorkflowManager" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="48867f57-69b4-4d52-ab80-3a74367baefb" />
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="5c8eb528-5281-4d0e-9726-62b72118496a" name="IWorkflow" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="7b7cf2ee-6e24-4543-b435-c939dad456ce" />
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="860a6e92-e11f-461d-a0fc-3fbcc2bc8132" name="IWorkflowItemBase" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ad3b705b-72e5-4c30-9df7-ad216ff073bd" />
+        <generalsInternal>
+          <generalization Id="d62eb22f-e81e-425d-8e44-d167c48eebba" isSubstitutable="false">
+            <interfaceMoniker Id="9880adae-82b0-432a-8323-2f004e68e0b7" LastKnownName="ISerializable" />
+            <elementDefinition Id="9bbd82b5-98be-455c-af81-71e9452d9773" />
+          </generalization>
+        </generalsInternal>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="9880adae-82b0-432a-8323-2f004e68e0b7" name="ISerializable" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="dfda2169-c6d4-4d99-bda2-35315048abdf" />
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="f19804f2-5b4d-4aa4-8dee-6ad97a1c0a2a" name="EDRVisualDataFlow" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="a692ce2a-ae74-415f-a39d-219c626cf144" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="c3cfaa49-17d0-4f2e-b8a9-a0777c5d550d" name="Lockable" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="791466e4-ae45-459a-abca-e9635e8dc7a6" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="a04caf79-85b0-46fd-810c-a5750c34378c" name="uml">
+    <elementDefinition Id="c2d1360b-ea8b-406c-b331-dd1f2f8fbe08" />
+  </package>
+</logicalClassDesignerModel>

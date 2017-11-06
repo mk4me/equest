@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="830fb8ad-3320-464b-a1e5-2639e6e09ea5" name="UMLClassDiagram2" linkedPackageId="03189ca2-f097-4461-a6db-4ae4b289b674" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <ownedCommentsInternal>
+    <comment Id="b14dc377-83c0-4007-99e8-d195502d5c70">
+      <elementDefinition Id="8fa7adf3-bb1b-4efe-b3dd-e92742c855bf" />
+      <body>W nim osadzany jest właściwy widget; zapewnia ramkę itp</body>
+    </comment>
+    <comment Id="16bd6ef9-1ce8-4efb-98f3-42286416365d">
+      <elementDefinition Id="5dc8f74a-b642-4425-9ff3-68e2447e6835" />
+      <body>combo wyboru wizualizatora + guziki + pozwala na dodawanie akcji z wizualizatorów w postaci guzików</body>
+    </comment>
+    <comment Id="3b8c5fb4-0a96-45c9-9bcd-e7098fea6003">
+      <elementDefinition Id="126acdf0-9f9b-4831-8bbf-9c81158355ba" />
+      <body>wybór źródła</body>
+    </comment>
+  </ownedCommentsInternal>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="049681c7-a2b0-43d5-8b2d-34da7cfab9ad" name="QDockWidget" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="6293babb-855f-4fdf-b4cc-abf424ab47d2" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="0aa7f0f5-d6fc-40ce-9f2b-8d2442515d97" name="VisualizerWidget" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="5699e14f-9f93-4904-8c28-9ca51de2c859" />
+        <generalsInternal>
+          <generalization Id="3e9b2d40-11ca-45da-9b22-3285657e18b6" isSubstitutable="false">
+            <classMoniker Id="049681c7-a2b0-43d5-8b2d-34da7cfab9ad" LastKnownName="QDockWidget" />
+            <elementDefinition Id="db1e96c1-79ed-4cf9-8dbe-182a91c787e0" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association Id="0be91947-c0ae-400f-8e7f-fbc0b4d49f5b" isDerived="false" sourceEndRoleName="VisualizerWidget" targetEndRoleName="VisualizerTitleBar" isLeaf="false" isAbstract="false">
+            <classMoniker Id="f7d174c7-9abd-4a9b-bb4e-6a8e7a3afbe4" LastKnownName="VisualizerTitleBar" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b7c0e1d2-968a-4759-b7ff-123f3a8e7a1d" name="VisualizerWidget" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="b21321e0-e07d-4e9c-8057-5b41d429e923" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="acab1902-f02a-4b94-8a86-7ab7c623c2df" name="VisualizerTitleBar" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="5e9a7839-2e65-4cd8-be79-3d32e8ba763e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="b35e4ff3-9977-48cb-8fe8-cba994dd242b" />
+          </association>
+          <association Id="318e8165-9131-488c-8bdd-70b062a7bf28" isDerived="false" sourceEndRoleName="VisualizerWidget" targetEndRoleName="InnerWidget" isLeaf="false" isAbstract="false">
+            <classMoniker Id="e3d157b7-14cf-4f61-89c5-28dae3336a62" LastKnownName="InnerWidget" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e8145864-761b-4076-9e17-bcb86b6841d9" name="VisualizerWidget" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="c6352a86-7c82-4a9e-9a2d-a499f823b24a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="719e8e9f-0740-436f-8bc4-2b46dd76787a" name="InnerWidget" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="76ba2394-ffba-4dbb-9256-3a0c596c2ede" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="1a1a48d7-8ebd-45b1-8e53-3fbbb60016c7" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="f7d174c7-9abd-4a9b-bb4e-6a8e7a3afbe4" name="VisualizerTitleBar" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="595d1bd7-a75b-4b7e-b396-e3b4414a22aa" />
+        <targetEnds>
+          <association Id="af55b6ff-a5ec-4a0e-929f-fb519ed085bb" isDerived="false" sourceEndRoleName="VisualizerTitleBar" targetEndRoleName="VisualizerTitleBarComboPick" isLeaf="false" isAbstract="false">
+            <classMoniker Id="440d596d-f775-4a60-9ea8-2d78a5fe07b4" LastKnownName="VisualizerTitleBarComboPick" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="dd43d1d8-084b-417d-afc5-b4aa8f48419b" name="VisualizerTitleBar" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="8695dec9-426f-4af3-88df-c7c459fc4be2" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f8c08171-5e5e-491f-8f5c-aed42f652732" name="VisualizerTitleBarComboPick" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="bec40128-ce3e-4117-a3db-76aa366da18d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="b58f2ed0-277e-4f19-bb5a-825ec4fce615" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="440d596d-f775-4a60-9ea8-2d78a5fe07b4" name="VisualizerTitleBarComboPick" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="cf59fb02-10a3-4f68-83f7-62b682f5046b" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="e3d157b7-14cf-4f61-89c5-28dae3336a62" name="InnerWidget" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="7b5539d0-c11c-4613-b59a-96bb28cd5dcd" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="03189ca2-f097-4461-a6db-4ae4b289b674" name="uml">
+    <elementDefinition Id="c2d1360b-ea8b-406c-b331-dd1f2f8fbe08" />
+    <profileInstances>
+      <packageHasProfileInstances Id="3a39c9cc-7a95-46fd-9e0e-d0607283bea1">
+        <profileInstance Id="7077218a-4be6-48a1-a3a9-f06497d556b4" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="db2e5c29-484c-4df4-a54c-41292d08911e">
+        <profileInstance Id="70b96c12-e859-42e3-86ab-f059883f20c1" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>

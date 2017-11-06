@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TypesWindow</class>
+ <widget class="QWidget" name="TypesWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>310</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Types</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QLabel" name="label">
+     <property name="text">
+      <string>Sources</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QListWidget" name="sourcesList">
+     <property name="movement">
+      <enum>QListView::Static</enum>
+     </property>
+     <property name="viewMode">
+      <enum>QListView::IconMode</enum>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="label_2">
+     <property name="text">
+      <string>Processing elements</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QListWidget" name="processorsList">
+     <property name="movement">
+      <enum>QListView::Static</enum>
+     </property>
+     <property name="viewMode">
+      <enum>QListView::IconMode</enum>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="label_3">
+     <property name="text">
+      <string>Sinks</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QListWidget" name="sinksList">
+     <property name="movement">
+      <enum>QListView::Static</enum>
+     </property>
+     <property name="viewMode">
+      <enum>QListView::IconMode</enum>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="newVdfIcons.qrc"/>
+ </resources>
+ <connections/>
+</ui>

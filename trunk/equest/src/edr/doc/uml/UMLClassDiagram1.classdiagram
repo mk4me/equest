@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="0cdbc5e9-9c3b-4a82-a8ae-2902b837777e" name="UMLClassDiagram1" linkedPackageId="c55f9169-c7b3-456f-8970-834320ad3e0d" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <ownedCommentsInternal>
+    <comment Id="4ddbf014-ed00-465b-a95c-e3e92077d24b">
+      <elementDefinition Id="d548ba5d-0754-490c-89a2-53b914b8a0f2" />
+      <body>corelib</body>
+    </comment>
+    <comment Id="87f721a7-a607-4b68-bd53-d5c71410b300">
+      <elementDefinition Id="481639ba-17eb-407d-8201-750930eb1bdd" />
+      <body>video plugin</body>
+    </comment>
+    <comment Id="fcd6fc78-8473-45c7-a176-938c8a12b9b8">
+      <elementDefinition Id="2e03815d-f421-47f9-b802-1fb75d35c902" />
+      <body>vidlib</body>
+    </comment>
+    <comment Id="293add5b-4f33-43be-bba4-df14a9d49d39">
+      <elementDefinition Id="38b2ef58-8daa-4a16-906c-70a787f545cf" />
+      <body>corelib</body>
+    </comment>
+    <comment Id="e5588e5c-f78d-46fe-8500-56dd77a46cb0">
+      <elementDefinition Id="ed4e8265-2a08-46d1-a47c-adcef19edf7e" />
+      <body>animation plugin*</body>
+    </comment>
+    <comment Id="f53b29a0-317f-40f7-8697-43d30c5dca68">
+      <elementDefinition Id="7abae6c8-a187-436c-ab4d-a790a71f02be" />
+      <body>acclaimlib*</body>
+    </comment>
+    <comment Id="5010fe27-ab0a-4bd4-96bc-30c5596f6f26">
+      <elementDefinition Id="020f0b88-01da-487e-b724-ed9771a1c82e" />
+      <body>corelib</body>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="a42285f6-b123-4960-9731-a59d853b7aa0">
+      <profileInstance Id="f5330520-30d8-4337-b784-e09936bd9f2f" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="4039d8da-0094-48ef-bcf6-88b62eb38a05">
+      <profileInstance Id="2975546a-86f6-4de4-bd65-a80bc3c18f98" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="36893329-f486-4301-9a87-f5b3ae2165c4" name="IParser" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="63ca8837-d908-4751-afc0-ebb4a88af183" />
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="6f66263b-1e18-47cd-8d6d-1a3270bace84" name="VideoParser" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="3ded0a9d-7673-46b7-a3e2-8d7f720e029d" />
+        <suppliersInternal>
+          <interfaceRealization Id="4c589b45-62c3-4b5f-b291-c7d0247add2a">
+            <interfaceMoniker Id="36893329-f486-4301-9a87-f5b3ae2165c4" LastKnownName="IParser" />
+            <elementDefinition Id="b627a02b-828e-4cdc-8ab9-ab4f0169e80c" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <targetEnds>
+          <association Id="5e723cb2-aa66-43e1-8d0f-3d4a157effde" isDerived="false" sourceEndRoleName="VideoParser" targetEndRoleName="vidlib::VideoStream" isLeaf="false" isAbstract="false">
+            <classMoniker Id="266351ba-2d7f-46d5-a70b-e029aabd8f86" LastKnownName="vidlib::VideoStream" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="fe11bc87-10c2-483b-b7f5-3b2f45e79d6a" name="VideoParser" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="1c183750-d3dc-426f-91f5-9084e13dd4f2" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="94d25f23-e6b9-498e-b395-f2509bb7bc58" name="vidlib::VideoStream" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="c2e90538-f3a7-4fdc-9b3b-fa53e9d3c362" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="0ca40b55-7a61-4b8b-8c7c-e0879a03a66d" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="266351ba-2d7f-46d5-a70b-e029aabd8f86" name="vidlib::VideoStream" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="e15303ae-1c45-4322-b1b6-971e524e94db" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="91e2e2d7-fb4b-47ba-991f-936f6db55c59" name="core::C3DData" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="fc83ea58-3cee-4fa3-b167-fdbfad065381" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="b9741f77-26be-4b84-9602-d45cc99ce3b4" name="Dane parsera" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="120a3a3e-32a6-439d-b973-4bdda26f9a75" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="fa5fd30d-60d3-48b2-b030-9e17ab300313" name="C3DParser" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="d257a0a4-0553-4754-b389-1796b2ae6b78" />
+        <suppliersInternal>
+          <interfaceRealization Id="4792dcc6-73fc-4f31-84d4-e32e27a13639">
+            <interfaceMoniker Id="36893329-f486-4301-9a87-f5b3ae2165c4" LastKnownName="IParser" />
+            <elementDefinition Id="6b4c189e-9e19-41f2-83eb-e783afb5b2a2" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <targetEnds>
+          <association Id="e60d1af4-c988-452d-aad8-1783c08fff13" isDerived="false" sourceEndRoleName="C3DParser" targetEndRoleName="core::C3DData" isLeaf="false" isAbstract="false">
+            <classMoniker Id="91e2e2d7-fb4b-47ba-991f-936f6db55c59" LastKnownName="core::C3DData" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e57c0444-8846-4fe7-a874-c2d3e2f7293d" name="C3DParser" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="8852200d-07a1-455b-9bed-4a4c2cca38a3" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3b20d8fe-eb0f-47c9-b84f-1a49e76e909a" name="core::C3DData" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="da668eb7-bf8f-475f-9434-b68d7cebd84d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="a6a370b7-60a1-4604-9c15-dba938294799" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="26ef8014-8cb8-4a3d-8d74-dce2b78e89fe" name="Parser" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="da0527cc-238e-4bac-b3ca-3e018d2aaf29" />
+        <suppliersInternal>
+          <interfaceRealization Id="d79b0e79-e20b-471f-bfb9-7e74575297d4">
+            <interfaceMoniker Id="36893329-f486-4301-9a87-f5b3ae2165c4" LastKnownName="IParser" />
+            <elementDefinition Id="1016e04b-7be3-4ebb-8b6b-c0b3e014a91f" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <targetEnds>
+          <association Id="d1e10883-549b-4d1f-a264-5f7fa0c5d0ee" isDerived="false" sourceEndRoleName="Parser" targetEndRoleName="Dane parsera" isLeaf="false" isAbstract="false">
+            <classMoniker Id="b9741f77-26be-4b84-9602-d45cc99ce3b4" LastKnownName="Dane parsera" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2d3ea1ca-5147-41bc-9ba7-d947744adc55" name="Parser" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="ad040172-8106-4511-b53b-1a9cfceb9bd0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="06c81367-32cd-47d7-b21e-0d94cc41efb6" name="Dane parsera" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="a20c9b58-1cbf-405f-a85e-79077c6b301d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="07a4b775-af7f-4684-8223-6b2f296310a8" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="c55f9169-c7b3-456f-8970-834320ad3e0d" name="uml">
+    <elementDefinition Id="c2d1360b-ea8b-406c-b331-dd1f2f8fbe08" />
+  </package>
+</logicalClassDesignerModel>

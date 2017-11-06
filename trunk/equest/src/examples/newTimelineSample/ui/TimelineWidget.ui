@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TimelineWidget</class>
+ <widget class="QWidget" name="TimelineWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>314</width>
+    <height>308</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <property name="sizeConstraint">
+      <enum>QLayout::SetNoConstraint</enum>
+     </property>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <property name="sizeConstraint">
+        <enum>QLayout::SetNoConstraint</enum>
+       </property>
+       <item>
+        <widget class="QPushButton" name="beginPlayer">
+         <property name="text">
+          <string>Begin</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="playPlayer">
+         <property name="text">
+          <string>Play</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="endPlayer">
+         <property name="text">
+          <string>End</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QTreeWidget" name="channelsTree">
+       <column>
+        <property name="text">
+         <string notr="true">1</string>
+        </property>
+       </column>
+      </widget>
+     </item>
+     <item>
+      <widget class="QSlider" name="manualTime">
+       <property name="maximum">
+        <number>9999</number>
+       </property>
+       <property name="pageStep">
+        <number>1000</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>beginPlayer</sender>
+   <signal>clicked()</signal>
+   <receiver>TimelineWidget</receiver>
+   <slot>toBegin()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>52</x>
+     <y>23</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>139</x>
+     <y>133</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>endPlayer</sender>
+   <signal>clicked()</signal>
+   <receiver>TimelineWidget</receiver>
+   <slot>toEnd()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>225</x>
+     <y>23</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>139</x>
+     <y>133</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>playPlayer</sender>
+   <signal>clicked()</signal>
+   <receiver>TimelineWidget</receiver>
+   <slot>play()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>138</x>
+     <y>23</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>139</x>
+     <y>133</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>manualTime</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>TimelineWidget</receiver>
+   <slot>setTime(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>148</x>
+     <y>297</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>139</x>
+     <y>133</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>channelsTree</sender>
+   <signal>itemCollapsed(QTreeWidgetItem*)</signal>
+   <receiver>TimelineWidget</receiver>
+   <slot>updateTimeCursor()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>156</x>
+     <y>156</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>156</x>
+     <y>153</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>channelsTree</sender>
+   <signal>itemExpanded(QTreeWidgetItem*)</signal>
+   <receiver>TimelineWidget</receiver>
+   <slot>updateTimeCursor()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>156</x>
+     <y>156</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>156</x>
+     <y>153</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>play()</slot>
+  <slot>toBegin()</slot>
+  <slot>toEnd()</slot>
+  <slot>setTime(int)</slot>
+  <slot>updateTimeCursor()</slot>
+ </slots>
+</ui>

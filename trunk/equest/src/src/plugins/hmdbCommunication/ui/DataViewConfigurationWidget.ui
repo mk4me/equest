@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DataViewConfigurationWidget</class>
+ <widget class="QWidget" name="DataViewConfigurationWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QFormLayout" name="formLayout">
+   <item row="0" column="0">
+    <widget class="QLabel" name="filterLabel">
+     <property name="text">
+      <string>Filter:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1">
+    <widget class="QComboBox" name="filterComboBox"/>
+   </item>
+   <item row="1" column="0">
+    <widget class="QLabel" name="perspectiveLabel">
+     <property name="text">
+      <string>Perspective:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1">
+    <widget class="QComboBox" name="perspectiveComboBox"/>
+   </item>
+   <item row="2" column="0">
+    <widget class="QLabel" name="contentLabel">
+     <property name="text">
+      <string>Content:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="1">
+    <widget class="QComboBox" name="contentComboBox"/>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>filterComboBox</sender>
+   <signal>currentIndexChanged(int)</signal>
+   <receiver>DataViewConfigurationWidget</receiver>
+   <slot>onFilterChange(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>232</x>
+     <y>18</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>199</x>
+     <y>149</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>perspectiveComboBox</sender>
+   <signal>currentIndexChanged(int)</signal>
+   <receiver>DataViewConfigurationWidget</receiver>
+   <slot>onPerspectiveChange(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>232</x>
+     <y>44</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>199</x>
+     <y>149</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>contentComboBox</sender>
+   <signal>currentIndexChanged(int)</signal>
+   <receiver>DataViewConfigurationWidget</receiver>
+   <slot>onContentChange(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>232</x>
+     <y>70</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>199</x>
+     <y>149</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <signal>filterChanged()</signal>
+  <signal>perspectiveChanged()</signal>
+  <signal>contentChanged()</signal>
+  <slot>setFilterVisible(bool)</slot>
+  <slot>setPerspectiveVisible(bool)</slot>
+  <slot>setFilterEnabled(bool)</slot>
+  <slot>setPerspectiveEnabled(bool)</slot>
+  <slot>setCurrentFilter(int)</slot>
+  <slot>setCurrentPerspective(int)</slot>
+  <slot>onFilterChange(int)</slot>
+  <slot>onPerspectiveChange(int)</slot>
+  <slot>setContentVisible(bool)</slot>
+  <slot>setContentEnabled(bool)</slot>
+  <slot>setCurrentContent(int)</slot>
+  <slot>onContentChange(int)</slot>
+ </slots>
+</ui>

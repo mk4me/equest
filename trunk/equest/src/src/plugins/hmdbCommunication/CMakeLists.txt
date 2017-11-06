@@ -1,0 +1,188 @@
+BEGIN_PROJECT("dynamic")
+
+SET_PRIVATE_HEADERS(
+	DownloadStatusWidget.h
+	NotesWidget.h
+	StatusWidget.h
+	AntropometricDataWidget.h
+	DisordersDataWidget.h
+	PersonalDataWidget.h
+	PatientCardManager.h
+	QMultiToolBox.h
+	ShallowCopyUtils.h
+	Patient.h
+	CommunicationPCH.h
+	WSDLPULLService.h
+	CURLFTPTransfer.h
+	CURLFTPManager.h
+	CURLFTPProgress.h
+	CURLFTPStatus.h
+	CURLFTPTransferData.h
+	HMDBFTP.h
+	HMDBSession.h
+	HMDBService.h
+	HMDBStatusManager.h
+	HMDBLocalContext.h
+	HMDBRemoteContext.h
+	HMDBDataContext.h
+	AccountFactoryWS.h
+	AdministrationWS.h
+	AuthorizationWS.h
+	BasicQueriesWS.h
+	BasicUpdatesWS.h
+	FileStoremanWS.h
+	UserPersonalSpaceWS.h
+	WSDLServiceTypes.h
+	HMDBSource.h
+	HMDBSourceContext.h
+	SQLCipherStorage.h
+	HMDBSourceContextOperations.h
+	HMDBSourceWidget.h
+	HMDBShallowCopyContext.h
+	HMDBServicesVerificationHelper.h
+	MemoryStorage.h
+	HMDBSourceViewManager.h
+	UpdateFilesDialog.h
+)
+
+SET_PUBLIC_HEADERS (
+	DataSourcePerspective.h
+	DefaultPatientCardWidget.h
+	DataSourceDefaultContent.h
+	IDataSourceContent.h
+	IPatientCard.h
+	IPatientCardManager.h
+	ShallowCopyFilter.h
+	IPatient.h
+	ShallowCopy.h
+	IDataSourcePerspective.h
+	IHierarchyPerspective.h
+	Export.h
+	IHMDBSource.h
+	IHMDBSourceContext.h
+	IHMDBSession.h
+	IHMDBService.h
+	IHMDBFtp.h
+	IHMDBStorage.h
+	IHMDBStatusManager.h
+	IHMDBLocalContext.h
+	IHMDBRemoteContext.h
+	IHMDBDataContext.h
+	ServerStatusWidget.h
+	SourceOptionsWidget.h
+	DataViewWidget.h
+	OperationProgressWidget.h
+	IHMDBShallowCopyContext.h
+	Types.h
+	IHMDBSourceViewManager.h
+	GeneralSourceViewWidget.h
+	DataViewConfigurationWidget.h
+	ContextConfigurationSettingsFile.h
+)
+
+#------------------------------------------------------------------------------
+SET_SOURCE_FILES(
+	DownloadStatusWidget.cpp
+	NotesWidget.cpp
+	StatusWidget.cpp
+	AntropometricDataWidget.cpp
+	DisordersDataWidget.cpp
+	PersonalDataWidget.cpp
+	DefaultPatientCardWidget.cpp
+	PatientCardManager.cpp
+	QMultiToolBox.cpp
+	Patient.cpp
+	ShallowCopyUtils.cpp
+	DataSourcePerspective.cpp
+	CommunicationPCH.cpp
+	DataStatus.cpp
+	WSDLPULLService.cpp
+	CURLFTPTransfer.cpp
+	CURLFTPManager.cpp
+	CURLFTPProgress.cpp
+	CURLFTPStatus.cpp
+	HMDBFTP.cpp
+	HMDBSession.cpp
+	HMDBService.cpp
+	HMDBStatusManager.cpp
+	HMDBLocalContext.cpp
+	HMDBRemoteContext.cpp
+	HMDBDataContext.cpp
+	AccountFactoryWS.cpp
+	AdministrationWS.cpp
+	AuthorizationWS.cpp
+	BasicUpdatesWS.cpp
+	BasicQueriesWS.cpp
+	FileStoremanWS.cpp	
+	UserPersonalSpaceWS.cpp
+	HMDBSource.cpp
+	HMDBSourceContext.cpp
+	SQLCipherStorage.cpp
+	HMDBSourceContextOperations.cpp
+	ServerStatusWidget.cpp
+	SourceOptionsWidget.cpp
+	HMDBSourceWidget.cpp
+	Plugin.cpp
+	DataViewWidget.cpp
+	HMDBShallowCopyContext.cpp
+	HMDBServicesVerificationHelper.cpp
+	MemoryStorage.cpp
+	DataSourceDefaultContent.cpp
+	HMDBSourceViewManager.cpp
+	OperationProgressWidget.cpp
+	GeneralSourceViewWidget.cpp
+	DataViewConfigurationWidget.cpp
+	UpdateFilesDialog.cpp
+	ContextConfigurationSettingsFile.cpp
+)
+
+SET_MOC_FILES(
+	DownloadStatusWidget.h
+	QMultiToolBox.h
+	DefaultPatientCardWidget.h
+	PersonalDataWidget.h
+	AntropometricDataWidget.h
+	DisordersDataWidget.h
+	NotesWidget.h
+	StatusWidget.h
+	ServerStatusWidget.h
+	SourceOptionsWidget.h
+	HMDBSourceWidget.h
+	DataViewWidget.h
+	OperationProgressWidget.h
+	GeneralSourceViewWidget.h
+	DataViewConfigurationWidget.h
+	UpdateFilesDialog.h
+)
+
+SET_UI_FILES(
+	DownloadStatusWidget.ui
+	DefaultPatientCardWidget.ui
+	PersonalDataWidget.ui
+	NotesWidget.ui
+	StatusWidget.ui
+	ServerStatusWidget.ui
+	SourceOptionsWidget.ui
+	DataViewWidget.ui
+	OperationProgressWidget.ui
+	GeneralSourceViewWidget.ui
+	DataViewConfigurationWidget.ui
+	UpdateFilesDialog.ui
+)
+
+SET_RC_FILES (
+	hmdbCommunicationIcons.qrc
+)
+
+SET_PRECOMPILED_HEADER( CommunicationPCH.h CommunicationPCH.cpp)
+
+GENERATE_PROJECT_TRANSLATIONS()
+
+if(CONFIG_DEMO_MODE)
+	add_definitions(-DDEMO_MODE)
+endif()
+if(CONFIG_DEMO_MODE_ONLINE)
+	add_definitions(-DDEMO_MODE_ONLINE)
+endif()
+
+END_PROJECT()

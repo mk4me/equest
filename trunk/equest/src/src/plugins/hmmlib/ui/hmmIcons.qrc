@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="hmm/icons">
+    <file alias="przod.png">../resources/embedded/przod.png</file>
+    <file alias="tyl.png">../resources/embedded/tyl.png</file>
+  </qresource>
+</RCC>

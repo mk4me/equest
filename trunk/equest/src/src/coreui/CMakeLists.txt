@@ -1,0 +1,182 @@
+BEGIN_PROJECT("dynamic")
+
+SET_PUBLIC_HEADERS(
+	CoreQtMetaTypes.h
+	CoreUnitQuaternionValidator.h
+	CoreQuaternionValidator.h
+	CoreRotationWidgetEditor.h
+	CoreEulerAnglesEditorWidget.h
+	CoreQuaternionEditorWidget.h
+	AbstractTab.h
+	AbstractState.h
+	AbstractStateMachine.h
+	GraphicSceneWithStateMachine.h
+	CoreDockWidgetSet.h
+	CoreDockWidgetManager.h
+	CoreLogWidget.h
+	CoreMainWindow.h	
+	CoreAction.h
+	CoreDockWidget.h
+	CoreTimeStepEditorWidget.h
+	CoreVectorInputDelegate.h
+	CoreSplitableDockWidget.h
+	CoreSplitableDockWidgetT.h
+	CoreFlexiToolBar.h
+	CoreFlexiToolBarSection.h
+	CoreTitleBar.h
+	CoreWidgetAction.h
+	CoreVisualizerWidget.h
+	ICoreActionSection.h
+	CoreCompoundVisualizerWidget.h
+	CoreTextEditWidget.h
+	HierarchyTreeModel.h
+	CorePopup.h
+	DataFilterWidget.h
+	FilterEntryWidget.h
+	WheelGraphicsView.h
+	MultiCommand.h
+	MoveCommand.h
+	Export.h
+	CoreLabeledWidget.h
+	CoreCursorChanger.h
+	SingleInstanceWindow.h
+	ContextAutoPlacer.h
+	IAppUsageContext.h
+	IAppUsageContextManager.h
+	SimpleContext.h
+	ReportsThumbnailContext.h
+	ReportsTab.h
+	IMdeTab.h
+	SimpleTab.h
+	IContextRoot.h
+	CoreDockFullScreenSwitch.h
+	KioskUtilities.h
+	findreplacedialog.h
+	finddialog.h
+	
+	findform.h
+	findreplaceform.h
+)
+
+SET_SOURCE_FILES(
+	CoreUnitQuaternionValidator.cpp
+	CoreQuaternionValidator.cpp
+	CoreRotationWidgetEditor.cpp
+	CoreEulerAnglesEditorWidget.cpp
+	CoreQuaternionEditorWidget.cpp
+	AbstractTab.cpp
+	AbstractState.cpp
+	AbstractStateMachine.cpp
+	CoreVectorInputDelegate.cpp
+	GraphicSceneWithStateMachine.cpp
+	CoreDockWidgetSet.cpp
+	CoreDockWidgetManager.cpp
+	CoreVisualizerWidget.cpp
+	CoreMainWindow.cpp
+	CoreLogWidget.cpp
+	CoreAction.cpp
+	CorePopupPrivate.cpp
+	CoreDockWidget.cpp
+	CoreTimeStepEditorWidget.cpp
+	CoreSplitableDockWidget.cpp
+	CoreFlexiToolBar.cpp
+	CoreFlexiToolBarSection.cpp
+	CoreTitleBar.cpp
+	CoreWidgetAction.cpp
+	CoreUiPCH.cpp
+	CoreCompoundVisualizerWidget.cpp
+	CoreTextEditWidget.cpp
+	HierarchyTreeModel.cpp
+	DataFilterWidget.cpp
+	FilterEntryWidget.cpp
+	CoreLabeledWidget.cpp
+	CoreCursorChanger.cpp
+	WheelGraphicsView.cpp
+	MultiCommand.cpp
+	MoveCommand.cpp
+	SingleInstanceWindow.cpp
+	ContextAutoPlacer.cpp
+	SimpleContext.cpp
+	SimpleTab.cpp
+	ReportsThumbnailContext.cpp
+	ReportsTab.cpp
+	CoreDockFullScreenSwitch.cpp
+	KioskUtilities.cpp
+	findreplacedialog.cpp
+	finddialog.cpp
+	findform.cpp
+	findreplaceform.cpp
+)
+
+SET_PRIVATE_HEADERS(
+	CoreUiPCH.h
+	CorePopupPrivate.h
+)
+
+SET_MOC_FILES(
+	CoreUnitQuaternionValidator.h
+	CoreQuaternionValidator.h
+	CoreRotationWidgetEditor.h
+	CoreEulerAnglesEditorWidget.h
+	CoreQuaternionEditorWidget.h
+	CoreVectorInputDelegate.h
+	AbstractTab.h
+	AbstractStateMachine.h
+	GraphicSceneWithStateMachine.h
+	CoreTextEditWidget.h
+	CoreCompoundVisualizerWidget.h
+	CoreVisualizerWidget.h
+	CoreSplitableDockWidget.h
+	CoreDockWidgetSet.h
+	CoreDockWidgetManager.h
+	CoreLogWidget.h
+	CoreMainWindow.h	
+	CoreAction.h	
+	CorePopupPrivate.h
+	CoreDockWidget.h
+	CoreTimeStepEditorWidget.h
+	CoreFlexiToolBar.h
+	CoreFlexiToolBarSection.h
+	CoreTitleBar.h
+	CoreWidgetAction.h
+	HierarchyTreeModel.h
+	DataFilterWidget.h
+	FilterEntryWidget.h
+	CoreLabeledWidget.h
+	WheelGraphicsView.h
+	ReportsThumbnailContext.h
+	ReportsTab.h
+	SimpleTab.h
+	CoreDockFullScreenSwitch.h
+	
+	findform.h
+	findreplaceform.h
+	findreplacedialog.h
+	finddialog.h
+)
+
+SET_UI_FILES(
+	CoreEulerAnglesEditorWidget.ui
+	CoreQuaternionEditorWidget.ui
+	CoreLogWidget.ui
+	CoreFlexiToolBarSection.ui
+	CoreTitleBar.ui
+	CoreTimeStepEditorWidget.ui
+	CorePopup.ui
+	configurationDialog.ui
+	filter.ui
+	FilterConfiguratorWidget.ui
+	filterEntry.ui
+	findreplacedialog.ui
+	findreplaceform.ui
+)
+
+SET_RC_FILES (
+	CoreIcons.qrc
+)
+
+SET_PRECOMPILED_HEADER (CoreUiPCH.h CoreUiPCH.cpp)
+
+GENERATE_PROJECT_TRANSLATIONS()
+
+END_PROJECT()

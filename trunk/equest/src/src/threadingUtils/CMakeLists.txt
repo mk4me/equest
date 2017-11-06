@@ -1,0 +1,49 @@
+BEGIN_PROJECT("dynamic")
+
+SET_PUBLIC_HEADERS(
+	Future.h
+	Export.h
+	JobManager.h
+	WorkManager.h
+	ThreadPool.h
+	ThreadPoolException.h
+	InterruptibleJobManager.h
+	InterruptibleWorkManager.h
+	InterruptibleThreadPool.h
+	IProgress.h
+	StreamData.h
+	IOperation.h
+	ThreadAfinityVerifier.h
+	ITTransaction.h
+	HierarchicalMutex.h
+	ScopedThread.h	
+	ThreadGuard.h
+	Macros.h
+	RunnableThread.h
+	FunctionWrapper.h
+	FutureWrapper.h
+	Queue.h
+	IJob.h
+	WorkQueuePolicy.h
+	StealingQueue.h
+	InterruptiblePolicy.h
+	InterruptibleThread.h
+	InterruptibleFuture.h
+	InterruptiblePackagedTask.h
+	InterruptHandlingPolicy.h
+	InterruptFlag.h
+	ThreadPolicyHelper.h
+	ExceptionHandlePolicy.h
+	ThreadFactoryT.h
+	SmartPtr.h
+	LogPolicy.h
+)
+
+SET_SOURCE_FILES(
+	InterruptFlag.cpp
+	StreamData.cpp
+	ThreadAfinityVerifier.cpp
+	WorkQueuePolicy.cpp
+)
+
+END_PROJECT()

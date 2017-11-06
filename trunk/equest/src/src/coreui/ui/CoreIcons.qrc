@@ -1,0 +1,45 @@
+<RCC>
+  <qresource prefix="coreUI/icons">
+    <file alias="strzalka-gora.png">../resources/embedded/icons/strzalka-gora.png</file>
+    <file alias="strzalka-dol.png">../resources/embedded/icons/strzalka-dol.png</file>
+    <file alias="appIcon.png">../resources/embedded/icons/appIcon.png</file>
+    <file alias="x-alpha.png">../resources/embedded/icons/x-alpha.png</file>
+    <file alias="load.png">../resources/embedded/icons/load.png</file>
+    <file alias="save.png">../resources/embedded/icons/save.png</file>
+    <file alias="about.png">../resources/embedded/icons/about.png</file>
+    <file alias="clear_console.png">../resources/embedded/icons/clear_console_16x16.png</file>
+    <file alias="dane.wejsciowe.png">../resources/embedded/icons/dane.wejsciowe.png</file>
+    <file alias="dokowanie.png">../resources/embedded/icons/dokowanie.png</file>
+    <file alias="fullscreen.png">../resources/embedded/icons/fullscreen.png</file>
+    <file alias="fullscreen2.png">../resources/embedded/icons/fullscreen2.png</file>
+    <file alias="horizontal.png">../resources/embedded/icons/horizontal.png</file>
+    <file alias="oddokowywanie.png">../resources/embedded/icons/oddokowywanie.png</file>
+    <file alias="open.png">../resources/embedded/icons/open.png</file>
+    <file alias="vertical.png">../resources/embedded/icons/vertical.png</file>    
+    <file alias="word_wrap_16x16.png">../resources/embedded/icons/word_wrap_16x16.png</file>
+    <file alias="x.png">../resources/embedded/icons/x.png</file>
+    <file alias="2D.png">../resources/embedded/icons/2D.png</file>
+    <file alias="3D.png">../resources/embedded/icons/3D.png</file>
+	  <file alias="screenshot-a.png">../resources/embedded/icons/screenshot-a.png</file>
+	  <file alias="screenshot-b.png">../resources/embedded/icons/screenshot-b.png</file>
+    <file alias="textedit/editcopy.png">../resources/embedded/icons/textedit/editcopy.png</file>
+	  <file alias="textedit/editcut.png">../resources/embedded/icons/textedit/editcut.png</file>
+	  <file alias="textedit/editpaste.png">../resources/embedded/icons/textedit/editpaste.png</file>
+	  <file alias="textedit/editredo.png">../resources/embedded/icons/textedit/editredo.png</file>
+	  <file alias="textedit/editundo.png">../resources/embedded/icons/textedit/editundo.png</file>
+	  <file alias="textedit/exportpdf.png">../resources/embedded/icons/textedit/exportpdf.png</file>
+	  <file alias="textedit/filenew.png">../resources/embedded/icons/textedit/filenew.png</file>
+	  <file alias="textedit/fileopen.png">../resources/embedded/icons/textedit/fileopen.png</file>
+	  <file alias="textedit/fileprint.png">../resources/embedded/icons/textedit/fileprint.png</file>
+	  <file alias="textedit/filesave.png">../resources/embedded/icons/textedit/filesave.png</file>
+	  <file alias="textedit/textbold.png">../resources/embedded/icons/textedit/textbold.png</file>
+	  <file alias="textedit/textcenter.png">../resources/embedded/icons/textedit/textcenter.png</file>
+	  <file alias="textedit/textitalic.png">../resources/embedded/icons/textedit/textitalic.png</file>
+	  <file alias="textedit/textjustify.png">../resources/embedded/icons/textedit/textjustify.png</file>
+	  <file alias="textedit/textleft.png">../resources/embedded/icons/textedit/textleft.png</file>
+	  <file alias="textedit/textright.png">../resources/embedded/icons/textedit/textright.png</file>
+	  <file alias="textedit/textunder.png">../resources/embedded/icons/textedit/textunder.png</file>
+	  <file alias="textedit/zoomin.png">../resources/embedded/icons/textedit/zoomin.png</file>
+	  <file alias="textedit/zoomout.png">../resources/embedded/icons/textedit/zoomout.png</file>
+  </qresource>
+</RCC>

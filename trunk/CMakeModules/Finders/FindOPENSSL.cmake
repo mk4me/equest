@@ -1,0 +1,14 @@
+# przygotowanie do szukania
+FIND_INIT(OPENSSL openssl)
+
+if(WIN32)
+	FIND_SHARED(OPENSSL_SSLEAY32 "ssleay32" "ssleay32")
+	FIND_SHARED(OPENSSL_LIBEAY32 "libeay32" "libeay32")
+	FIND_PREREQUISITES(OPENSSL "ZLIB")
+elseif(UNIX)
+	FIND_SHARED(OPENSSL_LIBSSL "libssl" "libssl")
+	FIND_SHARED(OPENSSL_LIBCRYPTO "libcrypto" "libcrypto")
+	FIND_DEPENDENCIES(OPENSSL "ZLIB")
+endif()
+
+FIND_FINISH(OPENSSL)

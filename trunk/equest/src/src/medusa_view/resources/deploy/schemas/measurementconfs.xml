@@ -1,0 +1,105 @@
+<MeasurementConfs>
+   <MeasurementConf MeasurementConfID="3" Name="EMG_LB_1">
+      <Attrs>
+        <A Name="L1" Value="m. prosty uda [L]" Id="prosty_uda_l" />
+        <A Name="L2" Value="m. dwugłowy uda (głowa długa) [L]" Id="dwuglowy_uda_l" />
+        <A Name="L3" Value="m. brzuchaty łydki (głowa boczna) [L]" Id="brzuchaty_lydki_gb_l" />
+        <A Name="L4" Value="m. piszczelowy przedni [L]" Id="piszczelowy_przedni_l" />
+        <A Name="L5" Value="m. pośladkowy średni [L]" />
+        <A Name="L6" Value="m. półścięgnisty i półbłoniasty [L]" Id="polsciegnisty_l" />
+        <A Name="L7" Value="m. napinacz powięzi szerokiej [L]" />
+        <A Name="L8" Value="m. krawiecki [L]" Id="krawiecki_l" />
+        <A Name="R9" Value="m. prosty uda [R]" Id="prosty_uda_p" />
+        <A Name="R10" Value="m. dwugłowy uda (głowa długa) [R]" Id="dwuglowy_uda_p" />
+        <A Name="R11" Value="m. brzuchaty łydki (głowa boczna) [R]" Id="brzuchaty_lydki_gb_p" />
+        <A Name="R12" Value="m. piszczelowy przedni [R]" Id="piszczelowy_przedni_p" />
+        <A Name="R13" Value="m. pośladkowy średni [R]" />
+        <A Name="R14" Value="m. półścięgnisty i półbłoniasty [R]" Id="polsciegnisty_p" />
+        <A Name="R15" Value="m. napinacz powięzi szerokiej [R]" />
+        <A Name="R16" Value="m. krawiecki [R]" Id="krawiecki_p" />
+      </Attrs>
+    </MeasurementConf>
+    <MeasurementConf MeasurementConfID="2" Name="EMG_LB_2">
+      <Attrs>
+        <A Name="L1" Value="m. prosty uda [L]" Id="prosty_uda_l" />
+        <A Name="L2" Value="m. dwugłowy uda (głowa długa) [L]" Id="dwuglowy_uda_p" />
+        <A Name="L3" Value="m. brzuchaty łydki (głowa boczna) [L]" Id="brzuchaty_lydki_gb_l" />
+        <A Name="L4" Value="m. brzuchaty łydki (głowa przyśrodkowa) [L]" Id="brzuchaty_lydki_gprzysr_l" />
+        <A Name="L5" Value="m. pośladkowy średni [L]" />
+        <A Name="L6" Value="m. półścięgnisty i półbłoniasty [L]" Id="polsciegnisty_l" />
+        <A Name="L7" Value="m. pośladkowy wielki [L]" Id="posladkowy_wielki_l" />
+        <A Name="L8" Value="m. krawiecki [L]" Id="krawiecki_l" />
+        <A Name="R9" Value="m. prosty uda [R]" Id="prosty_uda_p" />
+        <A Name="R10" Value="m. dwugłowy uda (głowa długa) [R]" Id="dwuglowy_uda_p" />
+        <A Name="R11" Value="m. brzuchaty łydki (głowa boczna) [R]" Id="brzuchaty_lydki_gb_p" />
+        <A Name="R12" Value="m. brzuchaty łydki (głowa przyśrodkowa) [R]" Id="brzuchaty_lydki_gprzysr_p" />
+        <A Name="R13" Value="m. pośladkowy średni [R]" />
+        <A Name="R14" Value="m. półścięgnisty i półbłoniasty [R]" Id="polsciegnisty_p" />
+        <A Name="R15" Value="m. pośladkowy wielki [R]" Id="posladkowy_wielki_p" />
+        <A Name="R16" Value="m. krawiecki [R]" Id="krawiecki_p" />
+      </Attrs>
+    </MeasurementConf>
+   <MeasurementConf MeasurementConfID="1" Name="EMG_LB_3">
+   
+      <Attrs>
+        <A Name="L1" Value="m. prosty uda [L]" Id="prosty_uda_l" />
+        <A Name="L2" Value="m. dwugłowy uda (głowa długa) [L]" Id="dwuglowy_uda_l" />
+        <A Name="L3" Value="m. brzuchaty łydki (głowa boczna) [L]" Id="brzuchaty_lydki_gb_l" />
+        <A Name="L4" Value="m. przy kości strzałkowej piszczelowy przedni [L]" Id="przy_kstrzalkowej_piszczelowy_l"  />
+        <A Name="L5" Value="m. pośladkowy średni [L]" />
+        <A Name="L6" Value="m. półścięgnisty i półbłoniasty [L]" Id="polsciegnisty_l" />
+        <A Name="L7" Value="m. pośladkowy wielki [L]" Id="posladkowy_wielki_l" />
+        <A Name="L8" Value="m. krawiecki [L]" Id="krawiecki_l" />
+        <A Name="R9" Value="m. prosty uda [R]" Id="prosty_uda_p" />
+        <A Name="R10" Value="m. dwugłowy uda (głowa długa) [R]" Id="dwuglowy_uda_p" />
+        <A Name="R11" Value="m. brzuchaty łydki (głowa boczna) [R]" Id="brzuchaty_lydki_gb_p" />
+        <A Name="R12" Value="m. przy kości strzałkowej piszczelowy przedni [R]" Id="przy_kstrzalkowej_piszczelowy_p" />
+        <A Name="R13" Value="m. pośladkowy średni [R]" />
+        <A Name="R14" Value="m. półścięgnisty i półbłoniasty [R]" Id="polsciegnisty_p" />
+        <A Name="R15" Value="m. pośladkowy wielki [R]" Id="posladkowy_wielki_p" />
+        <A Name="R16" Value="m. krawiecki [R]" Id="krawiecki_p" />
+      </Attrs>
+    </MeasurementConf>
+	
+ <MeasurementConf MeasurementConfID="4" Name="EMG_UB_1">
+      <Attrs>
+        <A Name="L1" Value="m. czworoboczny grzbietu (kapturowy) [L]" Id="czworoboczny_grzbietu_l"/>
+        <A Name="L2" Value="m. piersiowy większy [L]" Id="piersiowy_wiekszy_l"/>
+        <A Name="L3" Value="m. mostkowo-obojczykowo-sutkowy [L]" Id="most_obojcz_sutkowy_l" />
+        <A Name="L4" Value="m. prostownik grzbietu najdłuższy [L]" />
+        <A Name="L5" Value="m. naramienny pośrodkowy [L]" Id="naramienny_l" />
+        <A Name="L6" Value="m. trójgłowy ramienia (głowa długa) [L]" Id="trojglowy_ramienia_gdluga_l" />
+        <A Name="L7" Value="m. prostownik palców [L]" Id="prostownik_palcow_l" />
+        <A Name="L8" Value="m. odwodziciel krótki kciuka [L]" Id="odwodziciel_krotki_kciuka_l" />
+        <A Name="R9" Value="m. czworoboczny grzbietu (kapturowy) [R]" Id="czworoboczny_grzbietu_p" />
+        <A Name="R10" Value="m. piersiowy [R]" Id="piersiowy_wiekszy_p"/>
+        <A Name="R11" Value="m. mostkowo-obojczykowo-sutkowy [R]" Id="most_obojcz_sutkowy_l" />
+        <A Name="R12" Value="m. prostownik grzbietu najdłuższy [R]" />
+        <A Name="R13" Value="m. naramienny pośrodkowy [R]" Id="naramienny_p" />
+        <A Name="R14" Value="m. trójgłowy ramienia (głowa długa) [R]" Id="trojglowy_ramienia_gdluga_p" />
+        <A Name="R15" Value="m. prostownik palców [R]" Id="prostownik_palcow_p" />
+        <A Name="R16" Value="m. odwodziciel krótki kciuka [R]" Id="odwodziciel_krotki_kciuka_p" />
+      </Attrs>
+    </MeasurementConf>
+	<MeasurementConf MeasurementConfID="5" Name="EMG_LB_4">
+      <Attrs>
+        <A Name="EMG1" Value="m. prosty uda [L]" Id="prosty_uda_l"/>
+        <A Name="EMG2" Value="m. prosty uda [R]" Id="prosty_uda_p"/>
+        <A Name="EMG3" Value="m. dwugłowy uda [L]" Id="dwuglowy_uda_l" />
+        <A Name="EMG4" Value="m. dwugłowy uda[ R]" Id="dwuglowy_uda_p" />
+        <A Name="EMG5" Value="m. brzuchaty łydki[L]" Id="brzuchaty_lydki_l" />
+        <A Name="EMG6" Value="m. brzuchaty łydki[R]" Id="brzuchaty_lydki_p" />
+        <A Name="EMG7" Value="m. pośladkowy średni[L]" Id="posladkowy_sredni_l" />
+        <A Name="EMG8" Value="m. pośladkowy średni[R]" Id="posladkowy_sredni_p" />
+        <A Name="EMG9" Value="m. pośladkowy wielki[L]" Id="posladkowy_wielki_l" />
+        <A Name="EMG10" Value="m. pośladkowy wielki[R]" Id="posladkowy_wielki_p" />
+        <A Name="EMG11" Value="m. kulszowo-goleniowe[L]" Id="kulszowo_goleniowe_l" />
+        <A Name="EMG12" Value="m. kulszowo-goleniowe[R]" Id="kulszowo_goleniowe_p" />
+        <A Name="EMG13" Value="m. obszerny boczny[L]" Id="obszerny_boczny_l" />
+        <A Name="EMG14" Value="m. obszerny boczny[R]" Id="obszerny_boczny_p" />
+        <A Name="EMG15" Value="m. obszerny przyśrodkowy[L]" Id="obszerny_przysrodkowy_l" />
+        <A Name="EMG16" Value="m. obszerny przyśrodkowy[R]" Id="obszerny_przysrodkowy_p" />
+      </Attrs>
+    </MeasurementConf>
+</MeasurementConfs>
+	

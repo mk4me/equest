@@ -1,0 +1,11 @@
+<RCC>
+  <qresource prefix="imuCostume/icons">
+    <file alias="dostepny.png">../resources/embedded/icons/dostepny.png</file>
+	<file alias="niedostepny.png">../resources/embedded/icons/niedostepny.png</file>
+    <file alias="czesciowodostepny.png">../resources/embedded/icons/czesciowodostepny.png</file>
+    <file alias="nieznanydostepny.png">../resources/embedded/icons/nieznanydostepny.png</file>	 
+	<file alias="npos.png">../resources/embedded/images/npos.png</file>
+	<file alias="skeletonWithDimensions.png">../resources/embedded/images/skeletonWithDimensions.png</file>
+    <file alias="tpos.png">../resources/embedded/images/tpos.png</file>
+  </qresource>
+</RCC>

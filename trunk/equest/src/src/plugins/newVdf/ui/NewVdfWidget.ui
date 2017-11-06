@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>VdfWidget</class>
+ <widget class="QWidget" name="VdfWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>635</width>
+    <height>220</height>
+   </rect>
+  </property>
+  <property name="contextMenuPolicy">
+   <enum>Qt::CustomContextMenu</enum>
+  </property>
+  <property name="windowTitle">
+   <string>Visual Data Flow</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout"/>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="newVdfIcons.qrc"/>
+ </resources>
+ <connections/>
+ <slots>
+  <slot>timeSliderChanged(int)</slot>
+  <slot>playButtonPressed()</slot>
+  <slot>pauseButtonPressed()</slot>
+  <slot>stopButtonPressed()</slot>
+  <slot>timeSliderPressed()</slot>
+  <slot>timeSliderReleased()</slot>
+ </slots>
+</ui>

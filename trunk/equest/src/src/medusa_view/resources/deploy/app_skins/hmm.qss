@@ -1,0 +1,479 @@
+/* QTabWidget + QTabBar */
+
+/*jezeli documentMode jest wlaczone nie ma ramki pomimo styli! nie jest renderowana*/
+
+QTabWidget, QTabWidget::pane, QTabWidget QTabBar {
+	border: none;
+	padding: 0px;
+	margin: 0px;
+	spacing: 0px;
+}
+
+QTabWidget::pane, QTabWidget QTabBar {
+	background-color: rgb(43, 42, 41);
+}
+
+QTabWidget::pane {
+	padding: 2px;
+}
+
+QTabWidget::pane > QWidget {
+	background: transparent;
+}
+
+QTabBar::tab {
+	border: none;
+	border-radius: 0px;
+	background-color: transparent;
+	color: black;
+	min-width: 6ex;
+	padding: 2px;
+	margin-top: 4px;
+}
+
+QTabBar::tab:first {
+	border: none;	
+	border-top-left-radius: 4px;
+	background-color: transparent;
+	color: black;
+	min-width: 6ex;
+	padding: 2px;	
+}
+
+QTabBar::tab:first:previous-selected, QTabBar::tab:previous-selected {
+	border: none;
+	background-color: transparent;
+	color: black;
+	min-width: 6ex;
+	padding: 2px;	
+}
+
+QTabBar::tab:next-selected, QTabBar::tab:middle:next-selected {
+	border: none;
+	background-color: transparent;
+	color: black;
+	min-width: 6ex;
+	padding: 2px;	
+}
+
+QTabBar::tab:last {
+	border: none;
+	border-top-right-radius: 4px;
+	background-color: transparent;
+	color: black;
+	min-width: 6ex;
+	padding: 2px;
+}
+
+QTabBar::tab:middle:selected, QTabBar::tab:first:selected, QTabBar::tab:last:selected, QTabBar::tab:only-one {
+	color: white;
+	border: none;
+	background-color: rgb(41,41,41);
+	border-radius: 0px;
+	padding: 4px;
+	margin-top: 0px;
+}
+
+QTabWidget QTabBar::tab:hover {
+    background: rgb(101, 101, 101);
+	border: 1px solid rgb(135, 177, 255);
+	padding: 4px;
+}
+
+/********** POCZ¥TEK styli dla CoreFlexiToolBar ***********/
+
+coreUI--CoreFlexiToolBar {
+	margin: 0px;
+	padding: 2px;
+	background: transparent;
+}
+
+/* uchwyt QToolBar w QMainWindow */
+
+QToolBar::handle, QMainWindow QToolBar::handle {
+	image: url(:/mde/icons/splitter-dots-vertical.png);
+}
+
+coreUI--CoreFlexiToolBar QMainWindow {
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+}
+
+QToolBar {
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+}
+
+/********** KONIEC styli dla CoreFlexiToolBar ***********/
+
+
+ /********** POCZ¥TEK styli dla CoreFlexiToolBarSection ***********/
+
+coreUI--CoreFlexiToolBarSection {
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+	border-right: 1px solid white;
+}
+
+coreUI--CoreFlexiToolBarSection QFrame#innerContentFrame, coreUI--CoreFlexiToolBarSection QFrame#bottomWidget {
+	padding-left: 2px;
+	padding-right: 2px;
+	border: none;
+	margin: 0px;
+}
+
+coreUI--CoreFlexiToolBarSection QFrame#innerContentFrame {
+	border-bottom: 1px solid white;
+}
+
+coreUI--CoreFlexiToolBarSection QLabel {
+	color: white;
+}
+
+coreUI--CoreFlexiToolBarSection QLabel#sectionNameLabel {	
+	min-width: 6ex;
+}
+
+coreUI--CoreFlexiToolBarSection .QLabel {
+	border: none;
+}
+
+coreUI--CoreVisualizerWidget:hover {
+	border: 2px solid rgb(135, 177, 255);
+}
+
+/* EXPERIMENTAL */
+
+coreUI--CoreTitleBar {
+	background: black;
+	color: white;
+	border: none;
+	margin: 0px;
+	padding-left: 2px;
+	padding-right: 2px;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+}
+
+QComboBox {
+     border: 1px solid gray;
+     border-radius: 4px;
+     padding: 2px 18px 1px 4px;
+     min-width: 2em;
+ }
+
+QComboBox:hover {
+	border: 1px solid rgb(135, 177, 255);
+	border-radius: 4px;
+ }
+
+ /* QComboBox gets the "on" state when the popup is open */
+QComboBox:on { /* shift the text when the popup opens */
+     padding-top: 3px;
+     padding-left: 4px;
+	 border-bottom-left-radius: 0px;
+	 border: 1px solid rgb(135, 177, 255);
+ }
+
+QComboBox QListView {
+     subcontrol-origin: padding;
+     subcontrol-position: top right;
+     width: 15px;
+
+     border: 1px solid rgb(135, 177, 255);
+	 border-bottom-left-radius: 4px;
+	 border-bottom-right-radius: 4px;
+	 padding: 2px;
+ }
+
+QComboBox QListView::item:focus {
+	background: rgb(135, 177, 255);
+ }
+
+ /********** KONIECT styli dla coreUI--CoreFlexiToolBarSection ***********/
+
+ /* pola edycji */
+  QLineEdit {
+	margin: 0px;
+	padding: 0px;
+     border: 1px solid #888888;
+     background: lightgray;
+     border-radius: 4px;
+     selection-background-color: darkgray;
+ }
+ 
+ /* pasek postepu */
+  QProgressBar {
+     border: 1px solid #8f8f91;
+     border-radius: 4px;
+     text-align: center;
+ }
+
+ QProgressBar::chunk {
+     background-color: #8f8f91;
+     width: 20px;
+ }
+ 
+ /* pasek przesuwany */
+QSlider::groove:horizontal {
+	border: 2px solid #888888;
+	height: 10px;
+	border-radius: 4px;
+}
+
+QSlider::sub-page:horizontal {
+	background: qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 lightgray, stop:1 darkgray);
+	border: 2px solid #888888;
+	height: 10px;
+	border-radius: 4px;
+}
+
+QSlider::add-page:horizontal {
+	background: #fff;
+	border: 2px solid #888888;
+	background: lightgray;
+	height: 10px;
+	border-radius: 4px;
+}
+
+QSlider::handle:horizontal {
+	background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 lightgray, stop:1 darkgray);
+	border: 2px solid #888888;
+	width: 13px;
+	margin-top: -2px;
+	margin-bottom: -2px;
+	border-radius: 4px;
+}
+
+QLabel {	 
+	margin: 0px;
+	padding: 0px;
+}
+
+/* spin box */
+
+ QDoubleSpinBox {
+	margin: 0px;
+	padding: 0px;
+     border: 1px solid #888888;
+     background: lightgray;
+     border-radius: 4px;
+     selection-background-color: darkgray;
+	 max-width: 3em;
+ }
+ 
+ /*
+ QDoubleSpinBox::up-button {
+     subcontrol-origin: border;
+     subcontrol-position: top right;
+     border: none;
+	 background: white;
+	 padding-top: 2px;
+	 padding-right: 2px;
+	 image: url(:/mde/icons/trojkat-8x8-dogory.png);
+ }
+ 
+ QDoubleSpinBox::down-button {
+     subcontrol-origin: border;
+     subcontrol-position: bottom right;
+     border: none;
+	 background: white;
+	 padding-bottom: 2px;
+	 padding-right: 2px;
+	 image: url(:/mde/icons/trojkat-8x8-dodolu.png);
+ }
+ */
+ 
+
+QScrollBar:horizontal {											 
+	border: 1px ridge grey;											 
+	background: #FFFFFF;											
+	height: 6px;													
+	margin: 0px 0px 0px 0px;										
+}																
+																		
+QScrollBar::handle:horizontal,  QScrollBar::handle:pressed {		
+	background: rgb(135, 173, 255);									 
+	min-width: 2px;													 
+	max-width: 4px;													 
+	height:4px;				    									 
+	border: 0px solid grey;											 
+}																
+																		
+QScrollBar::handle:horizontal {									 
+	background: rgb(175, 213, 255);									 
+	selection-background-color: rgb(135, 173, 255);					
+	min-width: 2px;													 
+	max-width: 5px;													 
+	height:4px;				    									 
+	border: 0px solid grey;											 
+}																
+																		
+QScrollBar::add-line:horizontal {								
+	border: 0px solid grey;											 
+	background: #FFFFFF;											
+	width: 0px;														 
+	subcontrol-position: right;										 
+	subcontrol-origin: margin;										
+}																
+																		
+QScrollBar::sub-line:horizontal {								
+	border: 0px solid grey;											 
+	background: #FFFFFF;											
+	width: 0px;														 
+	subcontrol-position: left;										
+	subcontrol-origin: margin;										
+}																
+																		
+QScrollBar:vertical {											
+	border: 1px ridge grey;											 
+	background: #FFFFFF;											
+	width: 6px;													
+	margin: 2px 0 2px 0;											
+}																
+																		
+QScrollBar::handle:vertical,  QScrollBar::handle:pressed {		
+	background: rgb(135, 173, 255);									 
+	border: 0px outset grey;										
+	min-height: 20px;												
+}																
+																		
+QScrollBar::handle:vertical {									
+	background: rgb(175, 213, 255);									 
+	selection-background-color: rgb(135, 173, 255);					 
+	border: 0px outset grey;										
+	min-height: 20px;												
+}					
+
+QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical {
+      border: 0 solid grey;
+      width: 0px;
+      height: 0px;
+  }
+
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {								
+	border: 0px solid grey;											 
+	background: #FFFFFF;											
+	width: 0px;														 
+	subcontrol-position: right;										 
+	subcontrol-origin: margin;										
+}	
+
+/*elementy flexi section */
+QPushButton, QToolButton {
+	margin: 0px;
+	padding: 0px;
+	spacing: 0px;
+	border: none;
+    background-color: transparent;
+	# to powodowalo, ze czesc przyciskow byla niewidoczna (np. message box przy wyjsciu z aplikacji)
+	#color: white;
+ }
+ 
+QPushButton:hover, QToolButton:hover {
+     /*background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 darkgray, stop:1 lightgray);*/
+	border: 1px solid rgb(135, 177, 255);
+ }
+
+QPushButton:flat, QToolButton:flat {
+	margin: 0px;
+	padding: 0px;
+	spacing: 0px;
+	border: none;
+ }
+
+QPushButton:default, QToolButton:default {
+	margin: 0px;
+	padding: 0px;
+	spacing: 0px;
+	border: none;
+ }
+
+QToolButton[popupMode="2"], QToolButton[popupMode="1"] {
+    padding-right: 10px;
+	background-color: transparent;
+	color: white;
+ }
+
+QToolButton[popupMode="2"]:hover, QToolButton[popupMode="1"]:hover {
+	border: 1px solid rgb(135, 177, 255);
+ }
+
+QToolButton::menu-button, QToolButton#qt_toolbar_ext_button {
+     border: none;
+     border-radius: 0px;
+ }
+
+QToolButton::menu-arrow {
+     image: url(:/mde/icons/trojkat-8x8-dodolu.png);
+ }
+
+QToolButton::menu-arrow:open, QToolButton#qt_toolbar_ext_button::menu-arrow:open {
+     top: 1px; left: 1px;
+ }
+
+QToolButton#qt_toolbar_ext_button, QToolButton#qt_toolbar_ext_button
+{
+	border: none;
+	background: transparent;
+    qproperty-icon: url(:/mde/icons/trojkat-8x8-naboku.png);
+	min-width: 10px;
+	min-height: 10px;
+}
+
+
+QAbstractSpinBox {
+	border-radius: 4px;
+	padding: 2px;
+	padding-right: 17px;
+}
+
+QAbstractSpinBox:hover {
+	background: rgb(200, 200, 200);
+}
+
+QAbstractSpinBox:focus {
+	background: white;
+}
+
+QMenu {
+     background: rgb(41,41,41);
+	 border: 1px solid rgb(135, 177, 255);
+     margin: 2px; /* some spacing around the menu */
+ }
+
+ QMenu::item {
+     padding: 2px 25px 2px 20px;
+     border: 1px solid transparent; /* reserve space for selection border */
+	 color: white;
+ }
+
+ QMenu::item:selected {
+     border: 1px solid darkblue;
+     background: rgba(100, 100, 100, 150);
+ }
+
+ QMenu::icon:checked { /* appearance of a 'checked' icon */
+     background: gray;
+     border: 1px inset gray;
+     position: absolute;
+     top: 1px;
+     right: 1px;
+     bottom: 1px;
+     left: 1px;
+ }
+
+ QMenu::separator {
+     height: 2px;
+     background: lightblue;
+     margin-left: 10px;
+     margin-right: 5px;
+ }
+
+ QMenu::indicator {
+     width: 13px;
+     height: 13px;
+ }

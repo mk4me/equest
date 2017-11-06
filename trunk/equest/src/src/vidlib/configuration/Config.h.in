@@ -1,0 +1,27 @@
+#ifndef HEADER_GUARD_VIDLIB__CONFIG_H__
+#define HEADER_GUARD_VIDLIB__CONFIG_H__
+
+#cmakedefine VIDLIB_ENABLE_OSG
+#cmakedefine VIDLIB_ENABLE_LOG4CXX
+
+//! Czy w bibliotece ma byc zawarty plugin do OSG?
+#cmakedefine VIDLIB_ENABLE_EXCEPTIONS
+
+//! Czy biblioteka ma byæ budowana w wersji statycznej?
+#cmakedefine VIDLIB_LIBRARY_STATIC
+
+#if defined (VIDLIB_LIBRARY_STATIC)
+	#define VIDLIB_EXPORT
+#else
+
+	#include <utils/Export.h>
+
+	#if defined (vidlib_EXPORTS)
+		#define VIDLIB_EXPORT UTILS_DECL_EXPORT
+	#else
+		#define VIDLIB_EXPORT UTILS_DECL_IMPORT
+	#endif
+
+#endif
+
+#endif // HEADER_GUARD_VIDLIB__CONFIG_H__

@@ -1,0 +1,16 @@
+<RCC>
+  <qresource prefix="hmdbCommunication/icons">
+    <file alias="dostepny.png">../resources/embedded/icons/dostepny.png</file>
+	  <file alias="niedostepny.png">../resources/embedded/icons/niedostepny.png</file>
+    <file alias="czesciowodostepny.png">../resources/embedded/icons/czesciowodostepny.png</file>
+    <file alias="nieznanydostepny.png">../resources/embedded/icons/nieznanydostepny.png</file>
+	  <file alias="niezaladowane.png">../resources/embedded/icons/niezaladowane.png</file>
+    <file alias="zaladowane.png">../resources/embedded/icons/zaladowane.png</file>
+    <file alias="zdalne.png">../resources/embedded/icons/zdalne.png</file>
+    <file alias="lokalne.png">../resources/embedded/icons/lokalne.png</file>
+    <file alias="polnapol-ladowanie.png">../resources/embedded/icons/polnapol-ladowanie.png</file>
+    <file alias="polnapol-ladowanie2.png">../resources/embedded/icons/polnapol-ladowanie2.png</file>
+    <file alias="polnapol-dane.png">../resources/embedded/icons/polnapol-dane.png</file>
+    <file alias="pol-na-pol-green.png">../resources/embedded/icons/pol-na-pol-green.png</file>
+  </qresource>
+</RCC>

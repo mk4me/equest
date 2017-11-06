@@ -1,0 +1,7 @@
+#ifndef __AVIO_CONFIG_H__
+#define __AVIO_CONFIG_H__
+
+//! Czy w bibliotece ma byc zawarty plugin do OSG?
+#cmakedefine VM_ENABLE_EXCEPTIONS
+
+#endif // __AVIO_CONFIG_H__

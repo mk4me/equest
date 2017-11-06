@@ -1,0 +1,25 @@
+<RCC>
+  <qresource prefix="newTimeline/icons">
+    <file alias="configureStep.png">../resources/embedded/icons/configureStep.png</file>
+    <file alias="toBegin.png">../resources/embedded/icons/toBegin.png</file>
+    <file alias="toBegin2.png">../resources/embedded/icons/toBegin2.png</file>
+    <file alias="toEnd.png">../resources/embedded/icons/toEnd.png</file>
+    <file alias="toEnd2.png">../resources/embedded/icons/toEnd2.png</file>
+    <file alias="direction-white.png">../resources/embedded/icons/direction-white.png</file>
+    <file alias="direction.png">../resources/embedded/icons/direction.png</file>
+    <file alias="direction2-white.png">../resources/embedded/icons/direction2-white.png</file>
+    <file alias="direction2.png">../resources/embedded/icons/direction2.png</file>
+    <file alias="forw.png">../resources/embedded/icons/forw.png</file>
+    <file alias="forw2.png">../resources/embedded/icons/forw2.png</file>
+    <file alias="loop-white.png">../resources/embedded/icons/loop-white.png</file>
+    <file alias="loop.png">../resources/embedded/icons/loop.png</file>
+    <file alias="pause.png">../resources/embedded/icons/pause.png</file>
+    <file alias="pause2.png">../resources/embedded/icons/pause2.png</file>
+    <file alias="play.png">../resources/embedded/icons/play.png</file>
+    <file alias="play2.png">../resources/embedded/icons/play2.png</file>
+    <file alias="rew.png">../resources/embedded/icons/rew.png</file>
+    <file alias="rew2.png">../resources/embedded/icons/rew2.png</file>
+    <file alias="stop.png">../resources/embedded/icons/stop.png</file>
+    <file alias="stop2.png">../resources/embedded/icons/stop2.png</file>
+  </qresource>
+</RCC>

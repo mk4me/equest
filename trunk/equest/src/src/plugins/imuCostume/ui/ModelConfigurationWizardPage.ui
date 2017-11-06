@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ModelConfigurationWizardPage</class>
+ <widget class="QWizardPage" name="ModelConfigurationWizardPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Model Configuration Page</string>
+  </property>
+  <property name="title">
+   <string>Model configuration</string>
+  </property>
+  <property name="subTitle">
+   <string/>
+  </property>
+  <layout class="QFormLayout" name="formLayout">
+   <item row="0" column="0">
+    <widget class="QLabel" name="modelClassLabel">
+     <property name="text">
+      <string>Class:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1">
+    <widget class="QComboBox" name="modelClassComboBox"/>
+   </item>
+   <item row="1" column="0">
+    <widget class="QLabel" name="modelLabel">
+     <property name="text">
+      <string>Model:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1">
+    <widget class="QComboBox" name="modelComboBox"/>
+   </item>
+   <item row="2" column="0">
+    <widget class="QPushButton" name="loadModelPushButton">
+     <property name="text">
+      <string>Load</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>loadModelPushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>ModelConfigurationWizardPage</receiver>
+   <slot>onLoadModel()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>46</x>
+     <y>101</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>199</x>
+     <y>149</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>onLoadModel()</slot>
+ </slots>
+</ui>

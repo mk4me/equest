@@ -1,0 +1,9 @@
+<RCC>
+  <qresource prefix="newVdf/icons">
+	<file alias="rubber.png">../resources/embedded/icons/rubber.png</file>
+	<file alias="run.png">../resources/embedded/icons/run.png</file>
+	<file alias="processor.png">../resources/embedded/icons/processor.png</file>
+	<file alias="sink.png">../resources/embedded/icons/sink.png</file>
+	<file alias="source.png">../resources/embedded/icons/source.png</file>
+  </qresource>
+</RCC>

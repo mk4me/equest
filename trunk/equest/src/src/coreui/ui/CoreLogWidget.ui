@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CoreLogWidget</class>
+ <widget class="QWidget" name="CoreLogWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>685</width>
+    <height>455</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Log</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QTextBrowser" name="textBrowser">
+     <property name="contextMenuPolicy">
+      <enum>Qt::CustomContextMenu</enum>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+     <property name="html">
+      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="acceptRichText">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </item>
+  </layout>
+  <action name="actionClear_log">
+   <property name="icon">
+    <iconset resource="CoreIcons.qrc">
+     <normaloff>:/coreUI/icons/clear_console.png</normaloff>:/coreUI/icons/clear_console.png</iconset>
+   </property>
+   <property name="text">
+    <string>Clear log</string>
+   </property>
+   <property name="toolTip">
+    <string>Clears all logs</string>
+   </property>
+  </action>
+  <action name="actionToogle_word_wrap">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="CoreIcons.qrc">
+     <normaloff>:/coreUI/icons/word_wrap_16x16.png</normaloff>:/coreUI/icons/word_wrap_16x16.png</iconset>
+   </property>
+   <property name="text">
+    <string>Toogle word wrap</string>
+   </property>
+   <property name="toolTip">
+    <string>Toogles word wrapping in console - wrapping words by default</string>
+   </property>
+  </action>
+  <action name="actionFind">
+   <property name="text">
+    <string>Find</string>
+   </property>
+   <property name="toolTip">
+    <string>Search in log</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+F</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="CoreIcons.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>actionToogle_word_wrap</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>CoreLogWidget</receiver>
+   <slot>setWordWrap(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>342</x>
+     <y>227</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionFind</sender>
+   <signal>triggered()</signal>
+   <receiver>CoreLogWidget</receiver>
+   <slot>onFind()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>342</x>
+     <y>227</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>textBrowser</sender>
+   <signal>customContextMenuRequested(QPoint)</signal>
+   <receiver>CoreLogWidget</receiver>
+   <slot>onTextContextMenu(QPoint)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>342</x>
+     <y>227</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>342</x>
+     <y>227</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>setWordWrap(bool)</slot>
+  <slot>onFind()</slot>
+  <slot>onTextContextMenu(QPoint)</slot>
+ </slots>
+</ui>

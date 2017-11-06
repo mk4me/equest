@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<Project version="0.01" BackgroundFilename="miesnie2.png">
+    <Picture Filename="prosty_uda_p.png" X="102" Y="309" />
+    <Picture Filename="prosty_uda_l.png" X="178" Y="314" />
+    <Picture Filename="piszczelowy_przedni_p.png" X="118" Y="471" />
+    <Picture Filename="piszczelowy_przedni_l.png" X="182" Y="469" />
+    <Picture Filename="krawiecki_p.png" X="106" Y="289" />
+    <Picture Filename="krawiecki_l.png" X="159" Y="288" />
+    <Picture Filename="przy_kstrzalkowej_piszczelowy_p.png" X="113" Y="487" />
+    <Picture Filename="przy_kstrzalkowej_piszczelowy_l.png" X="186" Y="485" />
+    <Picture Filename="strzalkowy_p.png" X="108" Y="454" />
+    <Picture Filename="strzalkowy_l.png" X="190" Y="453" />
+    <Picture Filename="odwodziciel_krotki_kciuka_p.png" X="16" Y="298" />
+    <Picture Filename="odwodziciel_krotki_kciuka_l.png" X="272" Y="301" />
+    <Picture Filename="piersiowy_wiekszy_p.png" X="83" Y="118" />
+    <Picture Filename="piersiowy_wiekszy_l.png" X="171" Y="117" />
+    <Picture Filename="naramienny_p.png" X="71" Y="113" />
+    <Picture Filename="naramienny_l.png" X="194" Y="113" />
+    <Picture Filename="ramie3.png" X="65" Y="161" />
+    <Picture Filename="ramie3R.png" X="223" Y="160" />
+</Project>

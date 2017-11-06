@@ -1,0 +1,20 @@
+<RCC>
+  <qresource prefix="newChart/icons">
+    <file alias="pomiary.png">../resources/embedded/icons/pomiary.png</file>
+    <file alias="horizontal_tag.png">../resources/embedded/icons/horizontal_tag.png</file>
+    <file alias="horizontal_taga.png">../resources/embedded/icons/horizontal_taga.png</file>
+    <file alias="normalizacja1.png">../resources/embedded/icons/normalizacja1.png</file>
+    <file alias="normalizacja1a.png">../resources/embedded/icons/normalizacja1a.png</file>
+    <file alias="normalizacja2.png">../resources/embedded/icons/normalizacja2.png</file>
+    <file alias="normalizacja2a.png">../resources/embedded/icons/normalizacja2a.png</file>
+    <file alias="picker.png">../resources/embedded/icons/picker.png</file>
+    <file alias="pickera.png">../resources/embedded/icons/pickera.png</file>
+    <file alias="value_tag.png">../resources/embedded/icons/value_tag.png</file>
+    <file alias="value_taga.png">../resources/embedded/icons/value_taga.png</file>
+    <file alias="vertical_tag.png">../resources/embedded/icons/vertical_tag.png</file>
+    <file alias="vertical_taga.png">../resources/embedded/icons/vertical_taga.png</file>
+	  <file alias="stat-b.png">../resources/embedded/icons/stat-b.png</file>
+	  <file alias="stat-a.png">../resources/embedded/icons/stat-a.png</file>
+    <file alias="charts.png">../resources/embedded/icons/charts.png</file>
+  </qresource>
+</RCC>

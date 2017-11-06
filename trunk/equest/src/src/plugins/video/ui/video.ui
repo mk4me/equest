@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>VideoWidget</class>
+ <widget class="QWidget" name="VideoWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>467</width>
+    <height>327</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>467</width>
+    <height>327</height>
+   </size>
+  </property>
+  <property name="contextMenuPolicy">
+   <enum>Qt::CustomContextMenu</enum>
+  </property>
+  <property name="windowTitle">
+   <string>Video</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="osgui::QOsgDefaultWidget" name="viewer" native="true">
+     <property name="minimumSize">
+      <size>
+       <width>449</width>
+       <height>309</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+  </layout>
+  <action name="actionTextureRectangle">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Use Texture Rectangle</string>
+   </property>
+  </action>
+  <action name="actionFormatYUV">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>YUV (12bpp, fragment shader)</string>
+   </property>
+  </action>
+  <action name="actionFormatRGB">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>RGB (24 bpp)</string>
+   </property>
+   <property name="toolTip">
+    <string>RGB</string>
+   </property>
+  </action>
+  <action name="actionFormatBGRA">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>BGRA (32 bpp)</string>
+   </property>
+   <property name="toolTip">
+    <string>BGRA</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>osgui::QOsgDefaultWidget</class>
+   <extends>QWidget</extends>
+   <header location="global">osgui/QOsgWidgets.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>VideoWidget</sender>
+   <signal>customContextMenuRequested(QPoint)</signal>
+   <receiver>VideoWidget</receiver>
+   <slot>onContextMenuRequested(QPoint)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>346</x>
+     <y>338</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>346</x>
+     <y>338</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionFormatYUV</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>VideoWidget</receiver>
+   <slot>onFormatYUVToggled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>346</x>
+     <y>338</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionFormatRGB</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>VideoWidget</receiver>
+   <slot>onFormatRGBToggled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>346</x>
+     <y>338</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionFormatBGRA</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>VideoWidget</receiver>
+   <slot>onFormatBGRAToggled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>346</x>
+     <y>338</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionTextureRectangle</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>VideoWidget</receiver>
+   <slot>onTextureRectangleToggled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>346</x>
+     <y>338</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>displayTypeChanged(int)</slot>
+  <slot>outputFormatChanged(int)</slot>
+  <slot>onContextMenuRequested(QPoint)</slot>
+  <slot>onFormatYUVToggled(bool)</slot>
+  <slot>onFormatRGBToggled(bool)</slot>
+  <slot>onFormatBGRAToggled(bool)</slot>
+  <slot>onTextureRectangleToggled(bool)</slot>
+ </slots>
+</ui>

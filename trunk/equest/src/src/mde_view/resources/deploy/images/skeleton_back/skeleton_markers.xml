@@ -1,0 +1,34 @@
+<?xml version="1.0" ?>
+<Project version="0.01" BackgroundFilename="szkieletW2.png">
+    <Marker Name="LBHD" X="134" Y="34" />
+    <Marker Name="RBHD" X="181" Y="31" />
+    <Marker Name="C7" X="157" Y="99" />
+    <Marker Name="RBAK" X="180" Y="152" />
+    <Marker Name="T10" X="156" Y="206" />
+    <Marker Name="RSHO" X="235" Y="116" />
+    <Marker Name="RUPA" X="244" Y="173" />
+    <Marker Name="RELB" X="243" Y="218" />
+    <Marker Name="RFRM" X="258" Y="262" />
+    <Marker Name="RWRB" X="262" Y="311" />
+    <Marker Name="RWRA" X="277" Y="304" />
+    <Marker Name="RFIN" X="277" Y="328" />
+    <Marker Name="LSHO" X="78" Y="120" />
+    <Marker Name="LUPA" X="73" Y="171" />
+    <Marker Name="LELB" X="68" Y="225" />
+    <Marker Name="LFRM" X="57" Y="262" />
+    <Marker Name="LWRA" X="36" Y="311" />
+    <Marker Name="LWRB" X="52" Y="320" />
+    <Marker Name="LFIN" X="29" Y="340" />
+    <Marker Name="LPSI" X="124" Y="274" />
+    <Marker Name="RPSI" X="191" Y="277" />
+    <Marker Name="LHEE" X="118" Y="538" />
+    <Marker Name="LTOE" X="116" Y="583" />
+    <Marker Name="RHEE" X="191" Y="548" />
+    <Marker Name="RTOE" X="202" Y="583" />
+    <Marker Name="LKNE" X="112" Y="419" />
+    <Marker Name="RKNE" X="201" Y="420" />
+    <Marker Name="RTHI" X="209" Y="333" />
+    <Marker Name="LTHI" X="108" Y="335" />
+    <Marker Name="LTIB" X="115" Y="466" />
+    <Marker Name="RTIB" X="200" Y="465" />
+</Project>

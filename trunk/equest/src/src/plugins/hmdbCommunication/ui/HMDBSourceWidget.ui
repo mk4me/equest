@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>HMDBSourceContextWidget</class>
+ <widget class="QWidget" name="HMDBSourceContextWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QTreeWidget" name="dataPerspectiveTreeWidget">
+     <column>
+      <property name="text">
+       <string notr="true">1</string>
+      </property>
+     </column>
+    </widget>
+   </item>
+  </layout>
+  <action name="actionDownloadAll">
+   <property name="text">
+    <string>Download All</string>
+   </property>
+  </action>
+  <action name="actionDownload">
+   <property name="text">
+    <string>Download</string>
+   </property>
+  </action>
+  <action name="actionForceDownload">
+   <property name="text">
+    <string>Force download</string>
+   </property>
+  </action>
+  <action name="actionLoadAll">
+   <property name="text">
+    <string>Load All</string>
+   </property>
+  </action>
+  <action name="actionLoad">
+   <property name="text">
+    <string>Load</string>
+   </property>
+  </action>
+  <action name="actionUnload">
+   <property name="text">
+    <string>Unload</string>
+   </property>
+  </action>
+  <action name="actionUnloadAll">
+   <property name="text">
+    <string>Unload All</string>
+   </property>
+  </action>
+  <action name="actionSynchronize">
+   <property name="text">
+    <string>Synchronize</string>
+   </property>
+  </action>
+  <action name="actionRefreshStatus">
+   <property name="text">
+    <string>Refresh Status</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>actionDownload</sender>
+   <signal>triggered()</signal>
+   <receiver>HMDBSourceContextWidget</receiver>
+   <slot>onDownload()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>199</x>
+     <y>149</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionDownloadAll</sender>
+   <signal>triggered()</signal>
+   <receiver>HMDBSourceContextWidget</receiver>
+   <slot>onDownloadAll()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>199</x>
+     <y>149</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionForceDownload</sender>
+   <signal>triggered()</signal>
+   <receiver>HMDBSourceContextWidget</receiver>
+   <slot>onForceDownload()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>199</x>
+     <y>149</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionLoad</sender>
+   <signal>triggered()</signal>
+   <receiver>HMDBSourceContextWidget</receiver>
+   <slot>onLoad()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>199</x>
+     <y>149</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionLoadAll</sender>
+   <signal>triggered()</signal>
+   <receiver>HMDBSourceContextWidget</receiver>
+   <slot>onLoadAll()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>199</x>
+     <y>149</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionRefreshStatus</sender>
+   <signal>triggered()</signal>
+   <receiver>HMDBSourceContextWidget</receiver>
+   <slot>onRefreshStatus()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>199</x>
+     <y>149</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionSynchronize</sender>
+   <signal>triggered()</signal>
+   <receiver>HMDBSourceContextWidget</receiver>
+   <slot>onSynchronize()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>199</x>
+     <y>149</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionUnload</sender>
+   <signal>triggered()</signal>
+   <receiver>HMDBSourceContextWidget</receiver>
+   <slot>onUnload()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>199</x>
+     <y>149</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionUnloadAll</sender>
+   <signal>triggered()</signal>
+   <receiver>HMDBSourceContextWidget</receiver>
+   <slot>onUnloadAll()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>199</x>
+     <y>149</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <signal>synchronizationAboutToBegin()</signal>
+  <signal>synchronizationFinished()</signal>
+  <signal>downloadAboutToBegin()</signal>
+  <signal>downloadFinished()</signal>
+  <signal>dataAboutToLoad()</signal>
+  <signal>dataLoaded()</signal>
+  <signal>dataAboutToUnload()</signal>
+  <signal>dataUnloaded()</signal>
+  <signal>shallowCopyChanged()</signal>
+  <slot>setFilter(int)</slot>
+  <slot>setPerspective(int)</slot>
+  <slot>onLoad()</slot>
+  <slot>onUnload()</slot>
+  <slot>onDownload()</slot>
+  <slot>onForceDownload()</slot>
+  <slot>onSynchronize()</slot>
+  <slot>onRefreshStatus()</slot>
+  <slot>onDownloadAll()</slot>
+  <slot>onUnloadAll()</slot>
+  <slot>onLoadAll()</slot>
+ </slots>
+</ui>

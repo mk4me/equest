@@ -1,0 +1,189 @@
+/* separatory okna glownego */
+ QMainWindow::separator {
+     background: darkgray;
+     width: 10px; /* when vertical */
+     height: 10px; /* when horizontal */
+ }
+
+ QMainWindow::separator:hover {
+     background: black;
+ }
+ 
+ /* tlo wszystkich widgetow */
+ QWidget {
+     background: darkgray;
+ }
+
+ QFrame {
+	background: transparent;
+ }
+
+/* dokowane widgety */
+ QDockWidget::title {
+     text-align: left;
+     background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #888888, stop:1 darkgray);
+     padding-left: 5px;
+ }
+ 
+ /* menu okien */
+ QMenuBar {
+     background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 lightgray, stop:1 darkgray);
+ }
+
+ QMenuBar::item {
+     spacing: 3px;
+     padding: 1px 4px;
+     background: transparent;
+     border-radius: 4px;
+ }
+
+ QMenuBar::item:selected {
+     background: #a8a8a8;
+ }
+
+ QMenuBar::item:pressed {
+     background: #888888;
+ }
+ 
+  QMenu {
+     background-color: darkgray;
+     border: 1px solid black;
+ }
+
+ QMenu::item {
+     background-color: transparent;
+ }
+
+ QMenu::item:selected {
+     background-color: #888888;
+ }
+
+ /* pola edycji */
+  QLineEdit {
+     border: 2px solid #888888;
+     background: lightgray;
+     border-radius: 4px;
+     selection-background-color: darkgray;
+ }
+ 
+ /* pasek postepu */
+  QProgressBar {
+     border: 1px solid #8f8f91;
+     border-radius: 4px;
+     text-align: center;
+ }
+
+ QProgressBar::chunk {
+     background-color: #8f8f91;
+     width: 20px;
+ }
+ 
+ /* przyciski */
+ QPushButton, QToolButton {
+     border: 2px solid #8f8f91;
+     border-radius: 4px;
+     background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 lightgray, stop:1 darkgray);
+ }
+
+ QPushButton {
+	min-width: 80px;
+	min-height: 20px;
+ }
+ 
+ QPushButton:hover, QToolButton:hover {
+     background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 darkgray, stop:1 lightgray);
+ }
+
+ QPushButton:flat, QToolButton:flat {
+     border: none;
+ }
+
+ QPushButton:default, QToolButton:default {
+     border-color: navy;
+ }
+ 
+ /* przesuniêcie je¿eli jest strza³ka z prawej strony */
+ QToolButton[popupMode="2"] {
+	 background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 lightgray, stop:1 darkgray);
+     padding-right: 10px;
+ }
+
+ /* zakladki */
+ QTabBar::tab {
+     border-radius: 4px;
+     border: 2px solid #888888;
+     background: #888888;
+     padding: 4px;
+     margin-right: 1px;
+ }
+
+ QTabBar::tab:selected {
+     background: darkgray;
+     border-top-color: darkgray;
+/*     font: bold; */
+ }
+
+ QTabBar::tab:hover {
+     border-top-color: lightgray;
+     background: lightgray;
+ }
+ 
+ /* headery */
+  QHeaderView::section {
+     background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #888888, stop:1 darkgray);
+     padding: 4px;
+     height: 10px;
+     border: 1px solid #888888;
+ }
+ 
+ /* pasek przesuwany */
+	QSlider::groove:horizontal {
+	border: 2px solid #888888;
+	height: 10px;
+	border-radius: 4px;
+}
+
+QSlider::sub-page:horizontal {
+background: qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 lightgray, stop:1 darkgray);
+border: 2px solid #888888;
+height: 10px;
+border-radius: 4px;
+}
+
+QSlider::add-page:horizontal {
+background: #fff;
+border: 2px solid #888888;
+background: lightgray;
+height: 10px;
+border-radius: 4px;
+}
+
+QSlider::handle:horizontal {
+background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 lightgray, stop:1 darkgray);
+border: 2px solid #888888;
+width: 13px;
+margin-top: -2px;
+margin-bottom: -2px;
+border-radius: 4px;
+}
+/* spin box */
+ QDoubleSpinBox {
+     border: 2px solid #888888;
+     background: lightgray;
+     border-radius: 4px;
+     selection-background-color: darkgray;
+ }
+ 
+ QDoubleSpinBox::up-button {
+     subcontrol-origin: border;
+     subcontrol-position: top right;
+     border: 2px solid #888888;
+     border-radius: 4px;
+ }
+
+ QDoubleSpinBox::down-button {
+     subcontrol-origin: border;
+     subcontrol-position: bottom right;
+     border: 2px solid #888888;
+     border-radius: 4px;
+ }

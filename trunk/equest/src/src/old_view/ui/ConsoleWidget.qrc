@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/resources/icons">
+        <file alias="clear_console_16x16.png">../../../resources/icons/clear_console_16x16.png</file>
+        <file alias="word_wrap_16x16.png">../../../resources/icons/word_wrap_16x16.png</file>
+    </qresource>
+</RCC>

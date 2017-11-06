@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TestEDRWidget</class>
+ <widget class="QWidget" name="TestEDRWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>865</width>
+    <height>551</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>100</width>
+    <height>100</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>TestEdrWidget</string>
+  </property>
+  <widget class="QPushButton" name="addWidgetButton">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>150</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Add Widget</string>
+   </property>
+  </widget>
+  <widget class="QListWidget" name="leftObjectsList">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>140</y>
+     <width>256</width>
+     <height>192</height>
+    </rect>
+   </property>
+   <property name="contextMenuPolicy">
+    <enum>Qt::CustomContextMenu</enum>
+   </property>
+  </widget>
+  <widget class="QListWidget" name="rightObjectsList">
+   <property name="geometry">
+    <rect>
+     <x>600</x>
+     <y>140</y>
+     <width>256</width>
+     <height>192</height>
+    </rect>
+   </property>
+   <property name="contextMenuPolicy">
+    <enum>Qt::CustomContextMenu</enum>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="addActionButton">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>190</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Add Action</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="addMenuButton">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>230</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Add Menu</string>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="spinBox">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>100</y>
+     <width>42</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="leftRadio">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>270</y>
+     <width>82</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Left</string>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="rightRadio">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>300</y>
+     <width>82</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Right</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="positionLabel">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>110</y>
+     <width>46</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Position</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="leftLabel">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>110</y>
+     <width>46</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Left</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="rightLabel">
+   <property name="geometry">
+    <rect>
+     <x>610</x>
+     <y>110</y>
+     <width>46</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Right</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="clearButton">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>360</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Clear</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>360</y>
+     <width>71</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Titlebar Height</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="titlebarHeight">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>360</y>
+     <width>46</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>addActionButton</sender>
+   <signal>clicked()</signal>
+   <receiver>TestEDRWidget</receiver>
+   <slot>addAction()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>57</x>
+     <y>201</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>432</x>
+     <y>275</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>addMenuButton</sender>
+   <signal>clicked()</signal>
+   <receiver>TestEDRWidget</receiver>
+   <slot>addMenu()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>57</x>
+     <y>241</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>432</x>
+     <y>275</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>addWidgetButton</sender>
+   <signal>clicked()</signal>
+   <receiver>TestEDRWidget</receiver>
+   <slot>addWidget()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>57</x>
+     <y>161</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>432</x>
+     <y>275</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>leftRadio</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>TestEDRWidget</receiver>
+   <slot>changeSide(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>70</x>
+     <y>278</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>432</x>
+     <y>275</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>leftObjectsList</sender>
+   <signal>customContextMenuRequested(QPoint)</signal>
+   <receiver>TestEDRWidget</receiver>
+   <slot>showContextMenu(QPoint)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>447</x>
+     <y>235</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>432</x>
+     <y>275</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>rightObjectsList</sender>
+   <signal>customContextMenuRequested(QPoint)</signal>
+   <receiver>TestEDRWidget</receiver>
+   <slot>showContextMenu(QPoint)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>727</x>
+     <y>235</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>432</x>
+     <y>275</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>clearButton</sender>
+   <signal>clicked()</signal>
+   <receiver>TestEDRWidget</receiver>
+   <slot>clearSide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>57</x>
+     <y>371</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>432</x>
+     <y>275</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>changeSide(bool)</slot>
+  <slot>addWidget()</slot>
+  <slot>addAction()</slot>
+  <slot>addMenu()</slot>
+  <slot>showContextMenu(QPoint)</slot>
+  <slot>clearSide()</slot>
+ </slots>
+</ui>

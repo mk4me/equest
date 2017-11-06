@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SampleWindow</class>
+ <widget class="QMainWindow" name="SampleWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>395</width>
+    <height>308</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QPushButton" name="pushButton">
+      <property name="text">
+       <string>Hello world!</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPlainTextEdit" name="plainTextEdit">
+      <property name="plainText">
+       <string>To nie jest co prawda QWidget lecz QMainWindow, ale każdy widget do projektu włączamy analogicznie:
+- plik .h
+- plik .cpp
+- plik .ui (powinno się go edytować w QDesignerze)
+Dodatkowo CMake wygeneruje:
+- plik ui_xxx.h wygenerowany z pliku .ui
+- plik moc_xxx.cpp z metadanymi wygenerowany pliku .h
+Sposób obsługi tych plików znajduje się w CMakeLists.txt, wystarczy dostosować się do szablonu.
+
+Tworzenie w Qt ma swoją specyfikę i mogę powiedzieć jedno - RTFM. Dokumentacja jest naprawdę dobra i zabieranie się do Qt bez jej znajomości może boleć.
+
+</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>395</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>SampleWindow</receiver>
+   <slot>showHelloWorld()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>55</x>
+     <y>42</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>299</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>showHelloWorld()</slot>
+ </slots>
+</ui>

@@ -1,0 +1,1465 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SourceOptionsWidget</class>
+ <widget class="QWidget" name="SourceOptionsWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>649</width>
+    <height>959</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QTabWidget" name="sourceOptionsWidget">
+     <property name="tabPosition">
+      <enum>QTabWidget::West</enum>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="loginTab">
+      <attribute name="title">
+       <string>Login</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <item>
+        <layout class="QFormLayout" name="formLayout_3">
+         <item row="0" column="0">
+          <widget class="QLabel" name="viewLabel">
+           <property name="text">
+            <string>View:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QComboBox" name="viewComboBox"/>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="profileLabel">
+           <property name="text">
+            <string>Profile:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QComboBox" name="profileComboBox"/>
+         </item>
+         <item row="2" column="0">
+          <spacer name="horizontalSpacer_8">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item row="2" column="1">
+          <layout class="QHBoxLayout" name="horizontalLayout_3">
+           <item>
+            <spacer name="horizontalSpacer_10">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_8">
+             <item>
+              <widget class="QToolButton" name="addProfileToolButton">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="text">
+                <string>Add</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QToolButton" name="removeProfileToolButton">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="text">
+                <string>Del</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="Line" name="line">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="loginUserCredentialsGroupBox">
+         <property name="title">
+          <string>User credentials</string>
+         </property>
+         <layout class="QFormLayout" name="formLayout">
+          <item row="0" column="0">
+           <widget class="QLabel" name="loginLabel">
+            <property name="text">
+             <string>Login:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLineEdit" name="loginLineEdit"/>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="passwordLabel">
+            <property name="text">
+             <string>Password:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QLineEdit" name="passwordLineEdit">
+            <property name="echoMode">
+             <enum>QLineEdit::Password</enum>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <item>
+          <spacer name="horizontalSpacer">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QToolButton" name="advanceToolButton">
+           <property name="text">
+            <string>&lt;&lt; Advanced</string>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="checked">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="Line" name="line_16">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="loginStorageGroupBox">
+         <property name="title">
+          <string>Storage</string>
+         </property>
+         <layout class="QFormLayout" name="formLayout_2">
+          <item row="0" column="0">
+           <widget class="QLabel" name="storagePathLabel">
+            <property name="text">
+             <string>Path:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <layout class="QHBoxLayout" name="horizontalLayout">
+            <item>
+             <widget class="QLineEdit" name="storagePathLineEdit"/>
+            </item>
+            <item>
+             <widget class="QPushButton" name="browseStorageFilePushButton">
+              <property name="text">
+               <string>Browse</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="storagePasswordLabel">
+            <property name="text">
+             <string>Password:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QLineEdit" name="storagePasswordLineEdit">
+            <property name="echoMode">
+             <enum>QLineEdit::Password</enum>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="Line" name="line_17">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="loginSourceModeGroupBox">
+         <property name="title">
+          <string>Source mode</string>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_4">
+          <item>
+           <widget class="QCheckBox" name="onlineModeCheckBox">
+            <property name="text">
+             <string>Online</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_4">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="Line" name="line_18">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="loginConnectionsGroupBox">
+         <property name="title">
+          <string>Connections</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <item>
+           <widget class="QGroupBox" name="loginServicesGroupBox">
+            <property name="title">
+             <string>Services</string>
+            </property>
+            <layout class="QFormLayout" name="formLayout_20">
+             <item row="0" column="0">
+              <widget class="QLabel" name="motionServiceURLLabel">
+               <property name="text">
+                <string>Motion URL:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QLineEdit" name="motionServiceURLLineEdit"/>
+             </item>
+             <item row="1" column="0">
+              <widget class="QLabel" name="medicalServiceURLLabel">
+               <property name="text">
+                <string>Medical URL:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <widget class="QLineEdit" name="medicaServicelURLLineEdit"/>
+             </item>
+             <item row="2" column="0">
+              <widget class="QLabel" name="servicesCertificatPathLabel">
+               <property name="text">
+                <string>SSL certificate:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="1">
+              <layout class="QHBoxLayout" name="horizontalLayout_7">
+               <item>
+                <widget class="QLineEdit" name="servicesCertificatePathLineEdit"/>
+               </item>
+               <item>
+                <widget class="QPushButton" name="browseServicesCertificatePathPushButton">
+                 <property name="text">
+                  <string>Browse</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="loginDataGroupBox">
+            <property name="title">
+             <string>Data</string>
+            </property>
+            <layout class="QFormLayout" name="formLayout_4">
+             <item row="0" column="0">
+              <widget class="QLabel" name="motionDataURLLabel">
+               <property name="text">
+                <string>Motion URL:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QLineEdit" name="motionDataURLLineEdit">
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QLabel" name="medicalDataURLLabel">
+               <property name="text">
+                <string>Medical URL:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <widget class="QLineEdit" name="medicalDataURLLineEdit">
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="0">
+              <widget class="QLabel" name="motionDataUserLabel">
+               <property name="text">
+                <string>User:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="1">
+              <widget class="QLineEdit" name="dataUserLineEdit"/>
+             </item>
+             <item row="3" column="0">
+              <widget class="QLabel" name="motionDataPasswordLabel">
+               <property name="text">
+                <string>Password:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="1">
+              <widget class="QLineEdit" name="dataPasswordLineEdit">
+               <property name="echoMode">
+                <enum>QLineEdit::Password</enum>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_9">
+         <item>
+          <spacer name="horizontalSpacer_3">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QPushButton" name="loginPushButton">
+           <property name="text">
+            <string>Login</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <spacer name="verticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>213</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab">
+      <attribute name="title">
+       <string>Account operations</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_11">
+       <item>
+        <layout class="QFormLayout" name="formLayout_22">
+         <item row="0" column="0">
+          <widget class="QLabel" name="opConnectionLabel">
+           <property name="text">
+            <string>Connection:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QComboBox" name="opConnectionComboBox"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="Line" name="line_23">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="opServiceGroupBox">
+         <property name="title">
+          <string>Service</string>
+         </property>
+         <layout class="QFormLayout" name="formLayout_21">
+          <item row="0" column="0">
+           <widget class="QLabel" name="opServiceURLLabel">
+            <property name="text">
+             <string>URL:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLineEdit" name="opServiceURLLineEdit"/>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="opServiceCertificatePathLabel">
+            <property name="text">
+             <string>SSL certificate:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <layout class="QHBoxLayout" name="horizontalLayout_13">
+            <item>
+             <widget class="QLineEdit" name="opServiceCertificatePathLineEdit"/>
+            </item>
+            <item>
+             <widget class="QPushButton" name="opBrowseServiceCertificatePathPushButton">
+              <property name="text">
+               <string>Browse</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="2" column="0">
+           <widget class="QCheckBox" name="opPropagateCheckBox">
+            <property name="text">
+             <string>Propagate</string>
+            </property>
+            <property name="checked">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <spacer name="horizontalSpacer_9">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QTabWidget" name="accountOperationsTabWidget">
+         <property name="currentIndex">
+          <number>0</number>
+         </property>
+         <widget class="QWidget" name="registerTab">
+          <attribute name="title">
+           <string>Register</string>
+          </attribute>
+          <layout class="QVBoxLayout" name="verticalLayout_8">
+           <item>
+            <widget class="QGroupBox" name="regUserDataGroupBox">
+             <property name="title">
+              <string>User data</string>
+             </property>
+             <layout class="QFormLayout" name="formLayout_23">
+              <item row="0" column="0">
+               <widget class="QLabel" name="regUserLabel">
+                <property name="text">
+                 <string>User:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="1">
+               <widget class="QLineEdit" name="regUserLineEdit"/>
+              </item>
+              <item row="1" column="0">
+               <widget class="QLabel" name="regPasswordLabel">
+                <property name="text">
+                 <string>Password:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="1">
+               <widget class="QLineEdit" name="regPasswordLineEdit">
+                <property name="echoMode">
+                 <enum>QLineEdit::Password</enum>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="0">
+               <widget class="QLabel" name="regRepeatPasswordLabel">
+                <property name="text">
+                 <string>Repeat password:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="1">
+               <widget class="QLineEdit" name="regRepeatPasswordLineEdit">
+                <property name="echoMode">
+                 <enum>QLineEdit::Password</enum>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="0">
+               <widget class="QLabel" name="regNameLabel">
+                <property name="text">
+                 <string>Name:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="1">
+               <widget class="QLineEdit" name="regNameLineEdit">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+               </widget>
+              </item>
+              <item row="4" column="0">
+               <widget class="QLabel" name="regSurnameLabel">
+                <property name="text">
+                 <string>Surname:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="4" column="1">
+               <widget class="QLineEdit" name="regSurnameLineEdit">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+               </widget>
+              </item>
+              <item row="5" column="0">
+               <widget class="QLabel" name="regEmailLabel">
+                <property name="text">
+                 <string>Email</string>
+                </property>
+               </widget>
+              </item>
+              <item row="5" column="1">
+               <widget class="QLineEdit" name="regEmailLineEdit"/>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_11">
+             <item>
+              <spacer name="horizontalSpacer_6">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QPushButton" name="registerPushButton">
+               <property name="text">
+                <string>Register</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <spacer name="verticalSpacer_6">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>490</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="activationTab">
+          <attribute name="title">
+           <string>Activate</string>
+          </attribute>
+          <layout class="QVBoxLayout" name="verticalLayout_9">
+           <item>
+            <widget class="QGroupBox" name="activateActivationDataGroupBox">
+             <property name="title">
+              <string>Activation data</string>
+             </property>
+             <layout class="QFormLayout" name="formLayout_24">
+              <item row="0" column="0">
+               <widget class="QLabel" name="activateUserLabel">
+                <property name="text">
+                 <string>User:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="1">
+               <widget class="QLineEdit" name="activateUserLineEdit"/>
+              </item>
+              <item row="1" column="0">
+               <widget class="QLabel" name="activateActivationCodeLabel">
+                <property name="text">
+                 <string>Activation code:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="1">
+               <widget class="QLineEdit" name="activateActivationCodeLineEdit"/>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_19">
+             <item>
+              <spacer name="horizontalSpacer_15">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QPushButton" name="activatePushButton">
+               <property name="text">
+                <string>Activate</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <spacer name="verticalSpacer_7">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>594</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="passwordResetTab">
+          <attribute name="title">
+           <string>Reset password</string>
+          </attribute>
+          <layout class="QVBoxLayout" name="verticalLayout_10">
+           <item>
+            <widget class="QGroupBox" name="resetDataGroupBox">
+             <property name="title">
+              <string>Password reset data</string>
+             </property>
+             <layout class="QFormLayout" name="formLayout_25">
+              <item row="0" column="0">
+               <widget class="QLabel" name="resetEmailLabel">
+                <property name="text">
+                 <string>Email:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="1">
+               <widget class="QLineEdit" name="resetEmailLineEdit"/>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_22">
+             <item>
+              <spacer name="horizontalSpacer_18">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QPushButton" name="resetPushButton">
+               <property name="text">
+                <string>Reset</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <spacer name="verticalSpacer_8">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>620</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+       <item>
+        <spacer name="verticalSpacer_9">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="serverStatusTab">
+      <attribute name="title">
+       <string>Server status</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_7">
+       <item>
+        <layout class="QFormLayout" name="formLayout_17">
+         <item row="0" column="0">
+          <widget class="QLabel" name="statusServeLabel">
+           <property name="text">
+            <string>Server</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QComboBox" name="statusServerComboBox"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="Line" name="line_5">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="statusServerGroupBox">
+         <property name="title">
+          <string>Server</string>
+         </property>
+         <layout class="QFormLayout" name="formLayout_18">
+          <item row="0" column="0">
+           <widget class="QLabel" name="statusServerURLLabel">
+            <property name="text">
+             <string>URL:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLineEdit" name="statusServerURLLineEdit"/>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="statusServerCertificatePathLabel">
+            <property name="text">
+             <string>SSL certificate:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <layout class="QHBoxLayout" name="horizontalLayout_23">
+            <item>
+             <widget class="QLineEdit" name="statusServerCertificatePathLineEdit"/>
+            </item>
+            <item>
+             <widget class="QPushButton" name="statusBrowseServiceCertificatePathPushButton">
+              <property name="text">
+               <string>Browse</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="Line" name="line_22">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="statusParametersGroupBox">
+         <property name="title">
+          <string>Status check parameters</string>
+         </property>
+         <layout class="QFormLayout" name="formLayout_19">
+          <item row="0" column="0">
+           <widget class="QLabel" name="statusTimeoutLabel">
+            <property name="text">
+             <string>Timeout [ms]:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QSpinBox" name="statusTimeoutSpinBox">
+            <property name="alignment">
+             <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+            </property>
+            <property name="minimum">
+             <number>100</number>
+            </property>
+            <property name="maximum">
+             <number>5000</number>
+            </property>
+            <property name="singleStep">
+             <number>10</number>
+            </property>
+            <property name="value">
+             <number>350</number>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_24">
+         <item>
+          <widget class="QGroupBox" name="statusPlaceholderGroupBox">
+           <property name="title">
+            <string>Status</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_19">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QPushButton" name="checkStatusPushButton">
+           <property name="text">
+            <string>Check</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <spacer name="verticalSpacer_5">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>688</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>addProfileToolButton</sender>
+   <signal>clicked()</signal>
+   <receiver>SourceOptionsWidget</receiver>
+   <slot>onAddProfile()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>257</x>
+     <y>83</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>320</x>
+     <y>479</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>removeProfileToolButton</sender>
+   <signal>clicked()</signal>
+   <receiver>SourceOptionsWidget</receiver>
+   <slot>onRemoveProfile()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>447</x>
+     <y>83</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>320</x>
+     <y>479</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>viewComboBox</sender>
+   <signal>currentIndexChanged(int)</signal>
+   <receiver>SourceOptionsWidget</receiver>
+   <slot>onViewChange(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>352</x>
+     <y>30</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>320</x>
+     <y>479</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>profileComboBox</sender>
+   <signal>currentIndexChanged(int)</signal>
+   <receiver>SourceOptionsWidget</receiver>
+   <slot>onProfileChange(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>352</x>
+     <y>56</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>320</x>
+     <y>479</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>browseStorageFilePushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>SourceOptionsWidget</receiver>
+   <slot>onStoragePathBrowse()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>571</x>
+     <y>239</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>320</x>
+     <y>479</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>browseServicesCertificatePathPushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>SourceOptionsWidget</receiver>
+   <slot>onServicesSSLCertificateBrowse()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>561</x>
+     <y>481</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>320</x>
+     <y>479</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>loginPushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>SourceOptionsWidget</receiver>
+   <slot>onLogin()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>581</x>
+     <y>669</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>320</x>
+     <y>479</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>opConnectionComboBox</sender>
+   <signal>currentIndexChanged(int)</signal>
+   <receiver>SourceOptionsWidget</receiver>
+   <slot>onConnectionChanged(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>361</x>
+     <y>30</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>320</x>
+     <y>479</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>opBrowseServiceCertificatePathPushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>SourceOptionsWidget</receiver>
+   <slot>onAccountOperationServiceSSLCertificateBrowse()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>571</x>
+     <y>118</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>320</x>
+     <y>479</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>registerPushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>SourceOptionsWidget</receiver>
+   <slot>onRegister()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>568</x>
+     <y>405</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>320</x>
+     <y>479</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>activatePushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>SourceOptionsWidget</receiver>
+   <slot>onActivate()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>568</x>
+     <y>301</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>320</x>
+     <y>479</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>resetPushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>SourceOptionsWidget</receiver>
+   <slot>onPasswordReset()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>568</x>
+     <y>275</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>320</x>
+     <y>479</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>statusServerComboBox</sender>
+   <signal>currentIndexChanged(int)</signal>
+   <receiver>SourceOptionsWidget</receiver>
+   <slot>onServerChange(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>348</x>
+     <y>30</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>320</x>
+     <y>479</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>statusBrowseServiceCertificatePathPushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>SourceOptionsWidget</receiver>
+   <slot>onServerSSLCertificateBrowse()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>571</x>
+     <y>118</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>320</x>
+     <y>479</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkStatusPushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>SourceOptionsWidget</receiver>
+   <slot>onStatusCheck()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>581</x>
+     <y>227</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>320</x>
+     <y>479</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>onlineModeCheckBox</sender>
+   <signal>stateChanged(int)</signal>
+   <receiver>SourceOptionsWidget</receiver>
+   <slot>onSourceModeChange(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>76</x>
+     <y>335</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>320</x>
+     <y>479</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>storagePathLineEdit</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>SourceOptionsWidget</receiver>
+   <slot>onConnectionProfileEdit()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>575</x>
+     <y>238</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>578</x>
+     <y>479</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>storagePasswordLineEdit</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>SourceOptionsWidget</receiver>
+   <slot>onConnectionProfileEdit()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>615</x>
+     <y>267</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>578</x>
+     <y>479</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>onlineModeCheckBox</sender>
+   <signal>stateChanged(int)</signal>
+   <receiver>SourceOptionsWidget</receiver>
+   <slot>onConnectionProfileEdit()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>76</x>
+     <y>335</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>578</x>
+     <y>479</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>medicaServicelURLLineEdit</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>SourceOptionsWidget</receiver>
+   <slot>onConnectionProfileEdit()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>626</x>
+     <y>452</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>578</x>
+     <y>479</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>medicalDataURLLineEdit</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>SourceOptionsWidget</receiver>
+   <slot>onConnectionProfileEdit()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>621</x>
+     <y>568</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>578</x>
+     <y>479</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>motionDataURLLineEdit</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>SourceOptionsWidget</receiver>
+   <slot>onConnectionProfileEdit()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>621</x>
+     <y>542</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>578</x>
+     <y>479</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>motionServiceURLLineEdit</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>SourceOptionsWidget</receiver>
+   <slot>onConnectionProfileEdit()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>626</x>
+     <y>426</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>578</x>
+     <y>479</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>servicesCertificatePathLineEdit</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>SourceOptionsWidget</receiver>
+   <slot>onConnectionProfileEdit()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>586</x>
+     <y>480</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>578</x>
+     <y>479</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>dataUserLineEdit</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>SourceOptionsWidget</receiver>
+   <slot>onConnectionProfileEdit()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>621</x>
+     <y>594</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>578</x>
+     <y>479</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>dataPasswordLineEdit</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>SourceOptionsWidget</receiver>
+   <slot>onConnectionProfileEdit()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>621</x>
+     <y>620</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>578</x>
+     <y>479</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>advanceToolButton</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>SourceOptionsWidget</receiver>
+   <slot>setLoginAdvanceConfiguration(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>588</x>
+     <y>207</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>324</x>
+     <y>479</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>onStoragePathBrowse()</slot>
+  <slot>onServicesSSLCertificateBrowse()</slot>
+  <slot>onSourceModeChange()</slot>
+  <slot>onViewChange(int)</slot>
+  <slot>onProfileChange(int)</slot>
+  <slot>onAddProfile()</slot>
+  <slot>onRemoveProfile()</slot>
+  <slot>onLogin()</slot>
+  <slot>onConnectionChanged(int)</slot>
+  <slot>onAccountOperationServiceSSLCertificateBrowse()</slot>
+  <slot>onRegister()</slot>
+  <slot>onActivate()</slot>
+  <slot>onPasswordReset()</slot>
+  <slot>onServerChange(int)</slot>
+  <slot>onServerSSLCertificateBrowse()</slot>
+  <slot>onStatusCheck()</slot>
+  <slot>onSourceModeChange(int)</slot>
+  <slot>onRefreshViews()</slot>
+  <slot>onVerifyLogin()</slot>
+  <slot>onConnectionProfileEdit()</slot>
+  <slot>setLoginAdvanceConfiguration(bool)</slot>
+ </slots>
+</ui>

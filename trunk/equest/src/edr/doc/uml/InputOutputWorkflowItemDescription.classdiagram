@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="8ad04e1b-3098-4e33-a9c2-8b903703daf3" name="InputOutputWorkflowItemDescription" linkedPackageId="764d95e3-622d-41b2-a704-c17d415656e8" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <ownedCommentsInternal>
+    <comment Id="b3f1b50e-d0d5-4d4c-a464-924b039b4ba8">
+      <elementDefinition Id="23755897-cdc6-47ae-ac0e-3c1925cc2173" />
+      <body>Opis wejśc/wyjść elementów WorkflowItem po stronie klienta - wskazanie wspieranych typów</body>
+    </comment>
+    <comment Id="240865d3-bcac-4e0f-a6f2-c1b3f28e4bff">
+      <elementDefinition Id="43108f0a-51b1-43e2-b2cf-a133a3289f92" />
+      <body>Opis wejść/wyjść WorkflowItems po stronie EDR - opis wspieranych typów powiązany z danymi (ObjectWrapperami na obiekty domenowe) przez obiekty ObjecSlots, po których dziedziczą ObjectOutput i ObjectSource</body>
+    </comment>
+  </ownedCommentsInternal>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="6fb021c4-31b4-458f-94aa-c73436837865" name="IInputDescriptionInterface" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="eeaf8afe-91a8-4906-9d67-59c58766242e" />
+        <targetEnds>
+          <association Id="bc49dfad-ff59-49e0-8dab-c04d17e08e03" isDerived="false" sourceEndRoleName="IInputDescriptionInterface" targetEndRoleName="InputInfo" isLeaf="false" isAbstract="false">
+            <classMoniker Id="e799f210-b227-48ac-9b5a-186ebb97ec25" LastKnownName="InputInfo" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="991e221c-4f40-4189-9e4b-8d8ce5c79b04" name="IInputDescriptionInterface" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="f8fa5f7b-43fc-437a-aad6-aebe6caa9fba" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="345c8f78-c346-4d79-b824-6f7ed7545999" name="InputInfo" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <lowerValueInternal>
+                    <literalString Id="23d4cbc4-4e0c-4ef7-a6f7-88870c647fb0" name="Lower" value="1">
+                      <elementDefinition Id="981b8748-a0fe-4d85-8248-ab2681342048" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="889f2e2d-01a7-4b6e-a370-330297ffe16c" name="Upper" value="16">
+                      <elementDefinition Id="61b81dbb-a5a8-4cc5-9255-1ac7dc2ceb88" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="cd10688e-98b0-4d6b-ac16-e04a6f5afb8e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="78acf73f-024b-49d3-b36e-2ed7f046752a" />
+          </association>
+        </targetEnds>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="7c4c1672-6ad9-435f-ac5b-57d2be903b53" name="IOutputDescriptionInterface" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="fc9acf14-39f1-4ce8-9f6a-3b76d885e143" />
+        <targetEnds>
+          <association Id="9adaef49-e28e-4479-a2cc-40bb866aa3d3" isDerived="false" sourceEndRoleName="IOutputDescriptionInterface" targetEndRoleName="OutputInfo" isLeaf="false" isAbstract="false">
+            <classMoniker Id="1deaac31-2c9c-4599-943c-2993230d90c0" LastKnownName="OutputInfo" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="aac656df-caee-4e13-afff-78ef0dac20e7" name="IOutputDescriptionInterface" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="ee6360e5-f058-4c78-8143-04a067df1f0a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="df896a3b-3c2b-48ce-81e4-9e36a9db632c" name="OutputInfo" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <lowerValueInternal>
+                    <literalString Id="950cc8e4-5628-4101-ad01-95f49a9a52c6" name="Lower" value="1">
+                      <elementDefinition Id="09f957c8-6f46-494d-968b-acc2d3f2fde5" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="34eb7fc4-3f2f-4a1c-9f06-5e5fd1defdcb" name="Upper" value="*">
+                      <elementDefinition Id="26c4c502-2401-449d-81b2-b5830c0a8356" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="5b215958-0a3b-43c8-92d1-6cca1ad22ce2" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="b58f31fd-45a1-4658-9a2d-71dd655eaf4d" />
+          </association>
+        </targetEnds>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="e799f210-b227-48ac-9b5a-186ebb97ec25" name="InputInfo" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="2d5ed224-648f-4ec5-8e6e-546da46f675f" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="1deaac31-2c9c-4599-943c-2993230d90c0" name="OutputInfo" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="f0227c48-a84a-4715-9f36-3eda5e882400" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="ee50c851-21f9-4451-a070-bc123a7af409" name="SlotInfo" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="da25d113-4fa1-40d2-9587-b505ce05d19c" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="7742a852-4e7e-4099-9b59-c9c7baf84132" name="ObjectSlots" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="eabe400f-3232-4793-be09-0ec46c996441" />
+        <targetEnds>
+          <association Id="5bbe972e-3328-4ae7-868f-2a2af66008cc" isDerived="false" sourceEndRoleName="ObjectSlots" targetEndRoleName="SlotInfo" isLeaf="false" isAbstract="false">
+            <classMoniker Id="ee50c851-21f9-4451-a070-bc123a7af409" LastKnownName="SlotInfo" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="64ad75c1-195c-43b9-b95d-c8880021e787" name="ObjectSlots" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="d9654c2b-ba49-4179-830f-0a1faecac03c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5168d172-0fc0-41b6-b958-a2a216d8c1d0" name="SlotInfo" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <lowerValueInternal>
+                    <literalString Id="976cfa55-38c1-40b7-96d8-0022e8699705" name="Lower" value="1">
+                      <elementDefinition Id="ce53a3ee-b7bf-431f-8bd8-ca03a25a132d" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="9739b767-9ff2-44c7-bb6d-f66bd60d0fe8" name="Upper" value="16">
+                      <elementDefinition Id="29fb1cca-d74c-4679-89c0-f2baeb247ff2" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="2362090c-19d8-4254-bca6-2d4a0266e25b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="f86fbeac-7973-4de8-a3aa-f63200e116c4" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="b3b2d62b-6531-41db-8e90-403959543115" name="ObjectSource" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="b8c71cb2-6e14-4313-94a2-bd28592a34c4" />
+        <generalsInternal>
+          <generalization Id="eab1da8e-59f4-43da-ae32-7651bf5769e9" isSubstitutable="false">
+            <classMoniker Id="7742a852-4e7e-4099-9b59-c9c7baf84132" LastKnownName="ObjectSlots" />
+            <elementDefinition Id="203a2ecd-c882-425d-a1e1-335fe0581543" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="b520e90c-0481-43b5-8cb8-d61673c45f68" name="ObjectOutput" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="416af829-830d-43d1-b07a-018d62dde4bf" />
+        <generalsInternal>
+          <generalization Id="99c1d765-aeb5-4f86-af96-12d3e3a19770" isSubstitutable="false">
+            <classMoniker Id="7742a852-4e7e-4099-9b59-c9c7baf84132" LastKnownName="ObjectSlots" />
+            <elementDefinition Id="592bda1b-3607-48a9-a5da-928df12995ef" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="33bfe03e-21b6-4175-a60b-1240a9a1ecec" name="InputDesription" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="eb314779-91b2-4684-909b-c8905214b834" />
+        <targetEnds>
+          <association Id="8dd44ad9-30c3-4eee-951b-1bfde7764de7" isDerived="false" sourceEndRoleName="InputDesription" targetEndRoleName="ObjectOutput" isLeaf="false" isAbstract="false">
+            <classMoniker Id="b3b2d62b-6531-41db-8e90-403959543115" LastKnownName="ObjectSource" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6f6cbeb4-9787-4167-9749-83b5c61d0d85" name="InputDesription" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="93bc98e4-7bae-44e2-87b7-fa602766bd24" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="38fb74e5-74e0-4df9-b1a4-8f197c3aaaa3" name="ObjectOutput" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <elementDefinition Id="b1daaad9-8e93-4150-9dfe-24cf97a46567" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="da1b2644-6c39-4af6-ba7d-df62dd01d829" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="8cf59d2f-fcf9-401a-9a6e-a6c501c1dec7" name="OutputDescription" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="0f2b2188-3efe-4513-8c2d-79e22e2128c6" />
+        <targetEnds>
+          <association Id="cd3d750f-e783-49bd-a0f8-f5e7df8c306d" isDerived="false" sourceEndRoleName="OutputDescription" targetEndRoleName="ObjectSource" isLeaf="false" isAbstract="false">
+            <classMoniker Id="b520e90c-0481-43b5-8cb8-d61673c45f68" LastKnownName="ObjectOutput" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9cdd3b42-6ac7-42fd-8864-9313e6d6b307" name="OutputDescription" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="60aa9f00-9898-4f47-940d-a4cdca833194" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c62249ec-d667-4cf4-b003-9eabf7d139d6" name="ObjectSource" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <elementDefinition Id="6dcabdf9-0844-42ed-8bb5-bdaf08ff8eb2" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="8548446f-6bfd-4813-a811-f654db0e7c2c" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="764d95e3-622d-41b2-a704-c17d415656e8" name="uml">
+    <elementDefinition Id="c2d1360b-ea8b-406c-b331-dd1f2f8fbe08" />
+  </package>
+</logicalClassDesignerModel>

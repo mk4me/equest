@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SensorsConfigurationWizardPage</class>
+ <widget class="QWizardPage" name="SensorsConfigurationWizardPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>588</width>
+    <height>394</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Sensors configuration page</string>
+  </property>
+  <property name="title">
+   <string>Sensors configuration</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QTableWidget" name="sensorsConfigurationTableWidget">
+     <property name="contextMenuPolicy">
+      <enum>Qt::CustomContextMenu</enum>
+     </property>
+     <attribute name="horizontalHeaderStretchLastSection">
+      <bool>true</bool>
+     </attribute>
+     <attribute name="verticalHeaderStretchLastSection">
+      <bool>false</bool>
+     </attribute>
+     <column>
+      <property name="text">
+       <string>Sensor</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Joint</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Estimation Algorithm</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>PreMulRotation</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>PostMulRotation</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Offset</string>
+      </property>
+     </column>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QCheckBox" name="oneToOneMappingCheckBox">
+         <property name="text">
+          <string>One-To-One mapping</string>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+  </layout>
+  <action name="actionSelect_all_sensors">
+   <property name="text">
+    <string>Select all sensors</string>
+   </property>
+  </action>
+  <action name="actionDeselect_all_sensors">
+   <property name="text">
+    <string>Deselect all sensors</string>
+   </property>
+  </action>
+  <action name="actionInverse_sensors_selection">
+   <property name="text">
+    <string>Inverse sensors selection</string>
+   </property>
+  </action>
+  <action name="actionSelect_common_estimation_algorithm">
+   <property name="text">
+    <string>Select common estimation algorithm</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>oneToOneMappingCheckBox</sender>
+   <signal>stateChanged(int)</signal>
+   <receiver>SensorsConfigurationWizardPage</receiver>
+   <slot>onOneToOneMappingChanged(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>73</x>
+     <y>373</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>293</x>
+     <y>196</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>sensorsConfigurationTableWidget</sender>
+   <signal>cellChanged(int,int)</signal>
+   <receiver>SensorsConfigurationWizardPage</receiver>
+   <slot>onSensorConfigurationCellChange(int,int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>293</x>
+     <y>182</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>293</x>
+     <y>196</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>sensorsConfigurationTableWidget</sender>
+   <signal>customContextMenuRequested(QPoint)</signal>
+   <receiver>SensorsConfigurationWizardPage</receiver>
+   <slot>onSensorsConfigurationTableContextMenu(QPoint)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>293</x>
+     <y>182</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>293</x>
+     <y>196</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionDeselect_all_sensors</sender>
+   <signal>triggered()</signal>
+   <receiver>SensorsConfigurationWizardPage</receiver>
+   <slot>onDeselectAllSensors()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>293</x>
+     <y>196</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionInverse_sensors_selection</sender>
+   <signal>triggered()</signal>
+   <receiver>SensorsConfigurationWizardPage</receiver>
+   <slot>onInversSensorsSelection()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>293</x>
+     <y>196</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionSelect_all_sensors</sender>
+   <signal>triggered()</signal>
+   <receiver>SensorsConfigurationWizardPage</receiver>
+   <slot>onSelectAllSensors()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>293</x>
+     <y>196</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionSelect_common_estimation_algorithm</sender>
+   <signal>triggered()</signal>
+   <receiver>SensorsConfigurationWizardPage</receiver>
+   <slot>onSelectCommonEstimationAlgorithm()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>293</x>
+     <y>196</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>onOneToOneMappingChanged(int)</slot>
+  <slot>onSensorConfigurationCellChange(int,int)</slot>
+  <slot>onSensorsConfigurationTableContextMenu(QPoint)</slot>
+  <slot>onSelectAllSensors()</slot>
+  <slot>onDeselectAllSensors()</slot>
+  <slot>onInversSensorsSelection()</slot>
+  <slot>onSelectCommonEstimationAlgorithm()</slot>
+ </slots>
+</ui>

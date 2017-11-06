@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="core/icons">
+        <file alias="UnitedKingdomFlag.png">../resources/embedded/nationalFlags/UnitedKingdom.png</file>
+		<file alias="PolishFlag.png">../resources/embedded/nationalFlags/Poland.png</file>
+		<file alias="GermanFlag.png">../resources/embedded/nationalFlags/Germany.png</file>        
+    </qresource>
+</RCC>

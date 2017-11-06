@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="video/icons">
+    <file alias="video.png">../resources/embedded/icons/video.png</file>
+  </qresource>
+</RCC>

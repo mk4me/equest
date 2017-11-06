@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TimelineControlActionsWidget</class>
+ <widget class="QWidget" name="TimelineControlActionsWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <action name="actionStop">
+   <property name="icon">
+    <iconset resource="newTimelineIcons.qrc">
+     <normaloff>:/newTimeline/icons/stop.png</normaloff>:/newTimeline/icons/stop.png</iconset>
+   </property>
+   <property name="text">
+    <string>Stop</string>
+   </property>
+  </action>
+  <action name="actionPlayPause">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="newTimelineIcons.qrc">
+     <normaloff>:/newTimeline/icons/play.png</normaloff>
+     <normalon>:/newTimeline/icons/pause.png</normalon>:/newTimeline/icons/play.png</iconset>
+   </property>
+   <property name="text">
+    <string>Play/Pause</string>
+   </property>
+   <property name="toolTip">
+    <string>Play/Pause</string>
+   </property>
+  </action>
+  <action name="actionToBegining">
+   <property name="icon">
+    <iconset resource="newTimelineIcons.qrc">
+     <normaloff>:/newTimeline/icons/toBegin.png</normaloff>:/newTimeline/icons/toBegin.png</iconset>
+   </property>
+   <property name="text">
+    <string>To begining</string>
+   </property>
+   <property name="toolTip">
+    <string>Jump to begining</string>
+   </property>
+  </action>
+  <action name="actionToEnd">
+   <property name="icon">
+    <iconset resource="newTimelineIcons.qrc">
+     <normaloff>:/newTimeline/icons/toEnd.png</normaloff>:/newTimeline/icons/toEnd.png</iconset>
+   </property>
+   <property name="text">
+    <string>To end</string>
+   </property>
+   <property name="toolTip">
+    <string>Jump to end</string>
+   </property>
+  </action>
+  <action name="actionStepForward">
+   <property name="icon">
+    <iconset resource="newTimelineIcons.qrc">
+     <normaloff>:/newTimeline/icons/forw.png</normaloff>:/newTimeline/icons/forw.png</iconset>
+   </property>
+   <property name="text">
+    <string>Step Forward</string>
+   </property>
+   <property name="toolTip">
+    <string>One step forward</string>
+   </property>
+  </action>
+  <action name="actionStepBackward">
+   <property name="icon">
+    <iconset resource="newTimelineIcons.qrc">
+     <normaloff>:/newTimeline/icons/rew.png</normaloff>:/newTimeline/icons/rew.png</iconset>
+   </property>
+   <property name="text">
+    <string>Step Backward</string>
+   </property>
+   <property name="toolTip">
+    <string>One step backward</string>
+   </property>
+  </action>
+  <action name="actionLoop">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="newTimelineIcons.qrc">
+     <normaloff>:/newTimeline/icons/loop.png</normaloff>:/newTimeline/icons/loop.png</iconset>
+   </property>
+   <property name="text">
+    <string>Loop</string>
+   </property>
+   <property name="toolTip">
+    <string>Loop playback</string>
+   </property>
+  </action>
+  <action name="actionForwardBackward">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="newTimelineIcons.qrc">
+     <normaloff>:/newTimeline/icons/direction.png</normaloff>
+     <normalon>:/newTimeline/icons/direction2.png</normalon>:/newTimeline/icons/direction.png</iconset>
+   </property>
+   <property name="text">
+    <string>Forward/Backward</string>
+   </property>
+   <property name="toolTip">
+    <string>Playback direction</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="newTimelineIcons.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>actionForwardBackward</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>TimelineControlActionsWidget</receiver>
+   <slot>setBackward(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>199</x>
+     <y>149</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionLoop</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>TimelineControlActionsWidget</receiver>
+   <slot>setLoop(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>199</x>
+     <y>149</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionPlayPause</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>TimelineControlActionsWidget</receiver>
+   <slot>play(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>199</x>
+     <y>149</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionStepBackward</sender>
+   <signal>triggered()</signal>
+   <receiver>TimelineControlActionsWidget</receiver>
+   <slot>stepBackward()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>199</x>
+     <y>149</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionStepForward</sender>
+   <signal>triggered()</signal>
+   <receiver>TimelineControlActionsWidget</receiver>
+   <slot>stepForward()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>199</x>
+     <y>149</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionStop</sender>
+   <signal>triggered()</signal>
+   <receiver>TimelineControlActionsWidget</receiver>
+   <slot>stop()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>199</x>
+     <y>149</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionToBegining</sender>
+   <signal>triggered()</signal>
+   <receiver>TimelineControlActionsWidget</receiver>
+   <slot>toBegin()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>199</x>
+     <y>149</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionToEnd</sender>
+   <signal>triggered()</signal>
+   <receiver>TimelineControlActionsWidget</receiver>
+   <slot>toEnd()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>199</x>
+     <y>149</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>stop()</slot>
+  <slot>toBegin()</slot>
+  <slot>toEnd()</slot>
+  <slot>stepForward()</slot>
+  <slot>stepBackward()</slot>
+  <slot>setLoop(bool)</slot>
+  <slot>setStep(QDateTime)</slot>
+  <slot>setForward(bool)</slot>
+  <slot>setCurrentTime(QDateTime)</slot>
+  <slot>play(bool)</slot>
+  <slot>setBackward(bool)</slot>
+ </slots>
+</ui>

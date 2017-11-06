@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="dicomImporter/images">
+    <file alias="DicomLogo.png">../resources/embedded/DicomLogo.png</file>
+  </qresource>
+</RCC>

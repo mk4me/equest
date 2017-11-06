@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<KinematicModel MODEL="PlugInGait" VERSION="2.3">
+
+  <Parameters>
+    <StaticParameter ADVANCED="0" HIDDEN="0" NAME="Bodymass" PRIOR="90.4499969482422" QUANTITY="mass" READONLY="0" REQUIRED="1" VALUE="90.4499969482422"/>
+    <StaticParameter ADVANCED="0" HIDDEN="0" NAME="Height" PRIOR="1750" QUANTITY="length" READONLY="0" REQUIRED="1" VALUE="1750"/>
+    <StaticParameter ADVANCED="0" HIDDEN="0" NAME="InterAsisDistance" PRIOR="275" QUANTITY="length" READONLY="0" REQUIRED="0" VALUE="275"/>
+    <StaticParameter ADVANCED="0" HIDDEN="0" NAME="LeftLegLength" PRIOR="945" QUANTITY="length" READONLY="0" REQUIRED="1" VALUE="945"/>
+    <StaticParameter ADVANCED="0" EXPRESSION="( 0.1288 * LeftLegLength ) - 48.56" HIDDEN="0" NAME="LeftAsisTrocanterDistance" QUANTITY="length" READONLY="0" REQUIRED="0" VALUE="73.1559982299805"/>
+    <StaticParameter ADVANCED="0" HIDDEN="0" NAME="LeftKneeWidth" PRIOR="110" QUANTITY="length" READONLY="0" REQUIRED="1" VALUE="110"/>
+    <StaticParameter ADVANCED="0" HIDDEN="0" NAME="LeftAnkleWidth" PRIOR="80" QUANTITY="length" READONLY="0" REQUIRED="1" VALUE="80"/>
+    <StaticParameter ADVANCED="0" HIDDEN="0" NAME="LeftTibialTorsion" PRIOR="0" QUANTITY="angle" READONLY="0" REQUIRED="0" VALUE="0"/>
+    <StaticParameter ADVANCED="0" HIDDEN="0" NAME="LeftSoleDelta" PRIOR="0" QUANTITY="length" READONLY="0" REQUIRED="0" VALUE="0"/>
+    <StaticParameter ADVANCED="1" HIDDEN="0" NAME="LeftThighRotation" PRIOR="0" QUANTITY="angle" READONLY="0" REQUIRED="0" VALUE="0"/>
+    <StaticParameter ADVANCED="1" HIDDEN="0" NAME="LeftShankRotation" PRIOR="0" QUANTITY="angle" READONLY="0" REQUIRED="0" VALUE="0"/>
+    <StaticParameter ADVANCED="1" HIDDEN="0" NAME="LeftStaticPlantFlex" PRIOR="0.341363698244095" QUANTITY="angle" READONLY="1" REQUIRED="0" VALUE="0.341363698244095"/>
+    <StaticParameter ADVANCED="1" HIDDEN="0" NAME="LeftStaticRotOff" PRIOR="-0.0427027978003025" QUANTITY="angle" READONLY="1" REQUIRED="0" VALUE="-0.0427027978003025"/>
+    <StaticParameter ADVANCED="1" HIDDEN="0" NAME="LeftAnkleAbAdd" PRIOR="0" QUANTITY="angle" READONLY="1" REQUIRED="0" VALUE="0"/>
+    <StaticParameter ADVANCED="0" HIDDEN="0" NAME="LeftShoulderOffset" PRIOR="35" QUANTITY="length" READONLY="0" REQUIRED="1" VALUE="35"/>
+    <StaticParameter ADVANCED="0" HIDDEN="0" NAME="LeftElbowWidth" PRIOR="81" QUANTITY="length" READONLY="0" REQUIRED="1" VALUE="81"/>
+    <StaticParameter ADVANCED="0" HIDDEN="0" NAME="LeftWristWidth" PRIOR="50" QUANTITY="length" READONLY="0" REQUIRED="1" VALUE="50"/>
+    <StaticParameter ADVANCED="0" HIDDEN="0" NAME="LeftHandThickness" PRIOR="36" QUANTITY="length" READONLY="0" REQUIRED="1" VALUE="36"/>
+    <StaticParameter ADVANCED="0" HIDDEN="0" NAME="RightLegLength" PRIOR="940" QUANTITY="length" READONLY="0" REQUIRED="1" VALUE="940"/>
+    <StaticParameter ADVANCED="0" EXPRESSION="( 0.1288 * RightLegLength ) - 48.56" HIDDEN="0" NAME="RightAsisTrocanterDistance" QUANTITY="length" READONLY="0" REQUIRED="0" VALUE="72.5120010375977"/>
+    <StaticParameter ADVANCED="0" HIDDEN="0" NAME="RightKneeWidth" PRIOR="110" QUANTITY="length" READONLY="0" REQUIRED="1" VALUE="110"/>
+    <StaticParameter ADVANCED="0" HIDDEN="0" NAME="RightAnkleWidth" PRIOR="80" QUANTITY="length" READONLY="0" REQUIRED="1" VALUE="80"/>
+    <StaticParameter ADVANCED="0" HIDDEN="0" NAME="RightTibialTorsion" PRIOR="0" QUANTITY="angle" READONLY="0" REQUIRED="0" VALUE="0"/>
+    <StaticParameter ADVANCED="0" HIDDEN="0" NAME="RightSoleDelta" PRIOR="0" QUANTITY="length" READONLY="0" REQUIRED="0" VALUE="0"/>
+    <StaticParameter ADVANCED="1" HIDDEN="0" NAME="RightThighRotation" PRIOR="0" QUANTITY="angle" READONLY="0" REQUIRED="0" VALUE="0"/>
+    <StaticParameter ADVANCED="1" HIDDEN="0" NAME="RightShankRotation" PRIOR="0" QUANTITY="angle" READONLY="0" REQUIRED="0" VALUE="0"/>
+    <StaticParameter ADVANCED="1" HIDDEN="0" NAME="RightStaticPlantFlex" PRIOR="0.255263119935989" QUANTITY="angle" READONLY="1" REQUIRED="0" VALUE="0.255263119935989"/>
+    <StaticParameter ADVANCED="1" HIDDEN="0" NAME="RightStaticRotOff" PRIOR="0.00658870534971356" QUANTITY="angle" READONLY="1" REQUIRED="0" VALUE="0.00658870534971356"/>
+    <StaticParameter ADVANCED="1" HIDDEN="0" NAME="RightAnkleAbAdd" PRIOR="0" QUANTITY="angle" READONLY="1" REQUIRED="0" VALUE="0"/>
+    <StaticParameter ADVANCED="0" HIDDEN="0" NAME="RightShoulderOffset" PRIOR="35" QUANTITY="length" READONLY="0" REQUIRED="1" VALUE="35"/>
+    <StaticParameter ADVANCED="0" HIDDEN="0" NAME="RightElbowWidth" PRIOR="81" QUANTITY="length" READONLY="0" REQUIRED="1" VALUE="81"/>
+    <StaticParameter ADVANCED="0" HIDDEN="0" NAME="RightWristWidth" PRIOR="47" QUANTITY="length" READONLY="0" REQUIRED="1" VALUE="47"/>
+    <StaticParameter ADVANCED="0" HIDDEN="0" NAME="RightHandThickness" PRIOR="36" QUANTITY="length" READONLY="0" REQUIRED="1" VALUE="36"/>
+    <StaticParameter ADVANCED="0" EXPRESSION="( LeftLegLength + RightLegLength ) / 2" HIDDEN="1" NAME="MeanLegLength" QUANTITY="length" READONLY="1" REQUIRED="0" VALUE="942.5"/>
+    <StaticParameter ADVANCED="0" EXPRESSION="( MeanLegLength * 0.115 ) - 15.3" HIDDEN="1" NAME="C" QUANTITY="length" READONLY="1" REQUIRED="0" VALUE="93.0875015258789"/>
+    <StaticParameter ADVANCED="0" HIDDEN="1" NAME="Theta" PRIOR="0.5" QUANTITY="angle" READONLY="1" REQUIRED="0" VALUE="0.5"/>
+    <StaticParameter ADVANCED="0" HIDDEN="1" NAME="Beta" PRIOR="0.314000010490417" QUANTITY="angle" READONLY="1" REQUIRED="0" VALUE="0.314000010490417"/>
+    <StaticParameter ADVANCED="0" EXPRESSION="( InterAsisDistance / 2 ) - ( C * sin( Theta ) )" HIDDEN="1" NAME="HJCy" QUANTITY="length" READONLY="1" REQUIRED="0" VALUE="92.8714981079102"/>
+    <StaticParameter ADVANCED="1" EXPRESSION="2 * HJCy" HIDDEN="0" NAME="PelvisLength" QUANTITY="length" READONLY="1" REQUIRED="0" VALUE="185.744003295898"/>
+    <StaticParameter ADVANCED="0" EXPRESSION="( LeftAsisTrocanterDistance * cos( Beta ) ) - ( C * cos( Theta ) * sin( Beta ) )" HIDDEN="1" NAME="LASIx" QUANTITY="length" READONLY="1" REQUIRED="0" VALUE="44.3473014831543"/>
+    <StaticParameter ADVANCED="0" EXPRESSION="( LeftAsisTrocanterDistance * sin( Beta ) ) + ( C * cos( Theta ) * cos( Beta ) )" HIDDEN="1" NAME="LASIz" QUANTITY="length" READONLY="1" REQUIRED="0" VALUE="100.292999267578"/>
+    <StaticParameter ADVANCED="0" EXPRESSION="( RightAsisTrocanterDistance * cos( Beta ) ) - ( C * cos( Theta ) * sin( Beta ) )" HIDDEN="1" NAME="RASIx" QUANTITY="length" READONLY="1" REQUIRED="0" VALUE="43.7346992492676"/>
+    <StaticParameter ADVANCED="0" EXPRESSION="( RightAsisTrocanterDistance * sin( Beta ) ) + ( C * cos( Theta ) * cos( Beta ) )" HIDDEN="1" NAME="RASIz" QUANTITY="length" READONLY="1" REQUIRED="0" VALUE="100.09400177002"/>
+    <StaticParameter ADVANCED="0" EXPRESSION="( LASIx + RASIx ) / 2" HIDDEN="1" NAME="ASISx" QUANTITY="length" READONLY="1" REQUIRED="0" VALUE="44.0410003662109"/>
+    <StaticParameter ADVANCED="0" EXPRESSION="( LASIz + RASIz ) / 2" HIDDEN="1" NAME="ASISz" QUANTITY="length" READONLY="1" REQUIRED="0" VALUE="100.194000244141"/>
+    <StaticParameter ADVANCED="0" EXPRESSION="LeftKneeWidth / 2" HIDDEN="1" NAME="LKNEy" QUANTITY="length" READONLY="1" REQUIRED="0" VALUE="55"/>
+    <StaticParameter ADVANCED="0" EXPRESSION="LeftAnkleWidth / 2" HIDDEN="1" NAME="LANKy" QUANTITY="length" READONLY="1" REQUIRED="0" VALUE="40"/>
+    <StaticParameter ADVANCED="0" EXPRESSION="-RightKneeWidth / 2" HIDDEN="1" NAME="RKNEy" QUANTITY="length" READONLY="1" REQUIRED="0" VALUE="-55"/>
+    <StaticParameter ADVANCED="0" EXPRESSION="-RightAnkleWidth / 2" HIDDEN="1" NAME="RANKy" QUANTITY="length" READONLY="1" REQUIRED="0" VALUE="-40"/>
+    <StaticParameter ADVANCED="0" EXPRESSION="LeftElbowWidth/2" HIDDEN="1" NAME="LELBy" QUANTITY="length" READONLY="1" REQUIRED="0" VALUE="40.5"/>
+    <StaticParameter ADVANCED="0" EXPRESSION="LeftWristWidth/2" HIDDEN="1" NAME="LWRy" QUANTITY="length" READONLY="1" REQUIRED="0" VALUE="25"/>
+    <StaticParameter ADVANCED="0" EXPRESSION="LeftHandThickness/2" HIDDEN="1" NAME="LFINy" QUANTITY="length" READONLY="1" REQUIRED="0" VALUE="18"/>
+    <StaticParameter ADVANCED="0" EXPRESSION="-RightElbowWidth/2" HIDDEN="1" NAME="RELBy" QUANTITY="length" READONLY="1" REQUIRED="0" VALUE="-40.5"/>
+    <StaticParameter ADVANCED="0" EXPRESSION="-RightWristWidth/2" HIDDEN="1" NAME="RWRy" QUANTITY="length" READONLY="1" REQUIRED="0" VALUE="-23.5"/>
+    <StaticParameter ADVANCED="0" EXPRESSION="-RightHandThickness/2" HIDDEN="1" NAME="RFINy" QUANTITY="length" READONLY="1" REQUIRED="0" VALUE="-18"/>
+    <StaticParameter ADVANCED="0" HIDDEN="0" NAME="HeadOffset" PRIOR="0.0130603509023786" QUANTITY="angle" READONLY="0" REQUIRED="0" VALUE="0.0130603509023786"/>
+    <Parameter HIDDEN="1" NAME="HEADy" PRIOR="100" SD="0" VALUE="70.8128356933594"/>
+    <Parameter HIDDEN="1" NAME="LBHDx" PRIOR="-200" SD="0" VALUE="-127.34903717041"/>
+    <Parameter HIDDEN="1" NAME="BHDy" PRIOR="100" SD="0" VALUE="80.9976425170898"/>
+    <Parameter HIDDEN="1" NAME="RBHDx" PRIOR="-200" SD="0" VALUE="-122.506782531738"/>
+    <Parameter HIDDEN="1" NAME="HeadOx" PRIOR="0" SD="0" VALUE="-145.278289794922"/>
+    <Parameter HIDDEN="1" NAME="HeadOy" PRIOR="0" SD="0" VALUE="-21.7724781036377"/>
+    <Parameter HIDDEN="1" NAME="HeadOz" PRIOR="700" SD="0" VALUE="742.894104003906"/>
+    <Parameter HIDDEN="1" NAME="C7x" PRIOR="-150" SD="0" VALUE="-212.211837768555"/>
+    <Parameter HIDDEN="1" NAME="C7z" PRIOR="100" SD="0" VALUE="92.7901306152344"/>
+    <Parameter HIDDEN="1" NAME="T10x" PRIOR="-200" SD="0" VALUE="-260.484985351563"/>
+    <Parameter HIDDEN="1" NAME="T10y" PRIOR="0" SD="0" VALUE="-7.54354000091553"/>
+    <Parameter HIDDEN="1" NAME="T10z" PRIOR="-100" SD="0" VALUE="-179.54573059082"/>
+    <Parameter HIDDEN="1" NAME="STRNz" PRIOR="-150" SD="0" VALUE="-165.10285949707"/>
+    <Parameter HIDDEN="1" NAME="RBAKx" PRIOR="-200" SD="0" VALUE="-249.2373046875"/>
+    <Parameter HIDDEN="1" NAME="RBAKy" PRIOR="-100" SD="0" VALUE="-129.980667114258"/>
+    <Parameter HIDDEN="1" NAME="RBAKz" PRIOR="0" SD="0" VALUE="-12.7131462097168"/>
+    <Parameter HIDDEN="1" NAME="ThorOx" PRIOR="0" SD="0" VALUE="-43.7043190002441"/>
+    <Parameter HIDDEN="1" NAME="ThorOy" PRIOR="0" SD="0" VALUE="-11.1364765167236"/>
+    <Parameter HIDDEN="1" NAME="ThorOz" PRIOR="500" SD="0" VALUE="525.625366210938"/>
+    <Parameter HIDDEN="1" NAME="LeftClavicleLength" PRIOR="150" SD="0" VALUE="244.907989501953"/>
+    <Parameter HIDDEN="1" NAME="LeftHumerusLength" PRIOR="250" SD="0" VALUE="331.1455078125"/>
+    <Parameter HIDDEN="1" NAME="LeftRadiusLength" PRIOR="200" SD="0" VALUE="241.755584716797"/>
+    <Parameter HIDDEN="1" NAME="LeftHandLength" PRIOR="100" SD="0" VALUE="80.300048828125"/>
+    <Parameter HIDDEN="1" NAME="LWRx" PRIOR="80" SD="0" VALUE="43.4638938903809"/>
+    <Parameter HIDDEN="1" NAME="LUPAx" PRIOR="0" SD="0" VALUE="-16.1639347076416"/>
+    <Parameter HIDDEN="1" NAME="LUPAy" PRIOR="50" SD="0" VALUE="43.5190124511719"/>
+    <Parameter HIDDEN="1" NAME="LUPAz" PRIOR="-150" SD="0" VALUE="-158.92301940918"/>
+    <Parameter HIDDEN="1" NAME="LFRMx" PRIOR="0" SD="0" VALUE="-50.4450492858887"/>
+    <Parameter HIDDEN="1" NAME="LFRMy" PRIOR="50" SD="0" VALUE="31.5285358428955"/>
+    <Parameter HIDDEN="1" NAME="LFRMz" PRIOR="-150" SD="0" VALUE="-114.288330078125"/>
+    <Parameter HIDDEN="1" NAME="RightClavicleLength" PRIOR="150" SD="0" VALUE="252.364288330078"/>
+    <Parameter HIDDEN="1" NAME="RightHumerusLength" PRIOR="250" SD="0" VALUE="319.100341796875"/>
+    <Parameter HIDDEN="1" NAME="RightRadiusLength" PRIOR="200" SD="0" VALUE="230.347930908203"/>
+    <Parameter HIDDEN="1" NAME="RightHandLength" PRIOR="100" SD="0" VALUE="92.8216781616211"/>
+    <Parameter HIDDEN="1" NAME="RWRx" PRIOR="80" SD="0" VALUE="42.1498222351074"/>
+    <Parameter HIDDEN="1" NAME="RUPAx" PRIOR="0" SD="0" VALUE="-33.5405120849609"/>
+    <Parameter HIDDEN="1" NAME="RUPAy" PRIOR="-50" SD="0" VALUE="-40.2222137451172"/>
+    <Parameter HIDDEN="1" NAME="RUPAz" PRIOR="-150" SD="0" VALUE="-203.405151367188"/>
+    <Parameter HIDDEN="1" NAME="RFRMx" PRIOR="0" SD="0" VALUE="-48.813232421875"/>
+    <Parameter HIDDEN="1" NAME="RFRMy" PRIOR="-50" SD="0" VALUE="-30.0843257904053"/>
+    <Parameter HIDDEN="1" NAME="RFRMz" PRIOR="-150" SD="0" VALUE="-125.047096252441"/>
+    <Parameter HIDDEN="1" NAME="ASISy" PRIOR="100" SD="0" VALUE="146.007965087891"/>
+    <Parameter HIDDEN="1" NAME="LPSIx" PRIOR="-150" SD="0" VALUE="-146.512268066406"/>
+    <Parameter HIDDEN="1" NAME="LPSIy" PRIOR="50" SD="0" VALUE="33.9672393798828"/>
+    <Parameter HIDDEN="1" NAME="RPSIx" PRIOR="-150" SD="0" VALUE="-148.978118896484"/>
+    <Parameter HIDDEN="1" NAME="RPSIy" PRIOR="-50" SD="0" VALUE="-49.9950866699219"/>
+    <Parameter HIDDEN="1" NAME="LeftFemurLength" PRIOR="403.338012695313" SD="0" VALUE="403.338012695313"/>
+    <Parameter HIDDEN="1" NAME="LeftTibiaLength" PRIOR="397.057006835938" SD="0" VALUE="397.057006835938"/>
+    <Parameter HIDDEN="1" NAME="LeftFootLength" PRIOR="182.858001708984" SD="0" VALUE="182.858001708984"/>
+    <Parameter HIDDEN="1" NAME="LTHIy" PRIOR="100" SD="0" VALUE="88.7367095947266"/>
+    <Parameter HIDDEN="1" NAME="LTHIz" PRIOR="-200" SD="0" VALUE="-202.852661132813"/>
+    <Parameter HIDDEN="1" NAME="LTIBy" PRIOR="50" SD="0" VALUE="68.7766952514648"/>
+    <Parameter HIDDEN="1" NAME="LTIBz" PRIOR="-200" SD="0" VALUE="-185.054489135742"/>
+    <Parameter HIDDEN="1" NAME="LFOOy" PRIOR="-20" SD="0" VALUE="-4.43695640563965"/>
+    <Parameter HIDDEN="1" NAME="LFOOz" PRIOR="-30" SD="0" VALUE="-28.7211475372314"/>
+    <Parameter HIDDEN="1" NAME="LHEEx" PRIOR="-30" SD="0" VALUE="-53.4109344482422"/>
+    <Parameter HIDDEN="1" NAME="LTOEx" PRIOR="130" SD="0" VALUE="139.459609985352"/>
+    <Parameter HIDDEN="1" NAME="RightFemurLength" PRIOR="408.93701171875" SD="0" VALUE="408.93701171875"/>
+    <Parameter HIDDEN="1" NAME="RightTibiaLength" PRIOR="394.138000488281" SD="0" VALUE="394.138000488281"/>
+    <Parameter HIDDEN="1" NAME="RightFootLength" PRIOR="180.231002807617" SD="0" VALUE="180.231002807617"/>
+    <Parameter HIDDEN="1" NAME="RTHIy" PRIOR="-100" SD="0" VALUE="-84.6192474365234"/>
+    <Parameter HIDDEN="1" NAME="RTHIz" PRIOR="-200" SD="0" VALUE="-224.090469360352"/>
+    <Parameter HIDDEN="1" NAME="RTIBy" PRIOR="-50" SD="0" VALUE="-75.7402038574219"/>
+    <Parameter HIDDEN="1" NAME="RTIBz" PRIOR="-200" SD="0" VALUE="-154.420166015625"/>
+    <Parameter HIDDEN="1" NAME="RFOOy" PRIOR="20" SD="0" VALUE="0.263259142637253"/>
+    <Parameter HIDDEN="1" NAME="RFOOz" PRIOR="-30" SD="0" VALUE="-18.215259552002"/>
+    <Parameter HIDDEN="1" NAME="RHEEx" PRIOR="-30" SD="0" VALUE="-46.8203659057617"/>
+    <Parameter HIDDEN="1" NAME="RTOEx" PRIOR="130" SD="0" VALUE="142.18098449707"/>
+  </Parameters>
+
+  <Skeleton>
+    <Segment BOUNDS="LPSIx -ASISy 0 ASISx ASISy ASISz" CONTEXT="General" INERTIA="0 0 0 " MASS="0 " MASS-CENTRE="0 0 0 " NAME="Pelvis" RGB="192 192 192">
+      <JointFree BOUNDS="0 0 0 0 0 0 0 0 0 0 0 0" COVARIANCE="2.46490001678467 0 0 0 0 0  0 2.46490001678467 0 0 0 0  0 0 246.490005493164 0 0 0  0 0 0 1000000 0 0  0 0 0 0 1000000 0  0 0 0 0 0 1000000  " MEAN="0 0 0 0 0 0" NAME="World_Pelvis" POST-ORIENTATION="0 0 0" POST-POSITION="0 0 0" PRE-ORIENTATION="0 0 0" PRE-POSITION="0 0 0" SIGNS="+ + + + + + " T="* * * * * * ">
+        <JointTemplate COVARIANCE="2.46490001678467 0 0 0 0 0  0 2.46490001678467 0 0 0 0  0 0 246.490005493164 0 0 0  0 0 0 1000000 0 0  0 0 0 0 1000000 0  0 0 0 0 0 1000000  " MEAN="0 0 0 0 0 0" POST-ORIENTATION="0 0 0 " POST-POSITION="0 0 0 " PRE-ORIENTATION="0 0 0 " PRE-POSITION="0 0 0 " TPOSE-COVARIANCE="0 0 0 0 0 0  0 0 0 0 0 0  0 0 0 0 0 0  0 0 0 0 0 0  0 0 0 0 0 0  0 0 0 0 0 0  " TPOSE-MEAN="0 0 0 0 0 0"/>
+      </JointFree>
+      <Segment BOUNDS="LBHDx -HEADy -30 0 HEADy 0" CONTEXT="General" INERTIA="0 0 0 " MASS="0 " MASS-CENTRE="0 0 0 " NAME="Head" RGB="192 192 192">
+        <JointFree BOUNDS="0 0 0 0 0 0 0 0 0 0 0 0" COVARIANCE="2.46490001678467 0 0 0 0 0  0 2.46490001678467 0 0 0 0  0 0 246.490005493164 0 0 0  0 0 0 1000000 0 0  0 0 0 0 1000000 0  0 0 0 0 0 1000000  " MEAN="0 0 0 0 0 0" NAME="Pelvis_Head" POST-ORIENTATION="0 0 0" POST-POSITION="0 0 0" PRE-ORIENTATION="0 0 0" PRE-POSITION="-145.278289794922 -21.7724781036377 742.894104003906" SIGNS="+ + + + + + " T="* * * * * * ">
+          <JointTemplate COVARIANCE="2.46490001678467 0 0 0 0 0  0 2.46490001678467 0 0 0 0  0 0 246.490005493164 0 0 0  0 0 0 1000000 0 0  0 0 0 0 1000000 0  0 0 0 0 0 1000000  " MEAN="0 0 0 0 0 0" POST-ORIENTATION="0 0 0 " POST-POSITION="0 0 0 " PRE-ORIENTATION="0 0 0 " PRE-POSITION="HeadOx HeadOy HeadOz" TPOSE-COVARIANCE="0 0 0 0 0 0  0 0 0 0 0 0  0 0 0 0 0 0  0 0 0 0 0 0  0 0 0 0 0 0  0 0 0 0 0 0  " TPOSE-MEAN="0 0 0 0 0 0"/>
+        </JointFree>
+      </Segment>
+      <Segment BOUNDS="T10x -50 T10z 0 50 C7z" CONTEXT="General" INERTIA="0 0 0 " MASS="0 " MASS-CENTRE="0 0 0 " NAME="Thorax" RGB="192 192 192">
+        <JointFree BOUNDS="0 0 0 0 0 0 0 0 0 0 0 0" COVARIANCE="2.46490001678467 0 0 0 0 0  0 2.46490001678467 0 0 0 0  0 0 246.490005493164 0 0 0  0 0 0 1000000 0 0  0 0 0 0 1000000 0  0 0 0 0 0 1000000  " MEAN="0 0 0 0 0 0" NAME="Pelvis_Thorax" POST-ORIENTATION="0 0 0" POST-POSITION="0 0 0" PRE-ORIENTATION="0 0 0" PRE-POSITION="-43.7043190002441 -11.1364765167236 525.625366210938" SIGNS="+ + + + + + " T="* * * * * * ">
+          <JointTemplate COVARIANCE="2.46490001678467 0 0 0 0 0  0 2.46490001678467 0 0 0 0  0 0 246.490005493164 0 0 0  0 0 0 1000000 0 0  0 0 0 0 1000000 0  0 0 0 0 0 1000000  " MEAN="0 0 0 0 0 0" POST-ORIENTATION="0 0 0 " POST-POSITION="0 0 0 " PRE-ORIENTATION="0 0 0 " PRE-POSITION="ThorOx ThorOy ThorOz" TPOSE-COVARIANCE="0 0 0 0 0 0  0 0 0 0 0 0  0 0 0 0 0 0  0 0 0 0 0 0  0 0 0 0 0 0  0 0 0 0 0 0  " TPOSE-MEAN="0 0 0 0 0 0"/>
+        </JointFree>
+        <Segment BOUNDS="-30 0 -30 30 LeftClavicleLength 30" CONTEXT="Left" INERTIA="0 0 0 " MASS="0 " MASS-CENTRE="0 0 0 " NAME="LeftClavicle" RGB="255 0 0">
+          <JointBall BOUNDS="0 0 0 0 0 0" COVARIANCE="0.785000026226044 0 0  0 0.785000026226044 0  0 0 0.785000026226044  " MEAN="0 0 0" NAME="Thorax_LeftClavicle" POST-ORIENTATION="0 0 0" POST-POSITION="0 0 0" PRE-ORIENTATION="0 0 0" PRE-POSITION="0 0 0" SIGNS="+ + + " T="0 0 * ">
+            <JointTemplate COVARIANCE="0.785000026226044 0 0  0 0.785000026226044 0  0 0 0.785000026226044  " MEAN="0 0 0" POST-ORIENTATION="0 0 0 " POST-POSITION="0 0 0 " PRE-ORIENTATION="0 0 0 " PRE-POSITION="0 0 0" TPOSE-COVARIANCE="0 0 0  0 0 0  0 0 0  " TPOSE-MEAN="0 0 0"/>
+          </JointBall>
+          <Segment BOUNDS="-30 -30 -LeftHumerusLength 30 30 0" CONTEXT="Left" INERTIA="0 0 0 " MASS="0 " MASS-CENTRE="0 0 0 " NAME="LeftHumerus" RGB="255 0 0">
+            <JointHardySpicer AXIS-PAIR="0 0 1 1 0 0" BOUNDS="0 0 0 0" COVARIANCE="1.04666662216187 0  0 1.04666662216187  " MEAN="0 0" NAME="LeftClavicle_LeftHumerus" POST-ORIENTATION="0 0 0" POST-POSITION="0 0 0" PRE-ORIENTATION="0 0 0" PRE-POSITION="0 244.907989501953 0" SIGNS="+ + " T="* * ">
+              <JointTemplate COVARIANCE="1.04666662216187 0  0 1.04666662216187  " MEAN="0 0" POST-ORIENTATION="0 0 0 " POST-POSITION="0 0 0 " PRE-ORIENTATION="0 0 0 " PRE-POSITION="0 LeftClavicleLength 0" TPOSE-COVARIANCE="0 0  0 0  " TPOSE-MEAN="0 0"/>
+            </JointHardySpicer>
+            <Segment BOUNDS="-30 -30 -LeftRadiusLength 30 30 0" CONTEXT="Left" INERTIA="0 0 0 " MASS="0 " MASS-CENTRE="0 0 0 " NAME="LeftRadius" RGB="255 0 0">
+              <JointHardySpicer AXIS-PAIR="0 1 0 0 0 1" BOUNDS="0 0 0 0" COVARIANCE="1.04666662216187 0  0 1.04666662216187  " MEAN="0 0" NAME="LeftHumerus_LeftRadius" POST-ORIENTATION="0 0 0" POST-POSITION="0 0 0" PRE-ORIENTATION="0 0 0" PRE-POSITION="0 0 -331.1455078125" SIGNS="+ + " T="* * ">
+                <JointTemplate COVARIANCE="1.04666662216187 0  0 1.04666662216187  " MEAN="0 0" POST-ORIENTATION="0 0 0 " POST-POSITION="0 0 0 " PRE-ORIENTATION="0 0 0 " PRE-POSITION="0 0 -LeftHumerusLength" TPOSE-COVARIANCE="0 0  0 0  " TPOSE-MEAN="0 0"/>
+              </JointHardySpicer>
+              <Segment BOUNDS="-20 -20 -LeftHandLength 20 20 0" CONTEXT="Left" INERTIA="0 0 0 " MASS="0 " MASS-CENTRE="0 0 0 " NAME="LeftHand" RGB="255 0 0">
+                <JointBall BOUNDS="0 0 0 0 0 0" COVARIANCE="0.785000026226044 0 0  0 0.785000026226044 0  0 0 0.785000026226044  " MEAN="0 0 0" NAME="LeftRadius_LeftHand" POST-ORIENTATION="0 0 0" POST-POSITION="0 0 0" PRE-ORIENTATION="0 0 0" PRE-POSITION="0 0 -241.755584716797" SIGNS="+ + + " T="* * * ">
+                  <JointTemplate COVARIANCE="0.785000026226044 0 0  0 0.785000026226044 0  0 0 0.785000026226044  " MEAN="0 0 0" POST-ORIENTATION="0 0 0 " POST-POSITION="0 0 0 " PRE-ORIENTATION="0 0 0 " PRE-POSITION="0 0 -LeftRadiusLength" TPOSE-COVARIANCE="0 0 0  0 0 0  0 0 0  " TPOSE-MEAN="0 0 0"/>
+                </JointBall>
+              </Segment>
+            </Segment>
+          </Segment>
+        </Segment>
+        <Segment BOUNDS="-30 -RightClavicleLength -30 30 0 30" CONTEXT="Right" INERTIA="0 0 0 " MASS="0 " MASS-CENTRE="0 0 0 " NAME="RightClavicle" RGB="0 255 0">
+          <JointBall BOUNDS="0 0 0 0 0 0" COVARIANCE="0.785000026226044 0 0  0 0.785000026226044 0  0 0 0.785000026226044  " MEAN="0 0 0" NAME="Thorax_RightClavicle" POST-ORIENTATION="0 0 0" POST-POSITION="0 0 0" PRE-ORIENTATION="0 0 0" PRE-POSITION="0 0 0" SIGNS="+ + + " T="0 0 * ">
+            <JointTemplate COVARIANCE="0.785000026226044 0 0  0 0.785000026226044 0  0 0 0.785000026226044  " MEAN="0 0 0" POST-ORIENTATION="0 0 0 " POST-POSITION="0 0 0 " PRE-ORIENTATION="0 0 0 " PRE-POSITION="0 0 0" TPOSE-COVARIANCE="0 0 0  0 0 0  0 0 0  " TPOSE-MEAN="0 0 0"/>
+          </JointBall>
+          <Segment BOUNDS="-30 -30 -RightHumerusLength 30 30 0" CONTEXT="Right" INERTIA="0 0 0 " MASS="0 " MASS-CENTRE="0 0 0 " NAME="RightHumerus" RGB="0 255 0">
+            <JointHardySpicer AXIS-PAIR="0 0 1 1 0 0" BOUNDS="0 0 0 0" COVARIANCE="1.04666662216187 0  0 1.04666662216187  " MEAN="0 0" NAME="RightClavicle_RightHumerus" POST-ORIENTATION="0 0 0" POST-POSITION="0 0 0" PRE-ORIENTATION="0 0 0" PRE-POSITION="0 -252.364288330078 0" SIGNS="+ + " T="* * ">
+              <JointTemplate COVARIANCE="1.04666662216187 0  0 1.04666662216187  " MEAN="0 0" POST-ORIENTATION="0 0 0 " POST-POSITION="0 0 0 " PRE-ORIENTATION="0 0 0 " PRE-POSITION="0 -RightClavicleLength 0" TPOSE-COVARIANCE="0 0  0 0  " TPOSE-MEAN="0 0"/>
+            </JointHardySpicer>
+            <Segment BOUNDS="-30 -30 -RightRadiusLength 30 30 0" CONTEXT="Right" INERTIA="0 0 0 " MASS="0 " MASS-CENTRE="0 0 0 " NAME="RightRadius" RGB="0 255 0">
+              <JointHardySpicer AXIS-PAIR="0 1 0 0 0 1" BOUNDS="0 0 0 0" COVARIANCE="1.04666662216187 0  0 1.04666662216187  " MEAN="0 0" NAME="RightHumerus_RightRadius" POST-ORIENTATION="0 0 0" POST-POSITION="0 0 0" PRE-ORIENTATION="0 0 0" PRE-POSITION="0 0 -319.100341796875" SIGNS="+ + " T="* * ">
+                <JointTemplate COVARIANCE="1.04666662216187 0  0 1.04666662216187  " MEAN="0 0" POST-ORIENTATION="0 0 0 " POST-POSITION="0 0 0 " PRE-ORIENTATION="0 0 0 " PRE-POSITION="0 0 -RightHumerusLength" TPOSE-COVARIANCE="0 0  0 0  " TPOSE-MEAN="0 0"/>
+              </JointHardySpicer>
+              <Segment BOUNDS="-20 -20 -RightHandLength 20 20 0" CONTEXT="Right" INERTIA="0 0 0 " MASS="0 " MASS-CENTRE="0 0 0 " NAME="RightHand" RGB="0 255 0">
+                <JointBall BOUNDS="0 0 0 0 0 0" COVARIANCE="0.785000026226044 0 0  0 0.785000026226044 0  0 0 0.785000026226044  " MEAN="0 0 0" NAME="RightRadius_RightHand" POST-ORIENTATION="0 0 0" POST-POSITION="0 0 0" PRE-ORIENTATION="0 0 0" PRE-POSITION="0 0 -230.347930908203" SIGNS="+ + + " T="* * * ">
+                  <JointTemplate COVARIANCE="0.785000026226044 0 0  0 0.785000026226044 0  0 0 0.785000026226044  " MEAN="0 0 0" POST-ORIENTATION="0 0 0 " POST-POSITION="0 0 0 " PRE-ORIENTATION="0 0 0 " PRE-POSITION="0 0 -RightRadiusLength" TPOSE-COVARIANCE="0 0 0  0 0 0  0 0 0  " TPOSE-MEAN="0 0 0"/>
+                </JointBall>
+              </Segment>
+            </Segment>
+          </Segment>
+        </Segment>
+      </Segment>
+      <Segment BOUNDS="-50 -50 -LeftFemurLength 50 50 0" CONTEXT="Left" INERTIA="0 0 0 " MASS="0 " MASS-CENTRE="0 0 0 " NAME="LeftFemur" RGB="255 0 0">
+        <JointBall BOUNDS="0 0 0 0 0 0" COVARIANCE="0.785000026226044 0 0  0 0.785000026226044 0  0 0 0.785000026226044  " MEAN="0 0 0" NAME="Pelvis_LeftFemur" POST-ORIENTATION="0 0 0" POST-POSITION="0 0 0" PRE-ORIENTATION="0 0 0" PRE-POSITION="0 92.8714752197266 0" SIGNS="+ + + " T="* * * ">
+          <JointTemplate COVARIANCE="0.785000026226044 0 0  0 0.785000026226044 0  0 0 0.785000026226044  " MEAN="0 0 0" POST-ORIENTATION="0 0 0 " POST-POSITION="0 0 0 " PRE-ORIENTATION="0 0 0 " PRE-POSITION="0 HJCy 0" TPOSE-COVARIANCE="0 0 0  0 0 0  0 0 0  " TPOSE-MEAN="0 0 0"/>
+        </JointBall>
+        <Segment BOUNDS="-40 -40 -LeftTibiaLength/2 40 40 0" CONTEXT="Left" INERTIA="0 0 0 " MASS="0 " MASS-CENTRE="0 0 0 " NAME="LeftTibia" RGB="255 0 0">
+          <JointBall BOUNDS="0 0 0 0 0 0" COVARIANCE="0.785000026226044 0 0  0 0.785000026226044 0  0 0 0.785000026226044  " MEAN="0 0 0" NAME="LeftFemur_LeftTibia" POST-ORIENTATION="0 0 0" POST-POSITION="0 0 0" PRE-ORIENTATION="0 0 0" PRE-POSITION="0 0 -399.859802246094" SIGNS="+ + + " T="* * * ">
+            <JointTemplate COVARIANCE="0.785000026226044 0 0  0 0.785000026226044 0  0 0 0.785000026226044  " MEAN="0 0 0" POST-ORIENTATION="0 0 LeftShankRotation" POST-POSITION="0 0 0 " PRE-ORIENTATION="0 0 LeftThighRotation" PRE-POSITION="0 0 -LeftFemurLength" TPOSE-COVARIANCE="0 0 0  0 0 0  0 0 0  " TPOSE-MEAN="0 0 0"/>
+          </JointBall>
+          <Segment BOUNDS="-35 -35 0 35 35 LeftTibiaLength/2" CONTEXT="Left" INERTIA="0 0 0 " MASS="0 " MASS-CENTRE="0 0 0 " NAME="LeftTibialTorsioned" RGB="255 0 0">
+            <JointDummy NAME="LeftTibia_LeftTibialTorsioned" POST-ORIENTATION="0 0 0" POST-POSITION="0 0 0" PRE-ORIENTATION="0 0 0" PRE-POSITION="0 0 -409.285614013672">
+              <JointTemplate POST-ORIENTATION="0 0 0 " POST-POSITION="0 0 0 " PRE-ORIENTATION="0 0 -LeftTibialTorsion" PRE-POSITION="0 0 -LeftTibiaLength"/>
+            </JointDummy>
+            <Segment BOUNDS="LHEEx -40 LFOOz LTOEx 40 0" CONTEXT="Left" INERTIA="0 0 0 " MASS="0 " MASS-CENTRE="0 0 0 " NAME="LeftFoot" RGB="255 0 0">
+              <JointBall BOUNDS="0 0 0 0 0 0" COVARIANCE="0.785000026226044 0 0  0 0.785000026226044 0  0 0 0.785000026226044  " MEAN="0 0 0" NAME="LeftTibialTorsioned_LeftFoot" POST-ORIENTATION="0 0 0" POST-POSITION="0 0 0" PRE-ORIENTATION="0 0 0" PRE-POSITION="0 0 0" SIGNS="+ + + " T="0 * * ">
+                <JointTemplate COVARIANCE="0.785000026226044 0 0  0 0.785000026226044 0  0 0 0.785000026226044  " MEAN="0 0 0" POST-ORIENTATION="0 0 0 " POST-POSITION="0 0 0 " PRE-ORIENTATION="0 0 0 " PRE-POSITION="0 0 0 " TPOSE-COVARIANCE="0 0 0  0 0 0  0 0 0  " TPOSE-MEAN="0 0 0"/>
+              </JointBall>
+            </Segment>
+          </Segment>
+        </Segment>
+      </Segment>
+      <Segment BOUNDS="-50 -50 -RightFemurLength 50 50 0" CONTEXT="Right" INERTIA="0 0 0 " MASS="0 " MASS-CENTRE="0 0 0 " NAME="RightFemur" RGB="0 255 0">
+        <JointBall BOUNDS="0 0 0 0 0 0" COVARIANCE="0.785000026226044 0 0  0 0.785000026226044 0  0 0 0.785000026226044  " MEAN="0 0 0" NAME="Pelvis_RightFemur" POST-ORIENTATION="0 0 0" POST-POSITION="0 0 0" PRE-ORIENTATION="0 0 0" PRE-POSITION="0 -92.8714752197266 0" SIGNS="+ + + " T="* * * ">
+          <JointTemplate COVARIANCE="0.785000026226044 0 0  0 0.785000026226044 0  0 0 0.785000026226044  " MEAN="0 0 0" POST-ORIENTATION="0 0 0 " POST-POSITION="0 0 0 " PRE-ORIENTATION="0 0 0 " PRE-POSITION="0 -HJCy 0" TPOSE-COVARIANCE="0 0 0  0 0 0  0 0 0  " TPOSE-MEAN="0 0 0"/>
+        </JointBall>
+        <Segment BOUNDS="-40 -40 -RightTibiaLength/2 40 40 0" CONTEXT="Right" INERTIA="0 0 0 " MASS="0 " MASS-CENTRE="0 0 0 " NAME="RightTibia" RGB="0 255 0">
+          <JointBall BOUNDS="0 0 0 0 0 0" COVARIANCE="0.785000026226044 0 0  0 0.785000026226044 0  0 0 0.785000026226044  " MEAN="0 0 0" NAME="RightFemur_RightTibia" POST-ORIENTATION="0 0 0" POST-POSITION="0 0 0" PRE-ORIENTATION="0 0 0" PRE-POSITION="0 0 -406.690277099609" SIGNS="+ + + " T="* * * ">
+            <JointTemplate COVARIANCE="0.785000026226044 0 0  0 0.785000026226044 0  0 0 0.785000026226044  " MEAN="0 0 0" POST-ORIENTATION="0 0 RightShankRotation" POST-POSITION="0 0 0 " PRE-ORIENTATION="0 0 RightThighRotation" PRE-POSITION="0 0 -RightFemurLength" TPOSE-COVARIANCE="0 0 0  0 0 0  0 0 0  " TPOSE-MEAN="0 0 0"/>
+          </JointBall>
+          <Segment BOUNDS="-35 -35 0 35 35 RightTibiaLength/2" CONTEXT="Right" INERTIA="0 0 0 " MASS="0 " MASS-CENTRE="0 0 0 " NAME="RightTibialTorsioned" RGB="0 255 0">
+            <JointDummy NAME="RightTibia_RightTibialTorsioned" POST-ORIENTATION="0 0 0" POST-POSITION="0 0 0" PRE-ORIENTATION="0 0 0" PRE-POSITION="0 0 -404.178344726563">
+              <JointTemplate POST-ORIENTATION="0 0 0 " POST-POSITION="0 0 0 " PRE-ORIENTATION="0 0 RightTibialTorsion" PRE-POSITION="0 0 -RightTibiaLength"/>
+            </JointDummy>
+            <Segment BOUNDS="RHEEx -40 RFOOz RTOEx 40 0" CONTEXT="Right" INERTIA="0 0 0 " MASS="0 " MASS-CENTRE="0 0 0 " NAME="RightFoot" RGB="0 255 0">
+              <JointBall BOUNDS="0 0 0 0 0 0" COVARIANCE="0.785000026226044 0 0  0 0.785000026226044 0  0 0 0.785000026226044  " MEAN="0 0 0" NAME="RightTibialTorsioned_RightFoot" POST-ORIENTATION="0 0 0" POST-POSITION="0 0 0" PRE-ORIENTATION="0 0 0" PRE-POSITION="0 0 0" SIGNS="+ + + " T="0 * * ">
+                <JointTemplate COVARIANCE="0.785000026226044 0 0  0 0.785000026226044 0  0 0 0.785000026226044  " MEAN="0 0 0" POST-ORIENTATION="0 0 0 " POST-POSITION="0 0 0 " PRE-ORIENTATION="0 0 0 " PRE-POSITION="0 0 0 " TPOSE-COVARIANCE="0 0 0  0 0 0  0 0 0  " TPOSE-MEAN="0 0 0"/>
+              </JointBall>
+            </Segment>
+          </Segment>
+        </Segment>
+      </Segment>
+    </Segment>
+  </Skeleton>
+
+  <MarkerSet>
+    <Markers>
+      <Marker COVARIANCE="10 0 0 0 10 0 0 0 10 " NAME="LFHD" POSITION="0 70.8128 0" RADIUS="12.5" RGB="0 0 255" SEGMENT="Head" STATUS="required">
+        <MarkerTemplate COVARIANCE="10 0 0 0 10 0 0 0 10 " PLACEMENT-COVARIANCE="1 0 0 0 1 0 0 0 1 " POSITION="0 HEADy 0"/>
+      </Marker>
+      <Marker COVARIANCE="10 0 0 0 10 0 0 0 10 " NAME="RFHD" POSITION="0 -70.8128 0" RADIUS="12.5" RGB="0 0 255" SEGMENT="Head" STATUS="required">
+        <MarkerTemplate COVARIANCE="10 0 0 0 10 0 0 0 10 " PLACEMENT-COVARIANCE="1 0 0 0 1 0 0 0 1 " POSITION="0 -HEADy 0"/>
+      </Marker>
+      <Marker COVARIANCE="10 0 0 0 10 0 0 0 10 " NAME="LBHD" POSITION="-127.349 80.9976 0" RADIUS="12.5" RGB="0 0 255" SEGMENT="Head" STATUS="required">
+        <MarkerTemplate COVARIANCE="10 0 0 0 10 0 0 0 10 " PLACEMENT-COVARIANCE="1 0 0 0 1 0 0 0 1 " POSITION="LBHDx BHDy 0"/>
+      </Marker>
+      <Marker COVARIANCE="10 0 0 0 10 0 0 0 10 " NAME="RBHD" POSITION="-122.507 -80.9976 0" RADIUS="12.5" RGB="0 0 255" SEGMENT="Head" STATUS="required">
+        <MarkerTemplate COVARIANCE="10 0 0 0 10 0 0 0 10 " PLACEMENT-COVARIANCE="1 0 0 0 1 0 0 0 1 " POSITION="RBHDx -BHDy 0"/>
+      </Marker>
+      <Marker COVARIANCE="10 0 0 0 10 0 0 0 10 " NAME="C7" POSITION="-212.212 0 92.7901" RADIUS="12.5" RGB="0 0 255" SEGMENT="Thorax" STATUS="required">
+        <MarkerTemplate COVARIANCE="10 0 0 0 10 0 0 0 10 " PLACEMENT-COVARIANCE="1 0 0 0 1 0 0 0 1 " POSITION="C7x 0 C7z"/>
+      </Marker>
+      <Marker COVARIANCE="10 0 0 0 10 0 0 0 10 " NAME="T10" POSITION="-260.485 -7.54354 -179.546" RADIUS="12.5" RGB="0 0 255" SEGMENT="Thorax" STATUS="required">
+        <MarkerTemplate COVARIANCE="10 0 0 0 10 0 0 0 10 " PLACEMENT-COVARIANCE="1 0 0 0 1 0 0 0 1 " POSITION="T10x T10y T10z"/>
+      </Marker>
+      <Marker COVARIANCE="10 0 0 0 10 0 0 0 10 " NAME="CLAV" POSITION="0 0 0" RADIUS="12.5" RGB="0 0 255" SEGMENT="Thorax" STATUS="required">
+        <MarkerTemplate COVARIANCE="10 0 0 0 10 0 0 0 10 " PLACEMENT-COVARIANCE="1 0 0 0 1 0 0 0 1 " POSITION="0 0 0"/>
+      </Marker>
+      <Marker COVARIANCE="10 0 0 0 10 0 0 0 10 " NAME="STRN" POSITION="0 0 -165.103" RADIUS="12.5" RGB="0 0 255" SEGMENT="Thorax" STATUS="required">
+        <MarkerTemplate COVARIANCE="10 0 0 0 10 0 0 0 10 " PLACEMENT-COVARIANCE="1 0 0 0 1 0 0 0 1 " POSITION="0 0 STRNz"/>
+      </Marker>
+      <Marker COVARIANCE="10 0 0 0 10 0 0 0 10 " NAME="RBAK" POSITION="-249.237 -129.981 -12.7131" RADIUS="12.5" RGB="0 0 255" SEGMENT="Thorax" STATUS="required">
+        <MarkerTemplate COVARIANCE="10 0 0 0 10 0 0 0 10 " PLACEMENT-COVARIANCE="1 0 0 0 1 0 0 0 1 " POSITION="RBAKx RBAKy RBAKz"/>
+      </Marker>
+      <Marker COVARIANCE="10 0 0 0 10 0 0 0 10 " NAME="LSHO" POSITION="0 244.908 35" RADIUS="12.5" RGB="255 0 0" SEGMENT="LeftClavicle" STATUS="required">
+        <MarkerTemplate COVARIANCE="10 0 0 0 10 0 0 0 10 " PLACEMENT-COVARIANCE="1 0 0 0 1 0 0 0 1 " POSITION="0 LeftClavicleLength LeftShoulderOffset"/>
+      </Marker>
+      <Marker COVARIANCE="10 0 0 0 10 0 0 0 10 " NAME="LUPA" POSITION="-16.1639 43.519 -158.923" RADIUS="12.5" RGB="255 0 0" SEGMENT="LeftHumerus" STATUS="required">
+        <MarkerTemplate COVARIANCE="10 0 0 0 10 0 0 0 10 " PLACEMENT-COVARIANCE="1 0 0 0 1 0 0 0 1 " POSITION="LUPAx LUPAy LUPAz"/>
+      </Marker>
+      <Marker COVARIANCE="10 0 0 0 10 0 0 0 10 " NAME="LELB" POSITION="0 40.5 -331.146" RADIUS="12.5" RGB="255 0 0" SEGMENT="LeftHumerus" STATUS="required">
+        <MarkerTemplate COVARIANCE="10 0 0 0 10 0 0 0 10 " PLACEMENT-COVARIANCE="1 0 0 0 1 0 0 0 1 " POSITION="0 LELBy -LeftHumerusLength"/>
+      </Marker>
+      <Marker COVARIANCE="10 0 0 0 10 0 0 0 10 " NAME="LFRM" POSITION="-50.445 31.5285 -114.288" RADIUS="12.5" RGB="255 0 0" SEGMENT="LeftRadius" STATUS="required">
+        <MarkerTemplate COVARIANCE="10 0 0 0 10 0 0 0 10 " PLACEMENT-COVARIANCE="1 0 0 0 1 0 0 0 1 " POSITION="LFRMx LFRMy LFRMz"/>
+      </Marker>
+      <Marker COVARIANCE="10 0 0 0 10 0 0 0 10 " NAME="LWRA" POSITION="43.4639 25 -241.756" RADIUS="12.5" RGB="255 0 0" SEGMENT="LeftRadius" STATUS="required">
+        <MarkerTemplate COVARIANCE="10 0 0 0 10 0 0 0 10 " PLACEMENT-COVARIANCE="1 0 0 0 1 0 0 0 1 " POSITION="LWRx LWRy -LeftRadiusLength"/>
+      </Marker>
+      <Marker COVARIANCE="10 0 0 0 10 0 0 0 10 " NAME="LWRB" POSITION="-43.4639 25 -241.756" RADIUS="12.5" RGB="255 0 0" SEGMENT="LeftRadius" STATUS="required">
+        <MarkerTemplate COVARIANCE="10 0 0 0 10 0 0 0 10 " PLACEMENT-COVARIANCE="1 0 0 0 1 0 0 0 1 " POSITION="-LWRx LWRy -LeftRadiusLength"/>
+      </Marker>
+      <Marker COVARIANCE="10 0 0 0 10 0 0 0 10 " NAME="LFIN" POSITION="0 18 -80.3" RADIUS="12.5" RGB="255 0 0" SEGMENT="LeftHand" STATUS="required">
+        <MarkerTemplate COVARIANCE="10 0 0 0 10 0 0 0 10 " PLACEMENT-COVARIANCE="1 0 0 0 1 0 0 0 1 " POSITION="0 LFINy -LeftHandLength"/>
+      </Marker>
+      <Marker COVARIANCE="10 0 0 0 10 0 0 0 10 " NAME="RSHO" POSITION="0 -252.364 35" RADIUS="12.5" RGB="0 255 0" SEGMENT="RightClavicle" STATUS="required">
+        <MarkerTemplate COVARIANCE="10 0 0 0 10 0 0 0 10 " PLACEMENT-COVARIANCE="1 0 0 0 1 0 0 0 1 " POSITION="0 -RightClavicleLength RightShoulderOffset"/>
+      </Marker>
+      <Marker COVARIANCE="10 0 0 0 10 0 0 0 10 " NAME="RUPA" POSITION="-33.5405 -40.2222 -203.405" RADIUS="12.5" RGB="0 255 0" SEGMENT="RightHumerus" STATUS="required">
+        <MarkerTemplate COVARIANCE="10 0 0 0 10 0 0 0 10 " PLACEMENT-COVARIANCE="1 0 0 0 1 0 0 0 1 " POSITION="RUPAx RUPAy RUPAz"/>
+      </Marker>
+      <Marker COVARIANCE="10 0 0 0 10 0 0 0 10 " NAME="RELB" POSITION="0 -40.5 -319.1" RADIUS="12.5" RGB="0 255 0" SEGMENT="RightHumerus" STATUS="required">
+        <MarkerTemplate COVARIANCE="10 0 0 0 10 0 0 0 10 " PLACEMENT-COVARIANCE="1 0 0 0 1 0 0 0 1 " POSITION="0 RELBy -RightHumerusLength"/>
+      </Marker>
+      <Marker COVARIANCE="10 0 0 0 10 0 0 0 10 " NAME="RFRM" POSITION="-48.8132 -30.0843 -125.047" RADIUS="12.5" RGB="0 255 0" SEGMENT="RightRadius" STATUS="required">
+        <MarkerTemplate COVARIANCE="10 0 0 0 10 0 0 0 10 " PLACEMENT-COVARIANCE="1 0 0 0 1 0 0 0 1 " POSITION="RFRMx RFRMy RFRMz"/>
+      </Marker>
+      <Marker COVARIANCE="10 0 0 0 10 0 0 0 10 " NAME="RWRA" POSITION="42.1498 -23.5 -230.348" RADIUS="12.5" RGB="0 255 0" SEGMENT="RightRadius" STATUS="required">
+        <MarkerTemplate COVARIANCE="10 0 0 0 10 0 0 0 10 " PLACEMENT-COVARIANCE="1 0 0 0 1 0 0 0 1 " POSITION="RWRx RWRy -RightRadiusLength"/>
+      </Marker>
+      <Marker COVARIANCE="10 0 0 0 10 0 0 0 10 " NAME="RWRB" POSITION="-42.1498 -23.5 -230.348" RADIUS="12.5" RGB="0 255 0" SEGMENT="RightRadius" STATUS="required">
+        <MarkerTemplate COVARIANCE="10 0 0 0 10 0 0 0 10 " PLACEMENT-COVARIANCE="1 0 0 0 1 0 0 0 1 " POSITION="-RWRx RWRy -RightRadiusLength"/>
+      </Marker>
+      <Marker COVARIANCE="10 0 0 0 10 0 0 0 10 " NAME="RFIN" POSITION="0 -18 -92.8217" RADIUS="12.5" RGB="0 255 0" SEGMENT="RightHand" STATUS="required">
+        <MarkerTemplate COVARIANCE="10 0 0 0 10 0 0 0 10 " PLACEMENT-COVARIANCE="1 0 0 0 1 0 0 0 1 " POSITION="0 RFINy -RightHandLength"/>
+      </Marker>
+      <Marker COVARIANCE="10 0 0 0 10 0 0 0 10 " NAME="LASI" POSITION="44.3473 146.008 100.293" RADIUS="12.5" RGB="0 0 255" SEGMENT="Pelvis" STATUS="required">
+        <MarkerTemplate COVARIANCE="10 0 0 0 10 0 0 0 10 " PLACEMENT-COVARIANCE="1 0 0 0 1 0 0 0 1 " POSITION="LASIx ASISy LASIz"/>
+      </Marker>
+      <Marker COVARIANCE="10 0 0 0 10 0 0 0 10 " NAME="RASI" POSITION="43.7347 -146.008 100.094" RADIUS="12.5" RGB="0 0 255" SEGMENT="Pelvis" STATUS="required">
+        <MarkerTemplate COVARIANCE="10 0 0 0 10 0 0 0 10 " PLACEMENT-COVARIANCE="1 0 0 0 1 0 0 0 1 " POSITION="RASIx -ASISy RASIz"/>
+      </Marker>
+      <Marker COVARIANCE="10 0 0 0 10 0 0 0 10 " NAME="LPSI" POSITION="-146.512 33.9672 100.194" RADIUS="12.5" RGB="0 0 255" SEGMENT="Pelvis" STATUS="required">
+        <MarkerTemplate COVARIANCE="10 0 0 0 10 0 0 0 10 " PLACEMENT-COVARIANCE="1 0 0 0 1 0 0 0 1 " POSITION="LPSIx LPSIy ASISz"/>
+      </Marker>
+      <Marker COVARIANCE="10 0 0 0 10 0 0 0 10 " NAME="RPSI" POSITION="-148.978 -49.9951 100.194" RADIUS="12.5" RGB="0 0 255" SEGMENT="Pelvis" STATUS="required">
+        <MarkerTemplate COVARIANCE="10 0 0 0 10 0 0 0 10 " PLACEMENT-COVARIANCE="1 0 0 0 1 0 0 0 1 " POSITION="RPSIx RPSIy ASISz"/>
+      </Marker>
+      <Marker COVARIANCE="50 0 0 0 50 0 0 0 10 " NAME="LTHI" POSITION="0 88.7367 -202.853" RADIUS="12.5" RGB="255 0 0" SEGMENT="LeftFemur" STATUS="required">
+        <MarkerTemplate COVARIANCE="50 0 0 0 50 0 0 0 10 " PLACEMENT-COVARIANCE="1 0 0 0 1 0 0 0 1 " POSITION="0 LTHIy LTHIz"/>
+      </Marker>
+      <Marker COVARIANCE="50 0 0 0 50 0 0 0 10 " NAME="LKNE" POSITION="0 55 -399.86" RADIUS="12.5" RGB="255 0 0" SEGMENT="LeftFemur" STATUS="required">
+        <MarkerTemplate COVARIANCE="50 0 0 0 50 0 0 0 10 " PLACEMENT-COVARIANCE="1 0 0 0 1 0 0 0 1 " POSITION="0 LKNEy -LeftFemurLength"/>
+      </Marker>
+      <Marker COVARIANCE="10 0 0 0 10 0 0 0 10 " NAME="LTIB" POSITION="0 68.7767 -185.054" RADIUS="12.5" RGB="255 0 0" SEGMENT="LeftTibia" STATUS="required">
+        <MarkerTemplate COVARIANCE="10 0 0 0 10 0 0 0 10 " PLACEMENT-COVARIANCE="1 0 0 0 1 0 0 0 1 " POSITION="0 LTIBy LTIBz"/>
+      </Marker>
+      <Marker COVARIANCE="5 0 0 0 5 0 0 0 5 " NAME="LANK" POSITION="0 40 0" RADIUS="12.5" RGB="255 0 0" SEGMENT="LeftTibialTorsioned" STATUS="required">
+        <MarkerTemplate COVARIANCE="5 0 0 0 5 0 0 0 5 " PLACEMENT-COVARIANCE="1 0 0 0 1 0 0 0 1 " POSITION="0 LANKy 0"/>
+      </Marker>
+      <Marker COVARIANCE="10 0 0 0 10 0 0 0 10 " NAME="LHEE" POSITION="-53.4109 -4.43696 -28.7211" RADIUS="12.5" RGB="255 0 0" SEGMENT="LeftFoot" STATUS="required">
+        <MarkerTemplate COVARIANCE="10 0 0 0 10 0 0 0 10 " PLACEMENT-COVARIANCE="1 0 0 0 1 0 0 0 1 " POSITION="LHEEx LFOOy LFOOz"/>
+      </Marker>
+      <Marker COVARIANCE="10 0 0 0 10 0 0 0 10 " NAME="LTOE" POSITION="139.46 -4.43696 -28.7211" RADIUS="12.5" RGB="255 0 0" SEGMENT="LeftFoot" STATUS="required">
+        <MarkerTemplate COVARIANCE="10 0 0 0 10 0 0 0 10 " PLACEMENT-COVARIANCE="1 0 0 0 1 0 0 0 1 " POSITION="LTOEx LFOOy LFOOz"/>
+      </Marker>
+      <Marker COVARIANCE="50 0 0 0 50 0 0 0 10 " NAME="RTHI" POSITION="0 -84.6192 -224.09" RADIUS="12.5" RGB="0 255 0" SEGMENT="RightFemur" STATUS="required">
+        <MarkerTemplate COVARIANCE="50 0 0 0 50 0 0 0 10 " PLACEMENT-COVARIANCE="1 0 0 0 1 0 0 0 1 " POSITION="0 RTHIy RTHIz"/>
+      </Marker>
+      <Marker COVARIANCE="50 0 0 0 50 0 0 0 10 " NAME="RKNE" POSITION="0 -55 -406.69" RADIUS="12.5" RGB="0 255 0" SEGMENT="RightFemur" STATUS="required">
+        <MarkerTemplate COVARIANCE="50 0 0 0 50 0 0 0 10 " PLACEMENT-COVARIANCE="1 0 0 0 1 0 0 0 1 " POSITION="0 RKNEy -RightFemurLength"/>
+      </Marker>
+      <Marker COVARIANCE="10 0 0 0 10 0 0 0 10 " NAME="RTIB" POSITION="0 -75.7402 -154.42" RADIUS="12.5" RGB="0 255 0" SEGMENT="RightTibia" STATUS="required">
+        <MarkerTemplate COVARIANCE="10 0 0 0 10 0 0 0 10 " PLACEMENT-COVARIANCE="1 0 0 0 1 0 0 0 1 " POSITION="0 RTIBy RTIBz"/>
+      </Marker>
+      <Marker COVARIANCE="5 0 0 0 5 0 0 0 5 " NAME="RANK" POSITION="0 -40 0" RADIUS="12.5" RGB="0 255 0" SEGMENT="RightTibialTorsioned" STATUS="required">
+        <MarkerTemplate COVARIANCE="5 0 0 0 5 0 0 0 5 " PLACEMENT-COVARIANCE="1 0 0 0 1 0 0 0 1 " POSITION="0 RANKy 0"/>
+      </Marker>
+      <Marker COVARIANCE="10 0 0 0 10 0 0 0 10 " NAME="RHEE" POSITION="-46.8204 0.263259 -18.2153" RADIUS="12.5" RGB="0 255 0" SEGMENT="RightFoot" STATUS="required">
+        <MarkerTemplate COVARIANCE="10 0 0 0 10 0 0 0 10 " PLACEMENT-COVARIANCE="1 0 0 0 1 0 0 0 1 " POSITION="RHEEx RFOOy RFOOz"/>
+      </Marker>
+      <Marker COVARIANCE="10 0 0 0 10 0 0 0 10 " NAME="RTOE" POSITION="142.181 0.263259 -18.2153" RADIUS="12.5" RGB="0 255 0" SEGMENT="RightFoot" STATUS="required">
+        <MarkerTemplate COVARIANCE="10 0 0 0 10 0 0 0 10 " PLACEMENT-COVARIANCE="1 0 0 0 1 0 0 0 1 " POSITION="RTOEx RFOOy RFOOz"/>
+      </Marker>
+    </Markers>
+    <Sticks>
+      <Stick MARKER1="LFHD" MARKER2="RFHD" RGB="0 0 255"/>
+      <Stick MARKER1="LFHD" MARKER2="LBHD" RGB="0 0 255"/>
+      <Stick MARKER1="LFHD" MARKER2="RBHD" RGB="0 0 255"/>
+      <Stick MARKER1="RFHD" MARKER2="LBHD" RGB="0 0 255"/>
+      <Stick MARKER1="RFHD" MARKER2="RBHD" RGB="0 0 255"/>
+      <Stick MARKER1="LBHD" MARKER2="RBHD" RGB="0 0 255"/>
+      <Stick MARKER1="C7" MARKER2="T10" RGB="0 0 255"/>
+      <Stick MARKER1="C7" MARKER2="CLAV" RGB="0 0 255"/>
+      <Stick MARKER1="C7" MARKER2="STRN" RGB="0 0 255"/>
+      <Stick MARKER1="C7" MARKER2="RBAK" RGB="0 0 255"/>
+      <Stick MARKER1="T10" MARKER2="CLAV" RGB="0 0 255"/>
+      <Stick MARKER1="T10" MARKER2="STRN" RGB="0 0 255"/>
+      <Stick MARKER1="T10" MARKER2="RBAK" RGB="0 0 255"/>
+      <Stick MARKER1="CLAV" MARKER2="STRN" RGB="0 0 255"/>
+      <Stick MARKER1="CLAV" MARKER2="LSHO" RGB="255 0 0"/>
+      <Stick MARKER1="CLAV" MARKER2="RSHO" RGB="0 255 0"/>
+      <Stick MARKER1="LSHO" MARKER2="LELB" RGB="255 0 0"/>
+      <Stick MARKER1="LELB" MARKER2="LWRA" RGB="255 0 0"/>
+      <Stick MARKER1="LELB" MARKER2="LWRB" RGB="255 0 0"/>
+      <Stick MARKER1="LWRA" MARKER2="LWRB" RGB="255 0 0"/>
+      <Stick MARKER1="LWRA" MARKER2="LFIN" RGB="255 0 0"/>
+      <Stick MARKER1="LWRB" MARKER2="LFIN" RGB="255 0 0"/>
+      <Stick MARKER1="RSHO" MARKER2="RELB" RGB="0 255 0"/>
+      <Stick MARKER1="RELB" MARKER2="RWRA" RGB="0 255 0"/>
+      <Stick MARKER1="RELB" MARKER2="RWRB" RGB="0 255 0"/>
+      <Stick MARKER1="RWRA" MARKER2="RWRB" RGB="0 255 0"/>
+      <Stick MARKER1="RWRA" MARKER2="RFIN" RGB="0 255 0"/>
+      <Stick MARKER1="RWRB" MARKER2="RFIN" RGB="0 255 0"/>
+      <Stick MARKER1="LASI" MARKER2="RASI" RGB="0 0 255"/>
+      <Stick MARKER1="LASI" MARKER2="LPSI" RGB="0 0 255"/>
+      <Stick MARKER1="LASI" MARKER2="RPSI" RGB="0 0 255"/>
+      <Stick MARKER1="LASI" MARKER2="LTHI" RGB="255 0 0"/>
+      <Stick MARKER1="LASI" MARKER2="LKNE" RGB="255 0 0"/>
+      <Stick MARKER1="RASI" MARKER2="LPSI" RGB="0 0 255"/>
+      <Stick MARKER1="RASI" MARKER2="RPSI" RGB="0 0 255"/>
+      <Stick MARKER1="RASI" MARKER2="RTHI" RGB="0 255 0"/>
+      <Stick MARKER1="RASI" MARKER2="RKNE" RGB="0 255 0"/>
+      <Stick MARKER1="LPSI" MARKER2="RPSI" RGB="0 0 255"/>
+      <Stick MARKER1="LPSI" MARKER2="LKNE" RGB="255 0 0"/>
+      <Stick MARKER1="RPSI" MARKER2="RKNE" RGB="0 255 0"/>
+      <Stick MARKER1="LTHI" MARKER2="LKNE" RGB="255 0 0"/>
+      <Stick MARKER1="LKNE" MARKER2="LTIB" RGB="255 0 0"/>
+      <Stick MARKER1="LKNE" MARKER2="LANK" RGB="255 0 0"/>
+      <Stick MARKER1="LTIB" MARKER2="LANK" RGB="255 0 0"/>
+      <Stick MARKER1="LANK" MARKER2="LHEE" RGB="255 0 0"/>
+      <Stick MARKER1="LANK" MARKER2="LTOE" RGB="255 0 0"/>
+      <Stick MARKER1="LHEE" MARKER2="LTOE" RGB="255 0 0"/>
+      <Stick MARKER1="RTHI" MARKER2="RKNE" RGB="0 255 0"/>
+      <Stick MARKER1="RKNE" MARKER2="RTIB" RGB="0 255 0"/>
+      <Stick MARKER1="RKNE" MARKER2="RANK" RGB="0 255 0"/>
+      <Stick MARKER1="RTIB" MARKER2="RANK" RGB="0 255 0"/>
+      <Stick MARKER1="RANK" MARKER2="RHEE" RGB="0 255 0"/>
+      <Stick MARKER1="RANK" MARKER2="RTOE" RGB="0 255 0"/>
+      <Stick MARKER1="RHEE" MARKER2="RTOE" RGB="0 255 0"/>
+    </Sticks>
+  </MarkerSet>
+
+  <Alignment/>
+
+</KinematicModel>

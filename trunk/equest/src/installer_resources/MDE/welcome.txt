@@ -1,0 +1,1 @@
+Welcome to MDE (Motion Data Editor) software developed at Polish-Japanese Institute of Information Technology in the Bytom Faculty of Information Technology. Installer will guide You with the installation procedure. Installation process will last about 5 minutes.

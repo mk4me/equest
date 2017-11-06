@@ -1,0 +1,47 @@
+<RCC>
+  <qresource prefix="resources/icons">
+    <file alias="trajectory.png">../../../resources/icons/trajectory.png</file>
+    <file alias="load.png">../../../resources/icons/load.png</file>
+    <file alias="save.png">../../../resources/icons/save.png</file>
+    <file alias="video.png">../../../resources/icons/video.png</file>
+    <file alias="about.png">../../../resources/icons/about.png</file>
+    <file alias="clear_console.png">../../../resources/icons/clear_console_16x16.png</file>
+    <file alias="dane.wejsciowe.png">../../../resources/icons/dane.wejsciowe.png</file>
+    <file alias="dokowanie.png">../../../resources/icons/dokowanie.png</file>
+    <file alias="horizontal.png">../../../resources/icons/horizontal.png</file>
+    <file alias="oddokowywanie.png">../../../resources/icons/oddokowywanie.png</file>
+    <file alias="open.png">../../../resources/icons/open.png</file>
+    <file alias="typ.wizualizacji.png">../../../resources/icons/typ.wizualizacji.png</file>
+    <file alias="vertical.png">../../../resources/icons/vertical.png</file>
+    <file alias="wejscie.png">../../../resources/icons/wejscie.png</file>
+    <file alias="wejscie2.png">../../../resources/icons/wejscie2.png</file>
+    <file alias="wizualizacja2.png">../../../resources/icons/wizualizacja2.png</file>
+    <file alias="word_wrap_16x16.png">../../../resources/icons/word_wrap_16x16.png</file>
+    <file alias="x.png">../../../resources/icons/x.png</file>
+    <file alias="header.png">../../../resources/icons/header.png</file>
+    <file alias="Triangle.png">../../../resources/icons/triangle.png</file>
+    <file alias="Analizy.png">../../../resources/icons/Analizy.png</file>
+    <file alias="Badania.png">../../../resources/icons/Badania.png</file>
+    <file alias="Operacje.png">../../../resources/icons/Operacje.png</file>
+    <file alias="Raporty.png">../../../resources/icons/Raporty.png</file>
+    <file alias="Strona.png">../../../resources/icons/Strona.png</file>
+    <file alias="AnalizyH.png">../../../resources/icons/AnalizyH.png</file>
+    <file alias="BadaniaH.png">../../../resources/icons/BadaniaH.png</file>
+    <file alias="OperacjeH.png">../../../resources/icons/OperacjeH.png</file>
+    <file alias="RaportyH.png">../../../resources/icons/RaportyH.png</file>
+    <file alias="StronaH.png">../../../resources/icons/StronaH.png</file>
+    <file alias="AnalizyP.png">../../../resources/icons/AnalizyP.png</file>
+    <file alias="BadaniaP.png">../../../resources/icons/BadaniaP.png</file>
+    <file alias="OperacjeP.png">../../../resources/icons/OperacjeP.png</file>
+    <file alias="RaportyP.png">../../../resources/icons/RaportyP.png</file>
+    <file alias="StronaP.png">../../../resources/icons/StronaP.png</file>
+    <file alias="logo2.png">../../../resources/icons/logo2.png</file>
+    <file alias="logo.png">../../../resources/icons/logo.png</file>
+    <file alias="list.png">../../../resources/icons/list.png</file>
+    <file alias="openSession.png">../../../resources/icons/openSession.png</file>
+    <file alias="corner.png">../../../resources/icons/corner.png</file>
+    <file alias="cornerU.png">../../../resources/icons/cornerU.png</file>
+    <file alias="cornerR.png">../../../resources/icons/cornerR.png</file>
+    <file alias="cornerUR.png">../../../resources/icons/cornerUR.png</file>
+  </qresource>
+</RCC>

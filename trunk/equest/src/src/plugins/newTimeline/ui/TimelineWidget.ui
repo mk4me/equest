@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TimelineWidget</class>
+ <widget class="QWidget" name="TimelineWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>629</width>
+    <height>178</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Timeline</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="margin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QTreeWidget" name="channelsWidget">
+     <property name="contextMenuPolicy">
+      <enum>Qt::CustomContextMenu</enum>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="editTriggers">
+      <set>QAbstractItemView::SelectedClicked</set>
+     </property>
+     <property name="showDropIndicator" stdset="0">
+      <bool>false</bool>
+     </property>
+     <property name="selectionMode">
+      <enum>QAbstractItemView::MultiSelection</enum>
+     </property>
+     <property name="animated">
+      <bool>true</bool>
+     </property>
+     <property name="headerHidden">
+      <bool>false</bool>
+     </property>
+     <attribute name="headerCascadingSectionResizes">
+      <bool>true</bool>
+     </attribute>
+     <attribute name="headerDefaultSectionSize">
+      <number>70</number>
+     </attribute>
+     <attribute name="headerMinimumSectionSize">
+      <number>20</number>
+     </attribute>
+     <column>
+      <property name="text">
+       <string/>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string/>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string/>
+      </property>
+     </column>
+    </widget>
+   </item>
+  </layout>
+  <action name="actionRemoveChannels">
+   <property name="text">
+    <string>Remove channels</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="../../../coreui/ui/CoreIcons.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>actionRemoveChannels</sender>
+   <signal>triggered()</signal>
+   <receiver>TimelineWidget</receiver>
+   <slot>removeSelectedChannels()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>317</x>
+     <y>109</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>channelsWidget</sender>
+   <signal>customContextMenuRequested(QPoint)</signal>
+   <receiver>TimelineWidget</receiver>
+   <slot>showChannelsTreeContextMenu(QPoint)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>317</x>
+     <y>97</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>317</x>
+     <y>109</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>channelsWidget</sender>
+   <signal>itemClicked(QTreeWidgetItem*,int)</signal>
+   <receiver>TimelineWidget</receiver>
+   <slot>onItemClicked(QTreeWidgetItem*,int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>321</x>
+     <y>75</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>317</x>
+     <y>75</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>channelsWidget</sender>
+   <signal>itemDoubleClicked(QTreeWidgetItem*,int)</signal>
+   <receiver>TimelineWidget</receiver>
+   <slot>onItemDblClicked(QTreeWidgetItem*,int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>321</x>
+     <y>75</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>317</x>
+     <y>75</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <signal>offsetChanged(double)</signal>
+  <signal>timeChanged(double)</signal>
+  <signal>lengthChanged(double)</signal>
+  <slot>timeSliderChanged(int)</slot>
+  <slot>removeSelectedChannels()</slot>
+  <slot>setTime(double)</slot>
+  <slot>showChannelsTreeContextMenu(QPoint)</slot>
+  <slot>timeChanged(QTime)</slot>
+  <slot>scaleChanged(double)</slot>
+  <slot>playbackDirectionChanged(int)</slot>
+  <slot>toBegin()</slot>
+  <slot>toEnd()</slot>
+  <slot>play(bool)</slot>
+  <slot>stop()</slot>
+  <slot>onItemClicked(QTreeWidgetItem*,int)</slot>
+  <slot>onItemDblClicked(QTreeWidgetItem*,int)</slot>
+ </slots>
+</ui>

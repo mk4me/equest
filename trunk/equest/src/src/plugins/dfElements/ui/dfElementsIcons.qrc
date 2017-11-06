@@ -1,0 +1,19 @@
+<RCC>
+  <qresource prefix="dfElements/icons">
+	<file alias="emg.png">../resources/embedded/emg.png</file>
+	<file alias="force.png">../resources/embedded/force.png</file>
+	<file alias="grf.png">../resources/embedded/grf.png</file>
+	<file alias="joint.png">../resources/embedded/joint.png</file>
+	<file alias="marker.png">../resources/embedded/marker.png</file>
+	<file alias="moment.png">../resources/embedded/moment.png</file>
+	<file alias="power.png">../resources/embedded/power.png</file>
+	<file alias="video.png">../resources/embedded/video.png</file>
+	<file alias="video2.png">../resources/embedded/video2.png</file>
+	<file alias="plusminus.png">../resources/embedded/plusminus.png</file>
+	<file alias="minusplus.png">../resources/embedded/minusplus.png</file>
+	<file alias="normalizeH.png">../resources/embedded/normalizeH.png</file>
+	<file alias="normalizeV.png">../resources/embedded/normalizeV.png</file>
+	<file alias="invert.png">../resources/embedded/invert.png</file>
+	<file alias="sum.png">../resources/embedded/sum.png</file>
+  </qresource>
+</RCC>

@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="medusaExporter/images">
+    <file alias="medusa.png">../resources/embedded/medusa.png</file>
+  </qresource>
+</RCC>

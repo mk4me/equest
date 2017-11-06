@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+<Project version="0.01" BackgroundFilename="miesnie-tyl.png">
+    <Picture Filename="brzuchaty_lydki_gprzysr_p.png" X="156" Y="477" />
+    <Picture Filename="brzuchaty_lydki_gprzysr_l.png" X="125" Y="478" />
+    <Picture Filename="brzuchaty_lydki_gb_p.png" X="189" Y="478" />
+    <Picture Filename="brzuchaty_lydki_gb_l.png" X="85" Y="478" />
+    <Picture Filename="dwuglowy_uda_p.png" X="193" Y="361" />
+    <Picture Filename="dwuglowy_uda_l.png" X="109" Y="358" />
+    <Picture Filename="polsciegnisty_p.png" X="162" Y="354" />
+    <Picture Filename="polsciegnisty_l.png" X="127" Y="351" />
+    <Picture Filename="prostownik_palcow_l.png" X="42" Y="244" />
+    <Picture Filename="prostownik_palcow_p.png" X="251" Y="245" />
+    <Picture Filename="posladkowy_wielki_p.png" X="160" Y="295" />
+    <Picture Filename="posladkowy_wielki_l.png" X="95" Y="290" />
+    <Picture Filename="trojglowy_ramienia_gdluga_p.png" X="219" Y="149" />
+    <Picture Filename="trojglowy_ramienia_gdluga_l.png" X="80" Y="153" />
+    <Picture Filename="ramie-tyl2.png" X="235" Y="155" />
+    <Picture Filename="ramie-tyl2P.png" X="65" Y="154" />
+    <Picture Filename="ramie-tyl3.png" X="59" Y="99" />
+    <Picture Filename="ramie-tyl3P.png" X="191" Y="100" />
+    <Picture Filename="most_obojcz_sutkowy_l.png" X="92" Y="60" />
+    <Picture Filename="most_obojcz_sutkowy_p.png" X="158" Y="62" />
+    <Picture Filename="czworoboczny_grzbietu_l.png" X="90" Y="99" />
+    <Picture Filename="czworoboczny_grzbietu_p.png" X="161" Y="99" />
+    <Picture Filename="ramie-tyl6.png" X="-17" Y="408" />
+    <Picture Filename="ramie-tyl6P.png" X="241" Y="444" />
+</Project>

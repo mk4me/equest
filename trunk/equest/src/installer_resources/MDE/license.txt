@@ -1,0 +1,142 @@
+MDE – Warunki korzystania z uslugi
+Niniejsze Warunki korzystania z uslugi dotycza korzystania z kodu wykonywalnego aplikacji MDE na warunkach licencji testowej. 
+1. Relacje Uzytkownika z PJWSTK
+1.1 Korzystanie przez Uzytkownika z produktów, oprogramowania, uslug i witryn internetowych PJWSTK (nazywanych zbiorczo w tym dokumencie „Uslugami”, z wylaczeniem wszelkich uslug swiadczonych Uzytkownikowi przez PJWSTK na mocy oddzielnej umowy pisemnej) podlega warunkom umowy prawnej miedzy Uzytkownikiem a PJWSTK. „PJWSTK” oznacza Polsko-Japonska Wyzsza Szkola Technik Komputerowych z siedziba w Warszawie, ul. Koszykowa 86, NIP: 5262160983, REGON: 010816248, uczelnie niepubliczna wpisana do prowadzonego przez Ministra Nauki i Szkolnictwa Wyzszego rejestru uczelni niepublicznych i zwiazków uczelni niepublicznych pod nr 51 dzialajaca zgodnie z zasadami reprezentacji okreslonymi w Statucie uczelni W niniejszym dokumencie wyjasniono zasady umowy i okreslono niektóre z jej warunków.
+1.2 Jesli pisemna umowa z PJWSTK nie stanowi inaczej, umowa Uzytkownika z PJWSTK zawsze obejmuje, jako minimum, warunki korzystania z uslugi przedstawione w niniejszym dokumencie. Ponizej sa one nazywane „Warunkami uniwersalnymi”. W ograniczonym zakresie, w którym licencje oprogramowania typu open source wyraznie zastepuja niniejsze Warunki uniwersalne, umowa Uzytkownika z PJWSTK o korzystanie z MDE lub okreslonych dolaczonych skladników tej aplikacji podlega tym licencjom.
+1.3 Umowa Uzytkownika z PJWSTK oprócz Warunków uniwersalnych obejmuje równiez warunki przedstawione ponizej w sekcji „MDE – Dodatkowe warunki korzystania z uslugi” oraz warunki zawarte we wszelkich Informacjach prawnych dotyczacych Uslug. Wszystkie takie warunki sa ponizej nazywane „Warunkami dodatkowymi”. Jesli Warunki dodatkowe maja zastosowanie do Uslugi, mozna zapoznac sie z nimi w ramach danej Uslugi lub podczas korzystania z niej.
+1.4 Warunki uniwersalne w polaczeniu z Warunkami dodatkowymi stanowia prawnie wiazaca umowe miedzy Uzytkownikiem a PJWSTK w odniesieniu do korzystania z Uslug przez Uzytkownika. Wazne jest, aby Uzytkownik dokladnie zapoznal sie z tymi warunkami. Ta umowa prawna jest ponizej nazywana zbiorczo „Warunkami”.
+1.5 Jesli zaistnieje jakakolwiek sprzecznosc miedzy Warunkami dodatkowymi a Warunkami uniwersalnymi, w odniesieniu do Uslugi beda obowiazywac Warunki dodatkowe.
+2. Akceptacja Warunków
+2.1 W celu korzystania z Uslug Uzytkownik musi najpierw zaakceptowac Warunki. Uzytkownik nie moze korzystac z Uslug, jesli nie zaakceptuje Warunków.
+2.2 Uzytkownik moze zaakceptowac Warunki przez:
+(A) klikniecie opcji zaakceptowania Warunków, jesli zostala ona udostepniona przez PJWSTK w interfejsie uzytkownika dowolnej Uslugi; lub
+(B) faktyczne skorzystanie z zainstalowanych Uslug. W takim przypadku Uzytkownik rozumie i akceptuje fakt, ze od tej chwili PJWSTK bedzie uznawac korzystanie z Uslug przez Uzytkownika za akceptacje Warunków.
+3. Jezyk Warunków
+3.1 Jesli PJWSTK udostepnia Uzytkownikowi tlumaczenie polskiej wersji Warunków, Uzytkownik akceptuje fakt, ze tlumaczenie sluzy jedynie celom informacyjnym, a relacje Uzytkownika z PJWSTK podlegaja Warunkom w polskiej wersji jezykowej.
+3.2 Jesli zaistnieja jakiekolwiek sprzecznosci miedzy polska wersja Warunków a wersja przetlumaczona, bedzie obowiazywac polska wersja jezykowa.
+4. Swiadczenie uslug przez PJWSTK
+4.1 Uzytkownik przyjmuje do wiadomosci i akceptuje fakt, ze Podmioty zalezne i stowarzyszone z PJWSTK beda uprawnione do swiadczenia Uslug Uzytkownikowi.
+4.2 PJWSTK nieustannie wprowadza innowacje w celu zapewniania swoim uzytkownikom najlepszego mozliwego poziomu uslug. Uzytkownik przyjmuje do wiadomosci i akceptuje fakt, ze forma i charakter Uslug swiadczonych przez PJWSTK moze sie co pewien czas zmieniac bez uprzedniego powiadomienia.
+4.3 W odniesieniu do tych nieustajacych innowacji Uzytkownik przyjmuje do wiadomosci i akceptuje fakt, ze PJWSTK moze zaprzestac (na stale lub tymczasowo) swiadczenia Uslug (lub dowolnych funkcji w ramach Uslug) Uzytkownikowi lub uzytkownikom w ogólnosci wylacznie wedlug uznania PJWSTK i bez uprzedniego powiadomienia. Uzytkownik moze w kazdej chwili zaprzestac korzystania z Uslug. Uzytkownik nie musi informowac PJWSTK o zaprzestaniu korzystania z Uslug.
+4.4 Uzytkownik przyjmuje do wiadomosci i akceptuje fakt, ze jesli PJWSTK uniemozliwi Uzytkownikowi dostep do konta uzytkownika systemu MDE, moze to oznaczac zablokowanie dostepu do Uslug, szczególów konta lub dowolnych plików oraz innych tresci znajdujacych sie na koncie Uzytkownika.
+5. Korzystanie z Uslug przez Uzytkownika
+5.1 Uzytkownik zobowiazuje sie do korzystania z Uslug jedynie w celach dozwolonych przez (a) niniejsze Warunki oraz (b) wszelkie obowiazujace prawa, przepisy oraz ogólnie przyjete procedury i wytyczne w odpowiednich jurysdykcjach (w tym wszelkie prawa dotyczace eksportu i importu danych lub oprogramowania w Polsce i innych odpowiednich krajach).
+5.2 Uzytkownik zgadza sie nie podejmowac zadnych czynnosci, które utrudniaja lub zaklócaja dzialanie Uslug (badz serwerów i sieci polaczonych z Uslugami).
+5.3 Uzytkownik zgadza sie nie reprodukowac, powielac, kopiowac, sprzedawac, wymieniac ani odsprzedawac Uslug w zadnym celu, chyba ze otrzymal na to wyrazne pozwolenie w oddzielnej umowie z PJWSTK.
+5.4 Uzytkownik akceptuje fakt, ze ponosi wylaczna odpowiedzialnosc (oraz ze PJWSTK nie ponosi zadnej odpowiedzialnosci przed Uzytkownikiem ani jakakolwiek osoba trzecia) za wszelkie naruszenia zobowiazan Uzytkownika wynikajacych z Warunków i za skutki takich naruszen (w tym wszelkie straty lub szkody poniesione przez PJWSTK).
+6. Tresc zawarta w Uslugach
+6.1 Uzytkownik rozumie, ze wylaczna odpowiedzialnosc za wszelkie informacje (takie jak pliki danych, tekst, oprogramowanie komputerowe, muzyka, pliki audio lub inne dzwieki, zdjecia, filmy wideo lub inne obrazy), do których moze miec dostep w ramach Uslug lub za ich posrednictwem, ponosi osoba, od której pochodza te tresci. Wszystkie takie informacje sa ponizej nazywane zbiorczo „Trescia”.
+6.2 Uzytkownik powinien miec swiadomosc, ze Tresc prezentowana w ramach Uslug, w tym miedzy innymi reklamy w Uslugach i Tresc sponsorowana w Uslugach, moze byc chroniona prawami wlasnosci intelektualnej posiadanymi przez sponsorów lub reklamodawców dostarczajacych te Tresc do PJWSTK (albo przez inne osoby lub firmy wystepujace w imieniu wlascicieli praw). Uzytkownikowi nie wolno modyfikowac, wynajmowac, wydzierzawiac, wypozyczac, sprzedawac ani rozpowszechniac Tresci (w czesci ani calosci), ani tworzyc dziel pochodnych na jej podstawie, jesli nie otrzymal na to specjalnego pozwolenia od PJWSTK lub wlascicieli Tresci w oddzielnej umowie.
+6.3 PJWSTK zastrzega sobie prawo (ale nie jest zobowiazana) do wstepnego selekcjonowania, sprawdzania, oznaczania, filtrowania, modyfikowania, odrzucania lub usuwania wszelkiej Tresci w Usludze. 
+6.4 Uzytkownik rozumie, ze korzystajac z Uslug moze zostac narazony na kontakt z Trescia obrazliwa, nieprzyzwoita badz budzaca zastrzezenia i w tym aspekcie korzysta z Uslug na wlasne ryzyko.
+6.5 Uzytkownik akceptuje fakt, ze ponosi wylaczna odpowiedzialnosc (oraz ze PJWSTK nie ponosi zadnej odpowiedzialnosci przed Uzytkownikiem ani jakakolwiek osoba trzecia) za wszelka Tresc tworzona, przesylana lub wyswietlana przez siebie podczas korzystania z Uslug i za skutki swoich dzialan z tym zwiazanych (w tym wszelkie straty lub szkody poniesione przez PJWSTK).
+7. Prawa wlasnosci
+7.1 Uzytkownik przyjmuje do wiadomosci i akceptuje fakt, ze PJWSTK (lub licencjodawcy PJWSTK) posiada wszystkie prawa, tytuly prawne i udzialy zwiazane z Uslugami, w tym wszelkie prawa wlasnosci intelektualnej dotyczace Uslug (bez wzgledu na to, czy prawa te zostaly zastrzezone i w którym miejscu na swiecie obowiazuja).
+7.2 Jesli Uzytkownik nie zawarl innej pisemnej umowy z PJWSTK, zadne z postanowien niniejszych Warunków nie daje Uzytkownikowi prawa do uzywania jakichkolwiek nazw handlowych, znaków towarowych, znaków uslugowych, logo, nazw domen ani innych charakterystycznych cech marki PJWSTK.
+7.3 Jesli Uzytkownikowi jednoznacznie udzielono praw do uzywania jakichkolwiek cech marki w oddzielnej pisemnej umowie z PJWSTK, Uzytkownik zobowiazuje sie uzywac takich cech zgodnie z ta umowa, wszelkimi obowiazujacymi postanowieniami Warunków oraz aktualizowanymi co pewien czas wytycznymi dotyczacymi stosowania cech marki PJWSTK.
+7.4 PJWSTK przyjmuje do wiadomosci i akceptuje fakt, ze na mocy tych Warunków nie uzyskuje od Uzytkownika (ani jego licencjodawców) zadnych praw, tytulów prawnych ani udzialów zwiazanych z Trescia udostepniana, publikowana, przesylana lub wyswietlana przez Uzytkownika w Uslugach lub za ich posrednictwem, w tym jakichkolwiek praw wlasnosci intelektualnej dotyczacych tej Tresci (bez wzgledu na to, czy prawa te zostaly zastrzezone i w którym miejscu na swiecie obowiazuja). Jesli Uzytkownik nie zawarl innej pisemnej umowy z PJWSTK, Uzytkownik akceptuje fakt, ze ponosi odpowiedzialnosc za ochrone i egzekwowanie tych praw, a PJWSTK nie jest w zaden sposób zobowiazana do takich dzialan w imieniu Uzytkownika.
+7.5 Uzytkownik zobowiazuje sie nie usuwac, zaslaniac ani zmieniac zadnych informacji o prawach wlasnosci (w tym informacji o prawach autorskich i znakach towarowych), które moga byc dolaczone do Uslug lub w nich zawarte.
+7.6 Jesli Uzytkownik nie uzyskal wyraznej pisemnej zgody PJWSTK w tym zakresie, zobowiazuje sie podczas korzystania z Uslug nie uzywac zadnych znaków towarowych, znaków uslugowych, nazw handlowych ani logo jakiejkolwiek firmy lub organizacji w sposób mogacy budzic watpliwosci dotyczace wlasciciela lub uprawnionego uzytkownika takich znaków, nazw lub logo.
+8. Licencja udzielana przez PJWSTK
+8.1 Niniejsza Licencja jest „Licencja Testowa” i jest udzielana wylacznie w celu umozliwienia potencjalnemu nabywcy dokonania oceny Oprogramowania. 
+8.2 Z zastrzezeniem postanowien zawartych w punkcie 8.1 PJWSTK udziela Uzytkownikowi osobistej, waznej na calym swiecie, nieodplatnej, nieprzenoszalnej i niewylacznej licencji na uzywanie oprogramowania (nazywanego ponizej „Oprogramowaniem”) udostepnianego Uzytkownikowi przez PJWSTK w ramach Uslug swiadczonych przez PJWSTK. Licencja ta ma na celu wylacznie umozliwienie Uzytkownikowi korzystania z Uslug swiadczonych przez PJWSTK w sposób dozwolony na mocy Warunków.
+8.3 Z zastrzezeniem postanowien zawartych w sekcji 1.2 Uzytkownikowi nie wolno kopiowac lub modyfikowac Oprogramowania albo jakiejkolwiek jego czesci ani tworzyc dziel pochodnych na jego podstawie, analizowac wstecznie, dekompilowac ani w inny sposób próbowac wyodrebnic jego kod zródlowy (ani zezwalac na to jakiejkolwiek innej osobie), jesli nie jest to wyraznie dozwolone lub wymagane przez prawo badz Uzytkownik nie otrzymal specjalnego pozwolenia w formie pisemnej od PJWSTK.
+8.4 Z zastrzezeniem postanowien zawartych w sekcji 1.2, jesli PJWSTK nie udzielila specjalnego pozwolenia w formie pisemnej w tym zakresie, Uzytkownikowi nie wolno cedowac (ani podlicencjonowac) swoich praw do uzywania Oprogramowania, ustanawiac zabezpieczenia zwiazanego z prawami do uzywania Oprogramowania ani w inny sposób przenosic jakiejkolwiek czesci swoich praw do uzywania Oprogramowania.
+9. Licencja na Tresc udzielana przez Uzytkownika
+9.1 Uzytkownik zachowuje prawa autorskie i wszelkie inne posiadane juz przez niego prawa do Tresci przesylanej, publikowanej lub wyswietlanej w Uslugach badz za ich posrednictwem.
+10. Aktualizacje oprogramowania
+10.1 Oprogramowanie uzywane przez Uzytkownika moze co pewien czas automatycznie pobierac i instalowac aktualizacje z PJWSTK. Aktualizacje te maja na celu udoskonalenie, rozszerzenie oraz dalsze rozbudowanie Uslug i moga przyjmowac postac poprawek bledów, rozszerzen funkcji, nowych modulów oprogramowania lub calkowicie nowych wersji. Uzytkownik zgadza sie na otrzymywanie takich aktualizacji (i zezwala PJWSTK na ich dostarczanie) w ramach korzystania z Uslug.
+11. Konczenie relacji Uzytkownika z PJWSTK
+11.1 Warunki obowiazuja do momentu wypowiedzenia umowy przez Uzytkownika lub PJWSTK w sposób opisany ponizej.
+11.2 PJWSTK moze w dowolnym momencie wypowiedziec niniejsza Umowe z Uzytkownikiem, jesli:
+(A) Uzytkownik naruszyl dowolne postanowienie Warunków (lub dzialal w sposób swiadczacy o tym, ze nie zamierza badz nie jest zdolny przestrzegac postanowien Warunków); lub
+(B) PJWSTK jest do tego prawnie zobowiazana (jesli na przyklad swiadczenie Uslug Uzytkownikowi jest lub staje sie bezprawne); lub
+(C) partner, we wspólpracy z którym PJWSTK oferowala Uzytkownikowi Uslugi, zakonczyl swoje relacje z PJWSTK lub zaniechal oferowania Uslug Uzytkownikowi; lub
+(D) PJWSTK zaprzestaje swiadczenia Uslug uzytkownikom w kraju, w którym mieszka Uzytkownik lub w którym korzysta on z Uslugi; lub
+(E) swiadczenie Uzytkownikowi Uslug przez PJWSTK nie jest juz w opinii PJWSTK uzasadnione wzgledami handlowymi.
+11.3 Zadne z postanowien zawartych w niniejszej sekcji nie wplywa na okreslone w sekcji 4 Warunków prawa PJWSTK dotyczace swiadczenia Uslug.
+11.4 Po zakonczeniu obowiazywania niniejszych Warunków wszystkie prawa, zobowiazania i obowiazki prawne dotyczace Uzytkownika i PJWSTK (lub powstale w czasie obowiazywania niniejszych Warunków), a takze okreslone jako obowiazujace bezterminowo, pozostana niezmienione, a postanowienia ustepu 19.7 beda bezterminowo stosowane do tych praw, zobowiazan i obowiazków prawnych.
+12. WYLACZENIE GWARANCJI
+12.1 ZADNE Z POSTANOWIEN NINIEJSZYCH WARUNKÓW, W TYM SEKCJI 13 I 14, NIE WYLACZA ANI OGRANICZA GWARANCJI ANI ODPOWIEDZIALNOSCI PJWSTK ZA STRATY, KTÓREJ NIE MOZNA WYLACZYC LUB OGRANICZYC ZGODNIE Z OBOWIAZUJACYM PRAWEM. W NIEKTÓRYCH JURYSDYKCJACH NIEDOZWOLONE JEST WYLACZANIE OKRESLONYCH GWARANCJI LUB WARUNKÓW BADZ OGRANICZANIE LUB WYLACZANIE ODPOWIEDZIALNOSCI ZA STRATY LUB SZKODY SPOWODOWANE NIEDBALSTWEM, NARUSZENIEM UMOWY LUB DOROZUMIANYCH WARUNKÓW, BADZ ZA SZKODY PRZYPADKOWE LUB WTÓRNE. W TAKICH PRZYPADKACH DO UZYTKOWNIKA ODNOSZA SIE JEDYNIE OGRANICZENIA, KTÓRE SA ZGODNE Z PRAWEM W JURYSDYKCJI UZYTKOWNIKA, A NASZA ODPOWIEDZIALNOSC ZOSTAJE OGRANICZONA W MAKSYMALNYM ZAKRESIE DOPUSZCZALNYM PRZEZ PRAWO.
+12.2 UZYTKOWNIK WYRAZNIE PRZYJMUJE DO WIADOMOSCI I AKCEPTUJE FAKT, ZE KORZYSTA Z USLUG WYLACZNIE NA WLASNE RYZYKO ORAZ ZE USLUGI SA SWIADCZONE „W TAKIM STANIE, W JAKIM SIE ZNAJDUJA” I „W MIARE DOSTEPNOSCI”.
+12.3 W SZCZEGÓLNOSCI PJWSTK, JEJ PODMIOTY ZALEZNE I STOWARZYSZONE ORAZ LICENCJODAWCY NIE OSWIADCZAJA I NIE GWARANTUJA UZYTKOWNIKOWI, ZE:
+(A) KORZYSTANIE Z USLUG PRZEZ UZYTKOWNIKA BEDZIE SPELNIAC JEGO WYMAGANIA;
+(B) KORZYSTANIE Z USLUG PRZEZ UZYTKOWNIKA BEDZIE NIEPRZERWANE, TERMINOWE, ZABEZPIECZONE PRZED BLEDAMI LUB WOLNE OD NICH;
+(C) JAKIEKOLWIEK INFORMACJE UZYSKANE PRZEZ UZYTKOWNIKA W WYNIKU KORZYSTANIA Z USLUG BEDA DOKLADNE LUB WIARYGODNE ORAZ
+(D) USTERKI DZIALANIA LUB FUNKCJI DOWOLNEGO OPROGRAMOWANIA DOSTARCZANEGO UZYTKOWNIKOWI W RAMACH USLUG BEDA POPRAWIANE.
+12.4 UZYTKOWNIK POBIERA LUB W INNY SPOSÓB UZYSKUJE MATERIALY W RAMACH KORZYSTANIA Z USLUG WEDLUG WLASNEGO UZNANIA I NA WLASNE RYZYKO, A TAKZE PONOSI WYLACZNA ODPOWIEDZIALNOSC ZA WSZELKIE USZKODZENIA SYSTEMU KOMPUTEROWEGO BADZ INNEGO URZADZENIA LUB UTRATE DANYCH WSKUTEK POBRANIA TAKICH MATERIALÓW.
+12.5 ZADNE PORADY ANI INFORMACJE USTNE LUB PISEMNE UZYSKANE PRZEZ UZYTKOWNIKA OD PJWSTK BADZ W RAMACH USLUG LUB ZA ICH POSREDNICTWEM NIE STANOWIA JAKIEJKOLWIEK GWARANCJI, KTÓRA NIE ZOSTALA WYRAZNIE UMIESZCZONA W WARUNKACH.
+12.6 PONADTO PJWSTK WYRAZNIE WYLACZA SWOJA ODPOWIEDZIALNOSC Z TYTULU WSZELKICH GWARANCJI I WARUNKÓW, WYRAZNYCH LUB DOROZUMIANYCH, W TYM MIEDZY INNYMI DOROZUMIANYCH GWARANCJI I REKOJMI WARTOSCI HANDLOWEJ, PRZYDATNOSCI DO OKRESLONEGO CELU ORAZ NIENARUSZANIA PRAW.
+13. OGRANICZENIE ODPOWIEDZIALNOSCI
+13.1 Z ZASTRZEZENIEM OGÓLNYCH POSTANOWIEN POWYZSZEGO USTEPU 13.1 UZYTKOWNIK WYRAZNIE ROZUMIE I AKCEPTUJE FAKT, ZE PJWSTK, JEJ PODMIOTY ZALEZNE I STOWARZYSZONE ORAZ JEJ LICENCJODAWCY NIE PONOSZA PRZED UZYTKOWNIKIEM ODPOWIEDZIALNOSCI ZA:
+(A) ZADNE SZKODY BEZPOSREDNIE, POSREDNIE, PRZYPADKOWE, SZCZEGÓLNE, WTÓRNE ANI MORALNE, KTÓRE MOGA ZOSTAC PONIESIONE PRZEZ UZYTKOWNIKA, WYNIKLE W JAKIKOLWIEK SPOSÓB ORAZ NA PODSTAWIE DOWOLNYCH ZASAD ODPOWIEDZIALNOSCI. OBEJMUJE TO MIEDZY INNYMI UTRATE ZYSKÓW (POSREDNIA LUB BEZPOSREDNIA), UTRATE RENOMY LUB DOBREGO IMIENIA FIRMY, UTRATE DANYCH, KOSZT NABYCIA ZASTEPCZYCH TOWARÓW LUB USLUG ORAZ INNE STRATY NIEMATERIALNE;
+(B) ZADNE STRATY I SZKODY, KTÓRE MOGA ZOSTAC PONIESIONE PRZEZ UZYTKOWNIKA, W TYM MIEDZY INNYMI STRATY I SZKODY WYNIKLE Z:
+(I) ZAUFANIA UZYTKOWNIKA CO DO KOMPLETNOSCI, DOKLADNOSCI LUB ISTNIENIA JAKICHKOLWIEK REKLAM BADZ WSKUTEK DOWOLNEJ RELACJI LUB TRANSAKCJI MIEDZY UZYTKOWNIKIEM A DOWOLNYM REKLAMODAWCA LUB SPONSOREM, KTÓREGO REKLAMY SA WYSWIETLANE W USLUGACH;
+(II) JAKICHKOLWIEK ZMIAN DOKONANYCH PRZEZ PJWSTK W USLUGACH LUB STALEGO BADZ TYMCZASOWEGO ZAPRZESTANIA SWIADCZENIA USLUG (LUB DOWOLNYCH FUNKCJI W RAMACH USLUG);
+(III) USUNIECIA, USZKODZENIA LUB NIEZACHOWANIA DOWOLNEJ TRESCI ORAZ INNYCH DANYCH KOMUNIKACYJNYCH OBSLUGIWANYCH LUB PRZESYLANYCH W RAMACH KORZYSTANIA Z USLUG PRZEZ UZYTKOWNIKA ALBO ZA ICH POSREDNICTWEM;
+(IV) NIEPRZEKAZANIA PJWSTK PRZEZ UZYTKOWNIKA DOKLADNYCH INFORMACJI DOTYCZACYCH KONTA;
+(V) NIEZACHOWANIA PRZEZ UZYTKOWNIKA BEZPIECZENSTWA I POUFNOSCI HASLA LUB SZCZEGÓLOWYCH INFORMACJI DOTYCZACYCH KONTA;
+13.2 WYMIENIONE W POWYZSZYM USTEPIE 14.1 OGRANICZENIA ODPOWIEDZIALNOSCI PJWSTK PRZED UZYTKOWNIKIEM OBOWIAZUJA BEZ WZGLEDU NA TO, CZY PJWSTK ZOSTALA POWIADOMIONA LUB POWINNA BYLA ZDAWAC SOBIE SPRAWE Z MOZLIWOSCI WYSTAPIENIA WSZELKICH TAKICH SZKÓD.
+14. Zasady dotyczace praw autorskich i znaków towarowych
+14.1 PJWSTK z zasady reaguje na zawiadomienia o przypuszczalnym naruszeniu praw autorskich, które spelniaja obowiazujace wymogi miedzynarodowego prawa wlasnosci intelektualnej i zamyka konta osób dopuszczajacych sie wielokrotnych naruszen. 
+15. Inne tresci
+15.1 Uslugi moga zawierac hiperlacza do innych witryn internetowych, tresci lub zasobów. PJWSTK moze nie miec zadnej kontroli nad jakimikolwiek witrynami internetowymi lub zasobami udostepnianymi przez firmy lub osoby inne niz PJWSTK.
+15.2 Uzytkownik przyjmuje do wiadomosci i akceptuje fakt, ze PJWSTK nie ponosi odpowiedzialnosci za dostepnosc jakichkolwiek zewnetrznych witryn lub zasobów oraz nie poleca zadnych reklam, produktów ani innych materialów dostepnych w takich witrynach internetowych lub zasobach.
+15.3 Uzytkownik przyjmuje do wiadomosci i akceptuje fakt, ze PJWSTK nie ponosi zadnej odpowiedzialnosci za straty lub szkody poniesione przez Uzytkownika wskutek dostepnosci zewnetrznych witryn lub zasobów ani wskutek zaufania Uzytkownika co do kompletnosci, dokladnosci lub istnienia jakichkolwiek reklam, produktów lub innych materialów dostepnych w takich witrynach internetowych lub zasobach.
+16. Zmiany Warunków
+16.1 PJWSTK moze czasami dokonywac zmian Warunków uniwersalnych lub Warunków dodatkowych. W przypadku dokonania zmian PJWSTK utworzy nowa kopie Warunków uniwersalnych, a wszelkie nowe Warunki dodatkowe zostana udostepnione Uzytkownikowi w odpowiednich Uslugach lub za ich posrednictwem.
+16.2 Uzytkownik rozumie i akceptuje fakt, ze korzystanie z Uslug po dacie zmiany Warunków uniwersalnych lub Warunków dodatkowych PJWSTK bedzie uznawac za akceptacje zaktualizowanych Warunków uniwersalnych lub Warunków dodatkowych.
+17. Ogólne warunki prawne
+17.1 Czasami podczas korzystania z Uslug Uzytkownik moze (wskutek korzystania z Uslug lub w zwiazku z nim) skorzystac z uslugi, pobrac oprogramowanie lub zakupic towary dostarczane przez inna osobe albo firme. Korzystanie z innych uslug, oprogramowania lub towarów moze podlegac odrebnym warunkom umowy miedzy Uzytkownikiem a odpowiednia firma lub osoba. W takim przypadku Warunki nie obejmuja relacji prawnej Uzytkownika z innymi firmami lub osobami.
+17.2 Warunki stanowia cala umowe prawna miedzy Uzytkownikiem a PJWSTK i reguluja korzystanie z Uslug przez Uzytkownika (z wylaczeniem wszelkich uslug swiadczonych Uzytkownikowi przez PJWSTK na mocy odrebnej pisemnej umowy) i calkowicie zastepuja wszystkie poprzednie umowy miedzy Uzytkownikiem a PJWSTK dotyczace Uslug.
+17.3 Uzytkownik akceptuje fakt, ze PJWSTK moze dostarczac Uzytkownikowi powiadomienia, w tym dotyczace zmian Warunków, poczta e-mail, poczta tradycyjna lub publikujac ogloszenia w Uslugach.
+17.4 Uzytkownik akceptuje fakt, ze jesli PJWSTK nie korzysta z któregokolwiek prawa lub swiadczenia zawartego w niniejszych Warunkach ani nie wymaga jego stosowania (lub z którego PJWSTK moze korzystac na podstawie dowolnego obowiazujacego prawa), nie jest to uznawane za formalne zrzeczenie sie praw przez PJWSTK, a te prawa i swiadczenia nadal sa dla niej dostepne.
+17.5 Jesli sad majacy jurysdykcje w zakresie takich spraw wyda wyrok stwierdzajacy, ze którekolwiek postanowienie niniejszych Warunków jest niewazne, postanowienie to zostanie usuniete z Warunków, bez wplywu na pozostale Warunki. Pozostale postanowienia Warunków nadal beda wazne i wiazace.
+17.6 Uzytkownik przyjmuje do wiadomosci i akceptuje fakt, ze kazda firma zalezna nalezaca do PJWSTK jest beneficjentem Warunków bedacym strona trzecia oraz ze firmy te sa uprawnione do bezposredniego stosowania i korzystania z wszelkich postanowien Warunków, które zapewniaja im korzysci (lub prawa). Oprócz tego zadna inna osoba ani firma nie jest beneficjentem Warunków bedacym strona trzecia.
+17.7 Warunki oraz relacje uzytkownika z PJWSTK wynikajace z Warunków podlegaja prawu polskiemu z wyjatkiem norm prawa kolizyjnego. Uzytkownik i PJWSTK zgadzaja sie uznac wylaczna jurysdykcje sadów znajdujacych sie w miescie Warszawa w województwie mazowieckim zakresie rozwiazywania wszelkich spraw prawnych powstalych w zwiazku z Warunkami. Niezaleznie od tego Uzytkownik akceptuje fakt, ze PJWSTK nadal moze starac sie o wydanie nakazu sadowego (lub równowaznego typu pilnego orzeczenia sadu) w dowolnej jurysdykcji.
+18. Warunki dodatkowe dotyczace rozszerzen aplikacji MDE
+18.1 Warunki wymienione w niniejszej sekcji maja zastosowanie w przypadku zainstalowania przez Uzytkownika rozszerzen aplikacji MDE. Rozszerzenia to niewielkie programy lub biblioteki opracowane przez PJWSTK lub inne podmioty. Umozliwiaja modyfikowanie i rozbudowywanie funkcji aplikacji MDE. Rozszerzenia moga miec wieksze uprawnienia dostepu do komputera Uzytkownika, w tym mozliwosc odczytywania i modyfikowania prywatnych danych Uzytkownika.
+18.2 Czasami aplikacja MDE moze kontaktowac sie z serwerami zdalnymi (obslugiwanymi przez PJWSTK lub inne firmy) w celu sprawdzenia dostepnych aktualizacji rozszerzen, w tym miedzy innymi poprawek bledów i rozbudowanych funkcji. Uzytkownik wyraza zgode na automatyczne uzyskiwanie, pobieranie i instalowanie takich aktualizacji bez kolejnego powiadomienia.
+18.3 Czasami PJWSTK moze wykryc, ze rozszerzenie narusza warunki PJWSTK dla programistów badz inne umowy prawne, prawa, przepisy lub zasady. Aplikacja MDE okresowo pobiera liste takich rozszerzen z serwerów PJWSTK. Uzytkownik akceptuje fakt, ze PJWSTK moze zdalnie wylaczyc lub usunac wszelkie takie rozszerzenia z komputera Uzytkownika wylacznie wedlug wlasnego uznania. 
+19. Dodatkowe warunki dotyczace korzystania przez firmy
+19.1 Jesli Uzytkownik jest podmiotem gospodarczym, wtedy osoba akceptujaca niniejsze Warunki w imieniu tego podmiotu (w celu unikniecia jakichkolwiek watpliwosci: dla podmiotu gospodarczego uzywany jest termin „Uzytkownik” oznaczajacy podmiot) oswiadcza i zapewnia: ze jest upowazniona do dzialania w imieniu Uzytkownika; ze Uzytkownik oswiadcza, ze jest uprawniony do prowadzenia firmy w kraju (lub krajach), w których Uzytkownik prowadzi dzialalnosc; oraz ze pracownicy, czlonkowie zarzadu, przedstawiciele oraz inni agenci Uzytkownika uzyskujacy dostep do Uslugi sa nalezycie upowaznieni do uzyskiwania dostepu do MDE oraz do prawnego wiazania uzytkownika tymi warunkami.
+19.2 Zgodnie z niniejszymi Warunkami, poza udzieleniem licencji w sekcji 9, PJWSTK udziela Uzytkownikowi niewylacznej, niezbywalnej licencji na reprodukowanie, rozpowszechnianie, instalowanie i korzystanie z MDE wylacznie na komputerach przeznaczonych do wykorzystania przez pracowników, czlonków zarzadu, przedstawicieli i agentów Uzytkownika do celów zwiazanych z dzialalnoscia prowadzona przez Uzytkownika i gwarantujacych, ze sposób korzystania przez nich z MDE bedzie zgody z niniejszymi Warunkami.
+1 maja 2012
+
+=================================================================
+
+MDE – Dodatkowe warunki korzystania z uslugi
+MPEGLA
+TEN PRODUKT JEST LICENCJONOWANY NA PODSTAWIE LICENCJI NA ZBIÓR PATENTÓW AVC W CELU UZYTKU OSOBISTEGO I NIEKOMERCYJNEGO PRZEZ KLIENTA DO (i) KODOWANIA FILMÓW WIDEO ZGODNIE ZE STANDARDEM AVC („FILMY WIDEO AVC”) I/LUB (ii) DEKODOWANIA FILMÓW WIDEO AVC ZAKODOWANYCH PRZEZ KLIENTA UCZESTNICZACEGO W DZIALANIACH O CHARAKTERZE OSOBISTYM I NIEKOMERCYJNYM I/LUB UZYSKANYCH OD PARTNERA W ZAKRESIE FILMÓW WIDEO DYSPONUJACEGO LICENCJA NA UDOSTEPNIANIE FILMÓW WIDEO AVC. NIE JEST UDZIELANA ZADNA LICENCJA, W TYM DOROZUMIANA, NA JAKIKOLWIEK INNY UZYTEK. DODATKOWE INFORMACJE MOZNA ZNALEZC W WITRYNIE FIRMY MPEG LA, L.L.C. POD ADRESEM HTTP://WWW.MPEGLA.COM.
+QT
+TEN PRODUKT JEST LICENCJONOWANY NA WARUNKACH LICENCJI LGPL WERSJA 2.1. DODATKOWE INFORMACJE MOZNA ZNALEZC POD ADRESEM HTTP://QT.NOKIA.COM/PRODUCTS/LICENSING
+OPENSCENEGRAPH, OPENTHREADS
+TEN PRODUKT JEST LICENCJONOWANY NA WARUNKACH LICENCJI OPENSCENEGRAPH PUBLIC LICENSE. DODATKOWE INFORMACJE MOZNA ZNALEZC POD ADRESEM HTTP://WWW.OPENSCENEGRAPH.ORG/PROJECTS/OSG/WIKI/LEGAL
+SQLITE
+TEN PRODUKT JEST LICENCJONOWANY NA WARUNKACH LICENCJI PUBLIC DOMAIN. DODATKOWE INFORMACJE MOZNA ZNALEZC POD ADRESEM  HTTP://WWW.SQLITE.ORG/COPYRIGHT.HTML
+SQLCIPHER
+TEN PRODUKT JEST LICENCJONOWANY NA WARUNKACH LICENCJI BSD. DODATKOWE INFORMACJE MOZNA ZNALEZC POD ADRESEM HTTP://SQLCIPHER.NET/LICENSE
+QWT
+TEN PRODUKT JEST LICENCJONOWANY NA WARUNKACH LICENCJI LGPL. DODATKOWE INFORMACJE MOZNA ZNALEZC POD ADRESEM HTTP://QWT.SOURCEFORGE.NET/QWTLICENSE.HTML
+QUAZIP
+TEN PRODUKT JEST LICENCJONOWANY NA WARUNKACH LICENCJI LGPL. 
+ZLIB
+TEN PRODUKT JEST LICENCJONOWANY NA WARUNKACH LICENCJI ZLIB. DODATKOWE INFORMACJE MOZNA ZNALEZC POD ADRESEM HTTP://WWW.ZLIB.NET/ZLIB_LICENSE.HTML
+BOOST
+TEN PRODUKT JEST LICENCJONOWANY NA WARUNKACH LICENCJI BOOST. DODATKOWE INFORMACJE MOZNA ZNALEZC POD ADRESEM HTTP://WWW.BOOST.ORG/USERS/LICENSE.HTML
+BTK
+TEN PRODUKT JEST LICENCJONOWANY NA WARUNKACH LICENCJI BSD. DODATKOWE INFORMACJE MOZNA ZNALEZC POD ADRESEM HTTP://B-TK.GOOGLECODE.COM/SVN-HISTORY/R590/DOC/API/0.1/_LICENSE.HTML
+CURL
+TEN PRODUKT JEST LICENCJONOWANY NA WARUNKACH LICENCJI MIT/X. DODATKOWE INFORMACJE MOZNA ZNALEZC POD ADRESEM HTTP://CURL.HAXX.SE/DOCS/COPYRIGHT.HTML
+FFMPEG
+TEN PRODUKT JEST LICENCJONOWANY NA WARUNKACH LICENCJI LGPL. DODATKOWE INFORMACJE MOZNA ZNALEZC POD ADRESEM HTTP://FFMPEG.ORG/LEGAL.HTML
+LOG4CXX
+TEN PRODUKT JEST LICENCJONOWANY NA WARUNKACH LICENCJI APACHE LICENSE. DODATKOWE INFORMACJE MOZNA ZNALEZC POD ADRESEM HTTP://LOGGING.APACHE.ORG/LOG4CXX/LICENSE.HTML
+ODE
+TEN PRODUKT JEST LICENCJONOWANY NA WARUNKACH LICENCJI LGPL WERSJA 2.1. DODATKOWE INFORMACJE MOZNA ZNALEZC POD ADRESEM HTTP://SOURCEFORGE.NET/PROJECTS/OPENDE
+TINYXML
+TEN PRODUKT JEST LICENCJONOWANY NA WARUNKACH LICENCJI ZLIB. DODATKOWE INFORMACJE MOZNA ZNALEZC POD ADRESEM HTTP://SOURCEFORGE.NET/PROJECTS/TINYXML
+WSDLPULL
+TEN PRODUKT JEST LICENCJONOWANY NA WARUNKACH LICENCJI LGPL. DODATKOWE INFORMACJE MOZNA ZNALEZC POD ADRESEM HTTP://SOURCEFORGE.NET/PROJECTS/WSDLPULL/
+OPENSSL
+TEN PRODUKT JEST LICENCJONOWANY NA WARUNKACH LICENCJI OPENSSL. DODATKOWE INFORMACJE MOZNA ZNALEZC POD ADRESEM HTTP://WWW.OPENSSL.ORG/SOURCE/LICENSE.HTML
