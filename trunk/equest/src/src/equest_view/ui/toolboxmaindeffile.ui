@@ -1,0 +1,854 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>HMMMain</class>
+ <widget class="QMainWindow" name="HMMMain">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1004</width>
+    <height>626</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MDE</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <property name="baseSize">
+    <size>
+     <width>0</width>
+     <height>0</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QMainWindow#HMMMain &gt; QWidget#centralWidget { 
+	background-color: rgb(41, 41, 41);
+}</string>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QWidget" name="widowTitleBar" native="true">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Minimum">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(43, 42, 41);</string>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>3</number>
+       </property>
+       <item>
+        <widget class="QWidget" name="widget" native="true">
+         <layout class="QHBoxLayout" name="horizontalLayout_5">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QLabel" name="logo">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>16</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap resource="MdeViewIcons.qrc">:/mde/icons/header.png</pixmap>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:white;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="versionLabel">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:white;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QToolButton" name="aboutButton">
+         <property name="styleSheet">
+          <string notr="true">QToolButton {
+margin-left: 4px;
+margin-right: 4px;
+border: none;
+}
+
+QToolButton:hover {
+    background-color: rgb(135, 177, 255);
+	/*border: none;*/
+ }
+
+QToolButton:pressed {
+    background-color: rgb(55, 97, 180);
+}</string>
+         </property>
+         <property name="text">
+          <string>?</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>:/mde/icons/about.png</normaloff>:/mde/icons/about.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QToolButton" name="minimizeButton">
+         <property name="maximumSize">
+          <size>
+           <width>21</width>
+           <height>15</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QToolButton {
+    background-color: rgb(43, 42, 41);
+    border-width: 1px;
+     border-color:  rgb(63, 62, 61);
+     border-style: solid; 
+     border-top: none; 
+     border-bottom-left-radius: 5px;
+     border-right-width: 0px;
+} 
+
+QToolButton:hover {
+    background-color: rgb(135, 177, 255);
+	/*border: none;*/
+ }
+
+QToolButton:pressed {
+    background-color: rgb(55, 97, 180);
+}
+</string>
+         </property>
+         <property name="text">
+          <string>_</string>
+         </property>
+         <property name="icon">
+          <iconset resource="MdeViewIcons.qrc">
+           <normaloff>:/mde/icons/minimalizacja-alpha.png</normaloff>:/mde/icons/minimalizacja-alpha.png</iconset>
+         </property>
+         <property name="checkable">
+          <bool>false</bool>
+         </property>
+         <property name="autoExclusive">
+          <bool>true</bool>
+         </property>
+         <property name="autoRaise">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QToolButton" name="exitButton">
+         <property name="maximumSize">
+          <size>
+           <width>29</width>
+           <height>15</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QToolButton {
+    background-color: rgb(43, 42, 41);
+     border-width: 1px;
+     border-color:  rgb(63, 62, 61);
+     border-style: solid; 
+     border-top: none; 
+     border-bottom-right-radius: 5px;
+    border-left-width: 1px;
+}
+
+ QToolButton:hover {
+     background-color: rgb(200, 0, 0);	
+ }
+
+QToolButton:pressed {
+         background-color: rgb(128, 0, 0);
+}</string>
+         </property>
+         <property name="text">
+          <string>x</string>
+         </property>
+         <property name="icon">
+          <iconset resource="../../coreui/ui/CoreIcons.qrc">
+           <normaloff>:/coreUI/icons/x-alpha.png</normaloff>:/coreUI/icons/x-alpha.png</iconset>
+         </property>
+         <property name="autoRaise">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QFrame" name="toolBar">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>100</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>100</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QFrame#toolBar{
+     background-color: rgb(91, 91, 91);
+     border-top-right-radius: 8px; 
+     border-top-left-radius: 8px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+QFrame#toolBar &gt; QWidget {
+	background-color: rgb(91, 91, 91);
+	border: none;
+}
+ 
+QFrame#toolBar &gt; QToolButton:enabled {
+    background-color: rgb(91, 91, 91);
+    border-style: solid;
+     border-width: 1px;
+     border-radius: 9px;
+    /* hack! - istniejaca ramka, ktorej nie widac
+				   bez tego ikona rusza sie, w momencie wl/wyl ramki */
+     border-color: rgb(91, 91, 91);
+	color: white; 
+} 
+QFrame#toolBar &gt; QToolButton:!enabled {
+     background-color: rgb(91, 91, 91);
+     border-style: solid;
+     border-width: 1px;
+     border-radius: 9px;
+     border-color: rgb(91, 91, 91);
+	 color: black;
+}
+
+QFrame#toolBar &gt; QToolButton:enabled:hover {
+     background-color: rgb(91, 91, 91);
+	 border-style: solid;
+     border-width: 1px;
+     border-radius: 9px;
+     border-color: rgb(135, 177, 255);
+	 color: rgb(135, 177, 255);
+ }
+
+QFrame#toolBar &gt; QToolButton:checked, QFrame#toolBar &gt; QToolButton:hover:checked {
+     background-color: rgb(91, 91, 91);
+	 border-style: solid;
+     border-width: 1px;
+     border-radius: 9px;
+     border-color: white;
+	 color: white;
+ }
+
+
+</string>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QToolButton" name="templateButton">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>84</width>
+           <height>54</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="text">
+          <string>Open</string>
+         </property>
+         <property name="icon">
+          <iconset resource="MdeViewIcons.qrc">
+           <normaloff>:/mde/icons/Strona.png</normaloff>:/mde/icons/Strona.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>28</width>
+           <height>28</height>
+          </size>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <property name="checked">
+          <bool>false</bool>
+         </property>
+         <property name="toolButtonStyle">
+          <enum>Qt::ToolButtonTextUnderIcon</enum>
+         </property>
+         <property name="autoRaise">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QWidget" name="tabPlaceholder" native="true">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QWidget#tabPlaceholder {
+	border: none;
+	margin: 0px;
+	padding: 0px;
+}</string>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QFrame" name="mainArea">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+/* OGÓLNE - QFrame#mainArea */
+QFrame#mainArea  {
+	background-color: rgb(91, 91, 91);
+border-top: 1px solid rgb(101, 101, 101);
+padding-top: 2px;
+}
+
+QFrame#mainArea &gt; QWidget, QFrame#mainArea QWidget#analisisArea, QFrame#mainArea QWidget#analisisArea EDRDockWidgetManager, QFrame#mainArea QWidget#analisisArea QMainWindow {
+	background-color: rgb(91, 91, 91);
+}
+
+/* separatory okna glownego */
+QFrame#mainArea QMainWindow::separator {
+     background: rgb(91,91,91);
+     width: 2px; /* when vertical */
+     height: 2px; /* when horizontal */
+	margin: 1px;
+ }
+
+QFrame#mainArea QMainWindow::separator:hover {
+     background-color: rgb(255, 255, 255);
+ }
+
+QFrame#mainArea * QWidget {
+	background-color: white;
+}
+
+
+/* DANE - nowa odsłona bez dataExplorera */
+QFrame#mainArea &gt; #dataTabWidget, QTabWidget#dataTabWidget::pane, QTabWidget#dataTabWidget::pane &gt; *, QTabWidget#dataTabWidget::tab-bar, #dataTabWidget &gt; * {
+	background-color: rgb(91, 91, 91);
+	padding: 0px;
+	margin: 0px;
+}
+
+QTabWidget#dataTabWidget::pane {
+border: none;
+}
+
+/* nowy plugin communication - DataSourceWidget */
+
+QTabWidget#DataSourceWidget, QTabWidget#DataSourceWidget::pane, QTabWidget#DataSourceWidget::pane &gt; *, QTabWidget#DataSourceWidget #motionDataTab,  QTabWidget#DataSourceWidget #userDataTab, QTabWidget#DataSourceWidget #configTab {
+	background-color: rgb(91, 91, 91);
+	padding: 0px;
+	margin: 0px;
+}
+
+QTabWidget#DataSourceWidget::pane {
+	border: 1px solid black;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	border-bottom: 3px solid black;
+	margin: 0px;
+	padding: 2px;
+background: rgb(91, 91, 91);
+}
+
+QTabWidget#DataSourceWidget #leftWidget {
+	background: transparent;
+	padding: 0px;
+	margin: 0px;
+}
+
+QTabWidget#DataSourceWidget #dataViewWidget, QTabWidget#DataSourceWidget #patientCardPlaceholerWidget, QTabWidget#DataSourceWidget #configPlaceholderWidget {
+	border: 1px solid black;
+	padding: 2px;
+	border-radius: 4px;
+}
+
+QTabWidget#DataSourceWidget DefaultPatientCardWidget, QTabWidget#DataSourceWidget #patientCardPlaceholerWidget, QTabWidget#DataSourceWidget #widget {
+	background: rgb(91, 91, 91);
+}
+
+QTabWidget#DataSourceWidget:tab-bar, QTabWidget#DataSourceWidget &gt; QTabBar {
+	background: rgb(91, 91, 91);
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+}
+
+QTabWidget#DataSourceWidget &gt; QTabBar::tab, QTabWidget#DataSourceWidget &gt; QTabBar::tab:first, QTabWidget#DataSourceWidget &gt; QTabBar::tab:middle, QTabWidget#DataSourceWidget &gt; QTabBar::tab:last, QTabWidget#DataSourceWidget &gt; QTabBar::tab:selected {
+border: none;
+ border-radius: 0px;
+ background-color: transparent;
+ color: black;
+min-width: 8ex;
+ padding: 4px;
+margin-right: 3px;
+}
+
+QTabWidget#DataSourceWidget &gt; QTabBar::tab:middle {
+	margin-left: 3px;
+}
+
+QTabWidget#DataSourceWidget &gt; QTabBar::tab:last {
+	margin-right: 1px;
+	margin-left: 3px;
+}
+
+QTabWidget#DataSourceWidget &gt; QTabBar::tab:hover {
+    background-color: #898989;
+}
+
+QTabWidget#DataSourceWidget  &gt; QTabBar::tab:selected, QTabWidget#DataSourceWidget &gt; QTabBar::tab:hover:selected {
+ background-color: black;
+color: white;
+ border-bottom-left-radius: 4px;
+ border-bottom-right-radius: 4px;
+}
+
+QTabWidget#DataSourceWidget QToolBox::tab {
+	background: rgb(41,41,41);
+	color: white;
+margin: 0px;
+	border: 1px solid black;
+	border-radius: 4px;
+}
+
+QTabWidget#DataSourceWidget QAbstractButton, QTabWidget#DataSourceWidget QPushButton {
+	background: rgb(41,41,41);
+	color: white;
+	border: 1px solid black;
+	border-radius: 4px;
+	padding: 2px;
+}
+
+QTabWidget#DataSourceWidget QAbstractButton:hover {
+	background: rgb(200, 200, 200);
+	color: black;
+}
+
+QTabWidget#dataTabWidget QTextEdit {
+	border: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+QTabWidget#DataSourceWidget QCheckBox
+{
+	color: black;
+	background: transparent;
+	border: none;
+}
+
+QTabWidget#dataTabWidget QGroupBox {
+	color: black;
+	border: 1px solid black;
+	border-radius: 0px;
+	padding: 0px;
+	margin-top: 30px;
+color: white;
+font: bold 18px;
+ }
+
+QTabWidget#dataTabWidget QGroupBox::title {
+     subcontrol-origin: margin;
+		subcontrol-position: top left;
+     padding: 4px;	
+border: 1px solid black;
+border-bottom: none;
+border-radius: 4px;
+border-bottom-left-radius: 0px;
+border-bottom-right-radius: 0px;
+background: black;
+min-width: 10em;
+}
+
+QTabWidget#dataTabWidget QTreeWidget {
+	border: 2px solid black;
+}
+
+QTabWidget#dataTabWidget QTableWidget {
+	border: 2px solid black;
+	gridline-color: transparent;
+	alternate-background-color: 	lightgray;
+	selection-background-color: rgb(135, 177, 255);
+}
+
+QTabWidget#dataTabWidget QTableWidget::item {
+	border: 2px solid black;
+	border-top: none;
+	border-right: none;
+}
+
+QTabWidget#dataTabWidget QHeaderView::section, QTabWidget#dataTabWidget QTableWidget QTableCornerButton::section, QTabWidget#dataTabWidget QTableWidget QHeaderView::section {
+	background: rgb(41,41,41);
+	color: white;
+	padding: 2px;
+}
+
+QTabWidget#dataTabWidget QTableWidget QTableCornerButton::section {
+	border: 2px solid black;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+}
+
+QTabWidget#dataTabWidget QHeaderView::section, QTabWidget#dataTabWidget QTableWidget QHeaderView::section {
+	border: 2px solid black;
+	border-top: none;
+	border-left: none;
+}
+
+QTabWidget#dataTabWidget QHeaderView::section:only-one, QTabWidget#dataTabWidget QHeaderView::section:last, QTabWidget#dataTabWidget QHeaderView::section:only-one, QTabWidget#dataTabWidget QHeaderView::section:last {
+	border: 2px solid black;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+}
+
+QTabWidget#dataTabWidget QHeaderView::section:vertical {
+	border: 2px solid black;
+	border-left: none;
+	border-top: none;
+	border-right: none;
+}
+
+QTabWidget#DataSourceWidget QMessageBox, QTabWidget#DataSourceWidget QMessageBox * {
+	background-color: rgb(91, 91, 91);
+	color: black;
+}
+
+/* ANALIZY - QWidget#analisisArea */
+QFrame#mainArea QWidget#analisisArea &gt; *, QFrame#mainArea EDRDockWidgetManager .EDRDockWidgetSet &gt; * {
+	border: 1px solid black;
+	border-radius: 4px;
+	padding: 2px;
+}
+
+QFrame#mainArea EDRDockWidgetManager .EDRDockWidgetSet &gt; * {
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	margin: 3px;
+	margin-top: 0px;
+}
+
+QFrame#mainArea EDRTitleBar{
+	background-color: rgb(43, 42, 41);
+	color: white;
+	margin: 0px;
+	border: none;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+}
+
+QFrame#mainArea EDRTitleBar * {
+	background-color: rgb(43, 42, 41);
+	color: white;
+	margin: 0px;
+	border: none;
+}
+
+QFrame#mainArea QDockWidget &gt; .QWidget, QFrame#mainArea EDRDockWidget &gt; .QWidget, QFrame#mainArea VisualizerWidget &gt; .QWidget, QFrame#mainArea EDRDockWidgetSet &gt; .QWidget {
+	border: 1px solid /*black*/ rgb(220,220, 220);
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+	padding: 0px;
+	margin: 0px;
+}
+
+QFrame#mainArea VisualizerWidget &gt; .QWidget &gt; * {
+	margin: 0px;
+	padding: 0px;
+	border: none;
+}
+
+QFrame#mainArea VisualizerWidget &gt; .QWidget:focus, QFrame#mainArea VisualizerWidget &gt; .QWidget:focus:hover {
+	border: 2px solid orange;
+}
+
+QFrame#mainArea VisualizerWidget &gt; .QWidget:hover {
+	border: 2px solid rgb(135, 177, 255);
+}
+</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="lineWidth">
+       <number>0</number>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_4">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>5</number>
+       </property>
+       <property name="topMargin">
+        <number>5</number>
+       </property>
+       <property name="rightMargin">
+        <number>5</number>
+       </property>
+       <property name="bottomMargin">
+        <number>5</number>
+       </property>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <action name="actionAbout">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/mde/icons/about.png</normaloff>:/mde/icons/about.png</iconset>
+   </property>
+   <property name="text">
+    <string>About...</string>
+   </property>
+  </action>
+  <action name="actionOpen">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/mde/icons/open.png</normaloff>:/mde/icons/open.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Open</string>
+   </property>
+   <property name="shortcut">
+    <string>O</string>
+   </property>
+  </action>
+  <action name="actionWindow">
+   <property name="text">
+    <string>Window</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="actionSaveLayout">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/mde/icons/save.png</normaloff>:/mde/icons/save.png</iconset>
+   </property>
+   <property name="text">
+    <string>Save layout</string>
+   </property>
+  </action>
+  <action name="actionLayoutOpen">
+   <property name="text">
+    <string>Open...</string>
+   </property>
+  </action>
+  <action name="actionCreate_workflow">
+   <property name="text">
+    <string>Create workflow</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="../../coreui/ui/CoreIcons.qrc"/>
+  <include location="MdeViewIcons.qrc"/>
+  <include location="MdeViewIcons.qrc"/>
+  <include location="MdeViewIcons.qrc"/>
+  <include location="MdeViewIcons.qrc"/>
+  <include location="MdeViewIcons.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>exitButton</sender>
+   <signal>clicked()</signal>
+   <receiver>HMMMain</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>893</x>
+     <y>19</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>456</x>
+     <y>323</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>minimizeButton</sender>
+   <signal>clicked()</signal>
+   <receiver>HMMMain</receiver>
+   <slot>showMinimized()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>865</x>
+     <y>17</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>456</x>
+     <y>323</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>aboutButton</sender>
+   <signal>clicked()</signal>
+   <receiver>actionAbout</receiver>
+   <slot>trigger()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>858</x>
+     <y>10</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>onOpen()</slot>
+  <slot>onExit()</slot>
+  <slot>onWireframe()</slot>
+  <slot>onBones()</slot>
+  <slot>onMaterial()</slot>
+  <slot>onPageChanged(int)</slot>
+  <slot>onTabbedViewSelected(bool)</slot>
+  <slot>onDockableViewSelected(bool)</slot>
+  <slot>onSaveLayout()</slot>
+  <slot>onShowSavedLayouts()</slot>
+  <slot>onOpenLayout()</slot>
+  <slot>populateWindowMenu()</slot>
+  <slot>populateVisualizersMenu()</slot>
+  <slot>createWorkflow()</slot>
+ </slots>
+</ui>

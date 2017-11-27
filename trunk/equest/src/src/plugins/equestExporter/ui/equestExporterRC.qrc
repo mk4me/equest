@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="equestExporter/images">
+    <file alias="equest.png">../resources/embedded/equest.png</file>
+  </qresource>
+</RCC>
