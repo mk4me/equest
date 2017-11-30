@@ -31,6 +31,8 @@
 #include "plugins/hmdbCommunication/IHMDBSource.h"
 #include "hmdbserviceslib/IFileStoremanWS.h"
 #include "c3dlib/C3DTypes.h"
+#include "plugins/equest/EquestPerspective.h"
+#include "plugins/subject/IMotion.h"
 
 using namespace core;
 using namespace equest;
@@ -38,7 +40,8 @@ using namespace equest;
 
 
 EquestAnnotationVisualizer::AnnotationSerie::AnnotationSerie(EquestAnnotationVisualizer * visualizer) :
-	visualizer(visualizer)
+	visualizer(visualizer),
+	editable(false)
 {
 
 }
@@ -184,16 +187,25 @@ core::VariantConstPtr equest::EquestAnnotationVisualizer::AnnotationSerie::getRe
 {
 	auto transaction = plugin::getDataManagerReader()->transaction();
 	core::ConstVariantsList objects;
-	transaction->getObjects(objects, typeid(c3dlib::VectorChannelReaderInterface), false);
+	this->motion->getObjects(objects, typeid(c3dlib::VectorChannelReaderInterface), false);
 	std::string source;
 	std::string name;
 	for (auto& var : objects) {
-		var->getMetadata("core/source", source);
-		var->getMetadata("core/name", name);
 		return var;
 
 	}
 	return core::VariantConstPtr();
+}
+
+std::string equest::EquestAnnotationVisualizer::AnnotationSerie::getTempFilename() const
+{
+	std::string filename = this->motionLabel + "." + getUserName(nullptr) + ".xml";
+	utils::Filesystem::Path dir = plugin::getPaths()->getUserDataPath() / "EquestAnnotations";
+	if (!utils::Filesystem::pathExists(dir)) {
+		utils::Filesystem::createDirectory(dir);
+	}
+
+	return (dir / filename).string();
 }
 
 const utils::TypeInfo & EquestAnnotationVisualizer::AnnotationSerie::getRequestedDataType() const
@@ -288,6 +300,9 @@ plugin::IVisualizer::ISerie* EquestAnnotationVisualizer::createSerie(const utils
 	AnnotationSerie* ret = new AnnotationSerie(this);
 	ret->setName("Annotation");
 	ret->setData(requestedType, data);
+	auto username = getUserName(data);
+	auto metaname = getUserNameFromMetadata(data);
+	ret->setEditable(username == metaname);
 	return ret;
 }
 
@@ -317,6 +332,11 @@ void EquestAnnotationVisualizer::setActiveSerie(plugin::IVisualizer::ISerie * se
 	auto as = dynamic_cast<AnnotationSerie*>(serie);
 	if (as) {
 		currentSerie = as;
+		bool enabled = as ? as->getEditable() : false;
+		this->ui.saveButton->setEnabled(enabled);
+		this->ui.uploadButton->setEnabled(enabled);
+		this->ui.label->setText(QString::fromStdString(as->motionLabel));
+		as->ui.annotationButton->setEnabled(enabled);
 	}
 	else if (serie && !as) {
 		throw std::runtime_error("Unknown serie type");
@@ -361,10 +381,10 @@ void equest::EquestAnnotationVisualizer::save()
 {
 	try {
 		if (currentSerie) {
-			QString path = QFileDialog::getSaveFileName();
-			if (!path.isEmpty()) {
+			std::string path = currentSerie->getTempFilename();
+			if (!path.empty()) {
 				EquestAnnotationsConstPtr ptr = currentSerie->getAnnotations();
-				EquestAnnotations::save(path.toStdString(), *ptr);
+				EquestAnnotations::save(path, *ptr);
 			}
 		}
 	}
@@ -390,8 +410,8 @@ void equest::EquestAnnotationVisualizer::upload()
 {
 	//QMessageBox::warning(widget, "Warning", "Not yet implemented");
 	//return;
-
-	utils::Filesystem::Path p("C:/EQuest/_out/src/equest_view/2017-05-29-B1022-S01-T01.equest0.xml");// = getXmlOutputFilename();
+	save();
+	utils::Filesystem::Path p = currentSerie->getTempFilename(); //("C:/EQuest/_out/src/equest_view/2017-05-29-B1022-S01-T01.equest0.xml");// = getXmlOutputFilename();
 
 	/*int trialID = -1;
 	{

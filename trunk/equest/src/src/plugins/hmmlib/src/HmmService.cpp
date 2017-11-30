@@ -82,12 +82,12 @@ void HmmService::addSubjectFilterToBundle( core::IFilterBundlePtr fb, const util
 
 const bool HmmService::lateInit()
 {
-	auto comm = core::querySource<hmdbCommunication::IHMDBSource>(plugin::getSourceManager());
-	if (comm != nullptr) {
-		plugin::ISourcePtr commSource = utils::dynamic_pointer_cast<plugin::ISource>(comm);
-		comm->viewManager()->addHierarchyPerspective(utils::make_shared<MotionPerspective>());
-		return true;
-	}
+	//auto comm = core::querySource<hmdbCommunication::IHMDBSource>(plugin::getSourceManager());
+	//if (comm != nullptr) {
+	//	plugin::ISourcePtr commSource = utils::dynamic_pointer_cast<plugin::ISource>(comm);
+	//	comm->viewManager()->addHierarchyPerspective(utils::make_shared<MotionPerspective>());
+	//	return true;
+	//}
 
 	return false;
 }

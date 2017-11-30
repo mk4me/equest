@@ -14,6 +14,7 @@
 #include "ui_AnnotationArea.h"
 #include "EquestAnnotation.h"
 #include "plugins/hmdbCommunication/IHMDBShallowCopyContext.h"
+#include "plugins/subject/Types.h"
 
 class QTableWidget;
 class QDoubleSpinBox;
@@ -28,7 +29,7 @@ namespace equest {
 		UNIQUE_ID("{4A445E6E-D808-4D03-A2CB-CE83BB8E9264}");
 		CLASS_DESCRIPTION("Equest annotation Visualizer", "Equest annotation Visualizer");
 
-	private:
+	public:
 
 		class AnnotationSerie : public plugin::IVisualizer::ISerie
 		{
@@ -48,11 +49,21 @@ namespace equest {
 
 			virtual void update();
 
+			bool getEditable() const { return editable; }
+			void setEditable(bool editable) { this->editable = editable; }
+
+			std::string getTempFilename() const;
 
 			//! Czas zawiera siê miêdzy 0 a getLength()
 			//! \param time Aktualny, lokalny czas kana³u w sekundach
 			virtual void setTime(double time);
 
+			void setMotion(PluginSubject::MotionConstPtr motion, const std::string& label) {
+				this->motion = motion;
+				this->motionLabel = label;
+
+				this->visualizer->ui.label->setText(QString::fromStdString(motionLabel));
+			}
 			void addAnnotation();
 			void invalidateTable();
 			QDoubleSpinBox* createTableSpinbox(int row, int column, double value);
@@ -66,8 +77,11 @@ namespace equest {
 			EquestAnnotationVisualizer * visualizer;
 			Ui::AnnotationArea ui;
 			std::string name;
+			std::string motionLabel;
 			core::VariantConstPtr data;
 			utils::TypeInfo requestedType;
+			bool editable;
+			PluginSubject::MotionConstPtr motion;
 			//double currentTime;
 		};
 
@@ -132,6 +146,8 @@ namespace equest {
 
 
 		hmdbCommunication::IHMDBShallowCopyContext* sourceContextForData(const core::VariantConstPtr data);
+		
+
 
 	};
 }

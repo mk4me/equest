@@ -21,8 +21,7 @@ AnnotationParser::~AnnotationParser()
 void AnnotationParser::parse( const std::string & source  )
 {
 	annotationsOW = utils::ObjectWrapper::create<EquestAnnotations>();
-	equest::EquestAnnotationsPtr ptr = utils::make_shared<equest::EquestAnnotations>();
-	ptr->annotations = { { 0.3, 0.7, QString("Entry1")},{ 1.3, 1.7, QString("Entry2") } };
+	equest::EquestAnnotationsPtr ptr = utils::make_shared<equest::EquestAnnotations>(equest::EquestAnnotations::load(source));
 	annotationsOW->set(ptr);
 }
 
@@ -41,7 +40,7 @@ void AnnotationParser::acceptedExpressions(Expressions & expressions) const
     ExpressionDescription expDesc;
     expDesc.description = "Annotation format";
 	expDesc.objectsTypes.push_back(typeid(EquestAnnotations));
-    expressions.insert(Expressions::value_type(".*\\.ann$", expDesc));
+    expressions.insert(Expressions::value_type(".*\\.xml$", expDesc));
 }
 
 void AnnotationParser::getObject(core::Variant& object, const core::VariantsVector::size_type idx) const

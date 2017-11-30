@@ -21,7 +21,7 @@ namespace equest {
 class AnnotationParser : public plugin::ISourceParser
 {
     UNIQUE_ID("{181A95BA-AB96-4DEF-B887-2428511DB734}")
-	CLASS_DESCRIPTION("PNG parser", "PNG parser")
+	CLASS_DESCRIPTION("Annotations parser", "Annotations parser")
 	
 public:
     AnnotationParser();
